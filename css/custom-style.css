@@ -663,6 +663,10 @@ button:hover, button:active {
 #search-button:hover {
   color: #6c9020;
 }
+.team-professor {
+  background: #006699;
+  color: white;
+}
 /*------------------------------------*
    MICRO-ELEMENTS
 *------------------------------------*/
