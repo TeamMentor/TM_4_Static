@@ -632,7 +632,7 @@ a.minor:hover {
 /*------------------------------------*
    BUTTONS
 *------------------------------------*/
-button {
+button, .button {
   background: #8aaf3e;
   border-radius: 3px;
   border: none;
@@ -646,7 +646,7 @@ button {
   width: auto;
   outline: none;
 }
-button:hover, button:active {
+button:hover, button:active, .button:hover, .button:active {
   background: #b4cf7b;
 }
 .full-width {
