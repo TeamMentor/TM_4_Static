@@ -1347,7 +1347,7 @@ span.alert-text {
 }
 .icon-All .path1:before {
   content: "\e600";
-  color: rgb(68, 68, 68);
+  color: #b190e2;
 }
 .icon-All .path2:before {
   content: "\e601";
@@ -1356,7 +1356,7 @@ span.alert-text {
 }
 .icon-Android .path1:before {
   content: "\e602";
-  color: rgb(68, 68, 68);
+  color: #a0cf4b;
 }
 .icon-Android .path2:before {
   content: "\e603";
@@ -1366,12 +1366,12 @@ span.alert-text {
 .icon-Android .path3:before {
   content: "\e604";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #a0cf4b;
 }
 .icon-Android .path4:before {
   content: "\e605";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #a0cf4b;
 }
 .icon-Android .path5:before {
   content: "\e606";
@@ -1383,7 +1383,7 @@ span.alert-text {
 }
 .icon-C .path1:before {
   content: "\e608";
-  color: rgb(68, 68, 68);
+  color: #90bae2;
 }
 .icon-C .path2:before {
   content: "\e609";
@@ -1412,14 +1412,14 @@ span.alert-text {
 .icon-Checklist .path5:before {
   content: "\e60e";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #f6788d;
 }
 .icon-Close:before {
   content: "\e60f";
 }
 .icon-CodeExample .path1:before {
   content: "\e610";
-  color: rgb(68, 68, 68);
+  color: #5ed4a6;
 }
 .icon-CodeExample .path2:before {
   content: "\e611";
@@ -1478,7 +1478,7 @@ span.alert-text {
 }
 .icon-Deploy .path1:before {
   content: "\e61d";
-  color: rgb(68, 68, 68);
+  color: #a79389;
 }
 .icon-Deploy .path2:before {
   content: "\e61e";
@@ -1487,7 +1487,7 @@ span.alert-text {
 }
 .icon-Design .path1:before {
   content: "\e61f";
-  color: rgb(68, 68, 68);
+  color: #cb6e6e;
 }
 .icon-Design .path2:before {
   content: "\e620";
@@ -1497,17 +1497,17 @@ span.alert-text {
 .icon-Design .path3:before {
   content: "\e621";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #cb6e6e;
 }
 .icon-Design .path4:before {
   content: "\e622";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #cb6e6e;
 }
 .icon-Design .path5:before {
   content: "\e623";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #cb6e6e;
 }
 .icon-Filter:before {
   content: "\e624";
@@ -1519,11 +1519,11 @@ span.alert-text {
 .icon-Guideline .path2:before {
   content: "\e626";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #f3bf4f;
 }
 .icon-HowTo .path1:before {
   content: "\e627";
-  color: rgb(68, 68, 68);
+  color: #679ff3;
 }
 .icon-HowTo .path2:before {
   content: "\e628";
@@ -1532,7 +1532,7 @@ span.alert-text {
 }
 .icon-HTML5 .path1:before {
   content: "\e629";
-  color: rgb(68, 68, 68);
+  color: #f87359;
 }
 .icon-HTML5 .path2:before {
   content: "\e62a";
@@ -1541,12 +1541,12 @@ span.alert-text {
 }
 .icon-Implementation .path1:before {
   content: "\e62b";
-  color: rgb(68, 68, 68);
+  color: #54adb8;
 }
 .icon-Implementation .path2:before {
   content: "\e62c";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #54adb8;
 }
 .icon-Implementation .path3:before {
   content: "\e62d";
@@ -1561,7 +1561,7 @@ span.alert-text {
 }
 .icon-iOS .path1:before {
   content: "\e630";
-  color: rgb(68, 68, 68);
+  color: #a6a8ab;
 }
 .icon-iOS .path2:before {
   content: "\e631";
@@ -1570,7 +1570,7 @@ span.alert-text {
 }
 .icon-Java .path1:before {
   content: "\e632";
-  color: rgb(68, 68, 68);
+  color: #ff9200;
 }
 .icon-Java .path2:before {
   content: "\e633";
@@ -1585,9 +1585,18 @@ span.alert-text {
 }
 .icon-Net .path1:before {
   content: "\e636";
-  color: rgb(68, 68, 68);
+  color: #5990b5;
 }
 .icon-Net .path2:before {
+  content: "\e637";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Net-3-5 .path1:before {
+  content: "\e636";
+  color: #5962b5;
+}
+.icon-Net-3-5 .path2:before {
   content: "\e637";
   margin-left: -1em;
   color: rgb(255, 255, 255);
@@ -1602,11 +1611,11 @@ span.alert-text {
 .icon-PHP .path2:before {
   content: "\e63a";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6c7eb7;
 }
 .icon-Principle .path1:before {
   content: "\e63b";
-  color: rgb(68, 68, 68);
+  color: #eaa878;
 }
 .icon-Principle .path2:before {
   content: "\e63c";
@@ -1618,7 +1627,7 @@ span.alert-text {
 }
 .icon-Scala .path1:before {
   content: "\e63e";
-  color: rgb(68, 68, 68);
+  color: #ea7a78;
 }
 .icon-Scala .path2:before {
   content: "\e63f";
@@ -1633,7 +1642,7 @@ span.alert-text {
 }
 .icon-Test .path1:before {
   content: "\e642";
-  color: rgb(68, 68, 68);
+  color: #cbb654;
 }
 .icon-Test .path2:before {
   content: "\e643";
@@ -1656,11 +1665,11 @@ span.alert-text {
 .icon-Vulnerabilities .path2:before {
   content: "\e648";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #82a931;
 }
 .icon-WCF .path1:before {
   content: "\e649";
-  color: rgb(68, 68, 68);
+  color: #59caf5;
 }
 .icon-WCF .path2:before {
   content: "\e64a";
@@ -1669,7 +1678,7 @@ span.alert-text {
 }
 .icon-Web-App .path1:before {
   content: "\e64b";
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path2:before {
   content: "\e64c";
@@ -1679,45 +1688,45 @@ span.alert-text {
 .icon-Web-App .path3:before {
   content: "\e64d";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path4:before {
   content: "\e64e";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path5:before {
   content: "\e64f";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path6:before {
   content: "\e650";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path7:before {
   content: "\e651";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path8:before {
   content: "\e652";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path9:before {
   content: "\e653";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path10:before {
   content: "\e654";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }
 .icon-Web-App .path11:before {
   content: "\e655";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #6eb87a;
 }

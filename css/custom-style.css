@@ -1164,12 +1164,12 @@ td.vertical-align {
 .icon-Design .path4:before {
   content: "\e622";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #cb6e6e;
 }
 .icon-Design .path5:before {
   content: "\e623";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #cb6e6e;
 }
 .icon-Guideline .path1:before {
   content: "\e625";
@@ -1200,12 +1200,12 @@ td.vertical-align {
 }
 .icon-Implementation .path1:before {
   content: "\e62b";
-  color: rgb(68, 68, 68);
+  color: #54adb8;
 }
 .icon-Implementation .path2:before {
   content: "\e62c";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: #54adb8;
 }
 .icon-Implementation .path3:before {
   content: "\e62d";
