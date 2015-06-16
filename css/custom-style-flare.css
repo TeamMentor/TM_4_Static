@@ -352,6 +352,8 @@ span.text {
 #sub-nav .item {
   -moz-flex: 1;
   -webkit-flex: 1;
+  display: flex;
+  justify-content: space-between;
   flex: 1 1 100%;
   padding: 0.5em;
   border-bottom: 1px solid #dbdbdb;
@@ -784,6 +786,7 @@ button:hover, .button:hover {
 .btn-app {
   background: #7b7b7b;
   transition: 0.3s;
+  font-size: 0.65em;
 }
 .btn-app:hover {
   transition: 0.3s;
@@ -915,13 +918,6 @@ input.search-input, input.search-input:focus {
 }
 .accordion-panel ul li:hover {
   background: #dbdbdb;
-}
-aside .accordion-title {
-  padding: 1em;
-}
-aside .accordion-panel {
-  border-bottom: 0;
-  height: 300px;
 }
 /*------------------------------------*
    MICRO-ELEMENTS
@@ -1117,23 +1113,11 @@ span.alert-text {
   aside a.button, aside ul.side-nav li:last-child {
     display: none;
   }
-  aside #navigate {
-    height: 0;
-    transition: 0.5s;
-  }
-  aside:hover #navigate.accordion-panel:target {
-    height: 500px;
-    -webkit-transition: 0.5s;
-            transition: 0.5s;
-  }
   aside:hover ul.side-nav li {
     padding: 1em;
   }
   aside span.text, aside #filters {
     opacity:0;
-  }
-  aside:hover .accordion-title {
-    padding: 1.25em 1em;
   }
   aside:hover span.text, aside:hover #filters {
     opacity: 1;
@@ -1149,10 +1133,10 @@ span.alert-text {
   #right-nav:hover {
     padding: 0.5em;
   }
-  #left-nav .accordion, #left-nav .side-nav {
+  #left-nav .side-nav {
     opacity: 0;
   }
-  #left-nav:hover .accordion, #left-nav:hover .side-nav {
+  #left-nav:hover .side-nav {
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-out;
             transition: opacity 0.3s ease-out;
