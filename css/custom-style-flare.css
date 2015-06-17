@@ -1043,7 +1043,7 @@ span.alert-text {
     -webkit-flex: 21%;
     flex: 5%;
     background: url(../assets/logos/tm-icon.svg) no-repeat;
-    background-color: #8aaf3e;
+    background-color: #b4cf7b;
     background-size: 50%;
     background-position: 15px 10px;
   }
@@ -1063,7 +1063,7 @@ span.alert-text {
     flex: 95%;
     overflow: hidden;
     border-bottom: 1px solid #dbdbdb;
-    background-color: #8aaf3e;
+    background-color: #b4cf7b;
     padding: 0 5em 0 0;
   }
   .search-field {
