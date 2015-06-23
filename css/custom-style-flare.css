@@ -346,16 +346,6 @@ ul.side-nav li {
   color: #7b7b7b;
   font-size: 1em;
 }
-.no-style {
-  border: none;
-  background: none;
-}
-.no-style li:hover {
-  background: transparent !important;
-}
-span.text {
-  color: #7b7b7b;
-}
 #sub-nav {
   display: -webkit-flex;
   display: flex;
@@ -415,6 +405,7 @@ dl {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   border-bottom: 0;
+  margin: 0;
 }
 dt {
   padding: 0 0.5em;
@@ -1175,19 +1166,14 @@ span.alert-text {
     transition: 0.3s;
     height: 100%;
   }
-  aside:hover {
+  aside#right-nav:hover {
     -webkit-flex: 25%;
     flex: 25%;
-    text-align: left;
-    transition: 0.5s;
   }
   aside a.button, aside ul.side-nav li:last-child {
     display: none;
   }
-  aside:hover ul.side-nav li {
-    padding: 1em;
-  }
-  aside span.text, aside #filters {
+  aside #filters {
     opacity:0;
   }
   aside:hover span.text, aside:hover #filters {
@@ -1203,27 +1189,6 @@ span.alert-text {
   }
   #right-nav:hover {
     padding: 0.5em;
-  }
-  #left-nav .side-nav {
-    opacity: 0;
-  }
-  #left-nav:hover .side-nav {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease-out;
-            transition: opacity 0.3s ease-out;
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-  }
-  .nav-icon ul li {
-    padding: 1em 0;
-    border-bottom: 1px solid #dbdbdb;
-  }
-  aside .nav-icon {
-    display: block;
-    opacity: 1;
-  }
-  aside:hover .nav-icon {
-    display: none;
   }
   section.row__label {
     -webkit-box-orient: horizontal;
