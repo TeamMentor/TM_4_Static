@@ -355,7 +355,6 @@ ul.side-nav li {
 }
 span.text {
   color: #7b7b7b;
-  padding: 0 1em;
 }
 #sub-nav {
   display: -webkit-flex;
@@ -410,6 +409,26 @@ span.text {
 #sub-nav .item ul li {
   padding: 0.5em;
   border-bottom: 1px solid #dbdbdb;
+}
+dl {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  border-bottom: 0;
+}
+dt {
+  padding: 0 0.5em;
+  background: #dbdbdb;
+}
+dd {
+  padding: 0.5em 1em;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dbdbdb;
+}
+dd span.text {
+  padding: 0.35em 0 0 0;
 }
 /*------------------------------------*
   LANDING PAGE
