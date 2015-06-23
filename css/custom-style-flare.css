@@ -5,11 +5,6 @@
   margin: 1em 0 1em 1em;
   padding: 0 1em;
 }
-.lp-icon {
-  width: 20% !important;
-  padding-top: 20% !important;
-  float: left;
-}
 
 
 
@@ -391,10 +386,6 @@ span.text {
   width: 100%;
 }
 #sub-nav .item {
-  -moz-flex: 1;
-  -webkit-flex: 1;
-  display: flex;
-  justify-content: space-between;
   flex: 0 0 3.25em;
   padding: 0.5em 1em;
   border-bottom: 1px solid #dbdbdb;
@@ -1134,6 +1125,9 @@ span.alert-text {
     height: calc(100% - 4em);
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
+  }
+  .logged-out {
+    margin: 1em 0 0 0;
   }
   main {
     display: -webkit-flex;
