@@ -1,10 +1,6 @@
 .content {
   padding: 3em 1em;
 }
-.getting-started {
-  margin: 1em 0 1em 1em;
-  padding: 0 1em;
-}
 
 
 
@@ -150,7 +146,10 @@ section.row {
   flex: 100%;
 }
 .tm-summary {
-  padding: 1em 0;
+  display: none;
+}
+.getting-started {
+  margin: 0.5em;
 }
 aside {
   display: -webkit-flex;
@@ -510,13 +509,13 @@ footer ul li {
   SPRITES
 *------------------------------------*/
 .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance {
-  margin: 0 auto;
   height: 0;
+  margin: 0 auto;
 }
 .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance {
   background: url(../assets/icons/landing-page-icons.png) no-repeat;
-  width: 50%;
-  padding-top: 50%;
+  width: 80%;
+  padding-top: 80%;
 }
 .fix-vulnerabilities, .reduce-vulnerabilities, .provides-guidance {
   background-size: 685%;
@@ -698,13 +697,11 @@ table {
 }
 section.tm-summary table {
   border: 0;
-  margin: 2em 1em;
+  margin: 0.5em 0;
 }
 section.tm-summary table tr td:first-child{
-  width: 20%;
-}
-section.tm-summary table tr td:last-child {
-  padding: 0 1em;
+  width: 30%;
+  margin: 0;
 }
 /*------------------------------------*
    BUTTONS
@@ -724,7 +721,6 @@ button, .button {
   -webkit-box-shadow: none;
   box-shadow: none;
   overflow: hidden;
-  text-transform: uppercase;
   text-align: center;
   font-size: 0.85em;
   letter-spacing: 1px;
@@ -829,6 +825,16 @@ button:hover, .button:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+.btn-minor {
+  background: transparent;
+  color: #444444;
+  border: 1px solid #444444;
+}
+.btn-minor:hover {
+  background: transparent;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+}
 .full-width {
   display: block;
   width: 100% !important;
@@ -853,6 +859,7 @@ form {
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 0.5em;
 }
 form p {
   font-size: 12px;
@@ -914,9 +921,6 @@ input.search-input, input.search-input:focus {
 .input-field, .button-field, .conditions {
   -webkit-flex: 100%;
   flex: 100%;
-}
-.button-field li {
-  list-style-type: none;
 }
 .conditions {
   margin: 1em 0;
@@ -1043,6 +1047,9 @@ span.alert-text {
   text-align: center;
   padding: 0.5em 0.75em;
   border-radius: 20%;
+}
+.validation {
+  font-size: 0.75em;
 }
 /*------------------------------------*
    ANIMATIONS
@@ -1192,10 +1199,6 @@ span.alert-text {
     padding: 1em 0;
     border-bottom: 1px solid #dbdbdb;
   }
-  aside .accordion-title {
-    padding: 1em 0;
-    font-size: 1em !important;
-  }
   aside .nav-icon {
     display: block;
     opacity: 1;
@@ -1310,10 +1313,21 @@ span.alert-text {
   .input-field, .button-field, .conditions {
     -webkit-flex: 1 1 50%;
     flex: 1 1 50%;
-    padding: 0 10px;
+    padding: 0 0.5em;
   }
-  .access-form {
-    margin-top: 1.25em;
+  .button-field ul li {
+    display: inline-block;
+  }
+  .getting-started {
+    margin: 0;
+  }
+  .tm-summary {
+    display: block;
+  }
+  section.tm-summary table tr td:last-child{
+    width: 80%;
+    margin: 0;
+    padding: 0 0 0 1em;
   }
   #sub-nav .scroll {
     max-height: 600px;
