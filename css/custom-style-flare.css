@@ -1174,6 +1174,7 @@ span.alert-text {
   aside#right-nav:hover {
     -webkit-flex: 25%;
     flex: 25%;
+    text-align: left;
   }
   aside a.button, aside ul.side-nav li:last-child {
     display: none;
