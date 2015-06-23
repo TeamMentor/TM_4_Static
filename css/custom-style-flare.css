@@ -116,6 +116,9 @@ body * {
   flex-wrap: wrap;
   overflow: auto;
 }
+.logged-out {
+  margin: 0.5em;
+}
 .application footer {
   background: transparent;
 }
