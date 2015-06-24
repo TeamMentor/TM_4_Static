@@ -1176,13 +1176,13 @@ span.alert-text {
     flex: 25%;
     text-align: left;
   }
-  aside a.button, aside ul.side-nav li:last-child {
+  aside a.button, aside#left-nav ul.side-nav li:last-child {
     display: none;
   }
   aside #filters {
     opacity:0;
   }
-  aside:hover span.text, aside:hover #filters {
+  aside:hover #filters {
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-out;
             transition: opacity 0.3s ease-out;
@@ -1195,6 +1195,12 @@ span.alert-text {
   }
   #right-nav:hover {
     padding: 0.5em;
+  }
+  #right-nav:hover ul.side-nav {
+    display: none;
+  }
+  #right-nav ul.side-nav {
+    display: block;
   }
   section.row__label {
     -webkit-box-orient: horizontal;
