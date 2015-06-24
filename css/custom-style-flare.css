@@ -4,6 +4,8 @@
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   display: -webkit-flex;
@@ -38,7 +40,7 @@ body * {
   background-size: 170px;
   background-position: 8px 7px;
 }
-.tm-logo, .links {
+.tm-logo, .lp-logo, .links {
   background-color: white;
   border-bottom: 1px solid #dbdbdb;
   -webkit-flex: 50%;
@@ -1063,7 +1065,7 @@ span.alert-text {
   }
 }
 @media (min-width: 700px) {
-  .tm-logo, .search, .links {
+  .tm-logo, .lp-logo, .search, .links {
     height: 4em;
   }
   .tm-logo {
@@ -1072,7 +1074,7 @@ span.alert-text {
     background: url(../assets/logos/tm-icon.svg) no-repeat;
     background-color: white;
     background-size: 50%;
-    background-position: 18px 12px;
+    background-position: 50% 50%;
   }
   .links ul li {
     padding: 1em;
@@ -1093,9 +1095,15 @@ span.alert-text {
     background-color: white;
     padding: 0.5em 0;
   }
+  .search a.button {
+    color: #aaaaaa;
+  }
+  .search a.button:hover {
+    color: #b4cf7b;
+  }
   #search-button {
     order: 1;
-    width: 3%;
+    flex: 1%;
     text-align: left;
   }
   .search input[type="text"] {
@@ -1112,11 +1120,7 @@ span.alert-text {
     background: transparent;
     flex: 3%;
     font-size: 1.25em;
-    color: #aaaaaa;
     padding: 0.5em;
-  }
-  #filters-button:hover {
-    color: #b4cf7b;
   }
   .application {
     -webkit-order: 5;
@@ -1144,12 +1148,14 @@ span.alert-text {
     -webkit-flex: 5%;
     flex: 5%;
     text-align:center;
-    transition: 0.3s;
     height: 100%;
     padding: 0;
   }
+  aside#left-nav {
+    transition-delay: 2s;
+  }
   aside#right-nav {
-    display: none;
+    flex: 0;
   }
   aside#right-nav:target {
     -webkit-flex: 25%;
@@ -1162,7 +1168,7 @@ span.alert-text {
     flex: 70%;
     height: 100%
   }
-  aside a.button {
+  aside#left-nav a.button {
     display: none;
   }
   aside#left-nav span.text {
