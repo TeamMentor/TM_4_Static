@@ -1145,6 +1145,8 @@ span.alert-text {
     -webkit-flex: 90%;
     flex: 90%;
     padding: 10px;
+    align-items: flex-start;
+    align-content: flex-start;
   }
   aside {
     display: block;
