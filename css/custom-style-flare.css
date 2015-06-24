@@ -1093,11 +1093,6 @@ span.alert-text {
     background-color: white;
     padding: 0.5em 0;
   }
-  #search-button {
-    order: 1;
-    width: 3%;
-    text-align: left;
-  }
   .search input[type="text"] {
     background: transparent;
     border-radius: 0;
