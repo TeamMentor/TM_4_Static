@@ -174,9 +174,6 @@ aside:target {
   display: block;
   text-align: left;
 }
-#right-nav ul.side-nav {
-  display: none;
-}
 aside:target ~ main {
   display: none;
   height: 0;
@@ -1297,18 +1294,23 @@ span.alert-text {
     -webkit-box-flex: 5%;
         -ms-flex: 5%;
             flex: 5%;
-    text-align:center;
     height: 100%;
     padding: 0;
+    text-align: center;
   }
   aside#right-nav {
     height: 0;
     flex: 0;
-    order: 3;
+    -webkit-order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   aside#right-nav:target {
     height: 100%;
     flex: 25%;
+    text-align: left;
+    padding: 1em;
   }
   aside#right-nav:target ~ main {
     display: block;
@@ -1318,17 +1320,11 @@ span.alert-text {
             flex: 70%;
     height: 100%
   }
-  aside#left-nav a.button {
+  aside.border-right a.button {
     display: none;
   }
-  aside#left-nav span.text {
+  aside.border-right span.text {
     display: none;
-  }
-  aside.border-left {
-    -webkit-order: 3;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
   }
   section.row__label {
     -webkit-box-orient: horizontal;
