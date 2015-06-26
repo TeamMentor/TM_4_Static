@@ -158,22 +158,19 @@ aside {
           flex: 100%;
   background: white;
   overflow-y: auto;
-  padding: 0.5em;
+  padding: 0 0.5em;
 }
 aside span.text {
   padding: 0 1em;
 }
-aside [class^="icon-"], [class*=" icon-"] {
+aside [class^="icon-"], aside [class*=" icon-"] {
   color: #565656;
 }
-#left-nav {
-  border-right: 1px solid #dbdbdb;
-}
-#right-nav {
-  border-left: 1px solid #dbdbdb;
-}
-#left-nav:target, #right-nav:target {
+.border-right { border-right: 1px solid #dbdbdb; }
+.border-left { border-left: 1px solid #dbdbdb; }
+aside:target {
   display: block;
+  text-align: left;
 }
 #right-nav:target {
   padding: 1em;
@@ -207,7 +204,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   overflow-y: auto;
-  padding: 10px;
+  padding: 0.5em#;
 }
 section.row__label {
   background: transparent;
@@ -665,26 +662,33 @@ ul.filters {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  font-size: 0.85em;
 }
 ul.filters li {
-  border: 1px solid #dbdbdb;
-  background: #fafafa;
-  border-radius: 2em;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -webkit-flex: 1 1 30%;
+      -ms-flex: 1 0 30%;
+          flex: 0 0 30%;
   margin: 0.25em;
-  padding: 0.5em 1em;
-  -webkit-transition: 0.3s;
-          transition: 0.3s;
 }
-ul.filters li:hover {
-  background: #b4cf7b;
-  border-color: #b4cf7b;
-  -webkit-transition: 0.3s;
-          transition: 0.3s;
+ul.filters li a {
+  border: 1px solid #dbdbdb;
+  border-radius: 2em;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0.5em;
+}
+ul.filters li a:hover {
+  background-color: #fafafa;
+}
+#filter-icon {
+  font-size: 2em;
+}
+.filter-badge {
+  padding: 0.25em 0.5em;
+  font-size: 0.65em;
 }
 ul.display-inline li {
   display: inline-block;
@@ -892,10 +896,10 @@ button:hover, .button:hover {
   background: transparent;
   color: #444444;
   border: 1px solid #444444;
+  width: auto;
 }
 .btn-minor:hover {
   background: transparent;
-  color: #aaaaaa;
   border: 1px solid #aaaaaa;
 }
 .full-width {
@@ -1482,9 +1486,6 @@ span.alert-text {
   p, ul {
     font-size: 1em;
     line-height: 1.75em;
-  }
-  #filters ul li {
-    font-size: 0.85em;
   }
   .article-container {
     width: 60%;
