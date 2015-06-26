@@ -422,7 +422,7 @@ dl.help dd {
 dd span.text {
   padding: 0.35em 0 0 0;
 }
-#pagination {
+.pagination {
   width: 100%;
   height: 2.5em;
   margin: 1em 0;
@@ -446,10 +446,6 @@ dd span.text {
   LANDING PAGE
 *------------------------------------*/
 .landing-page {
-  background: #fafafa;
-  border-bottom: 1px solid #dbdbdb;
-}
-#landing-page {
   -webkit-order: 6;
   -webkit-box-ordinal-group: 7;
       -ms-flex-order: 6;
@@ -466,7 +462,6 @@ dd span.text {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow-y: auto;
-  background: white;
 }
 section {
   width: 100%;
@@ -978,8 +973,7 @@ input[type="number"], input[type="search"], input[type="tel"], input[type="time"
   border-radius: 3px;
   font-size: 1em;
   margin: 0 0 15px 0;
-  padding: 0.5em 0 0 8px;
-  padding: 0.5em 0 0 0.5rem;
+  padding: 0 0.5em;
   height: 40px;
   height: 2.5rem;
   box-sizing: border-box;
@@ -1096,17 +1090,11 @@ img {
 }
 .alert-box {
   width: 100%;
-  background-color: #a6cb5a;
   border: none;
   border-radius: 3px;
   font-size: 14px;
   letter-spacing: 1px;
   padding: 1em 1.5em;
-}
-.alert-box.active {
-  background-color: #dbdbdb;
-  color: #444444;
-  border: 1px solid #dbdbdb;
 }
 .alert {
   padding: 15px 20px;
@@ -1328,16 +1316,13 @@ span.alert-text {
             flex: 70%;
     height: 100%
   }
-  aside#right-nav:target + #left-nav {
-    width: 10px;
-  }
   aside#left-nav a.button {
     display: none;
   }
   aside#left-nav span.text {
     display: none;
   }
-  #right-nav {
+  aside.border-left {
     -webkit-order: 3;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -1524,13 +1509,13 @@ span.alert-text {
     width: 100%;
     padding-top: 110%;
   }
-  #pagination {
+  .pagination {
     width: 50%;
     margin: 0 auto;
   }
 }
 @media (min-width: 1285px) {
-  .landing-page {
+  .container {
     width: 1285px;
     margin: 0 auto;
   }
