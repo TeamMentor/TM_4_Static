@@ -160,7 +160,7 @@ aside {
           flex: 100%;
   background: white;
   overflow-y: auto;
-  padding: 0 0.5em;
+  padding: 1em;
 }
 aside span.text {
   padding: 0 1em;
@@ -173,9 +173,6 @@ aside [class^="icon-"], aside [class*=" icon-"] {
 aside:target {
   display: block;
   text-align: left;
-}
-#right-nav:target {
-  padding: 1em;
 }
 #right-nav ul.side-nav {
   display: none;
