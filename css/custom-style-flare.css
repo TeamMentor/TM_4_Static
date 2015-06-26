@@ -94,6 +94,8 @@ body * {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  height: -moz-calc(100% - 6em);
+  height: -webkit-calc(100% - 6em);
   height: calc(100% - 6em);
   display: -webkit-flex;
   display: -webkit-box;
@@ -678,13 +680,6 @@ ul.filters li a {
 ul.filters li a:hover {
   background-color: #fafafa;
 }
-#filter-icon {
-  font-size: 2em;
-}
-.filter-badge {
-  padding: 0.25em 0.5em;
-  font-size: 0.65em;
-}
 ul.display-inline li {
   display: inline-block;
   padding: 0 0.5em;
@@ -1144,6 +1139,13 @@ span.alert-text {
   font-size: 2em;
   float: right;
 }
+#filter-icon {
+  font-size: 2em;
+}
+.filter-badge {
+  padding: 0.25em 0.5em;
+  font-size: 0.65em;
+}
 .badge {
   background: #dbdbdb;
   border: 1px solid #dbdbdb;
@@ -1260,6 +1262,8 @@ span.alert-text {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
+    height: -moz-calc(100% - 4em);
+    height: -webkit-calc(100% - 4em);
     height: calc(100% - 4em);
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
@@ -1303,6 +1307,7 @@ span.alert-text {
   aside#right-nav {
     height: 0;
     flex: 0;
+    order: 3;
   }
   aside#right-nav:target {
     height: 100%;
