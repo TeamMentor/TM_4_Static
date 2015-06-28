@@ -6,6 +6,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x:hidden;
 }
 body {
   display: -webkit-flex;
@@ -39,16 +40,22 @@ body * {
 /*------------------------------------*
    NAVIGATION
 *------------------------------------*/
-.tm-logo, .lp-logo {
+.logo {
   -webkit-order: 1;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
+  position: relative;
   background: url('../assets/logos/tm-logo.svg') no-repeat;
-  background-size: 170px;
-  background-position: 8px 7px;
+  background-size: 120px;
+  background-position: 8px 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 30%;
 }
-.tm-logo, .lp-logo, .links {
+.logo, .links {
   background-color: white;
   border-bottom: 1px solid #dbdbdb;
   -webkit-flex: 50%;
@@ -56,7 +63,10 @@ body * {
   -ms-flex: 50%;
   flex: 50%;
 }
-.tm-logo, .links, .search {
+.application-logo {
+  width: 100%;
+}
+.logo, .links, .search {
   height: 3em;
 }
 .links {
@@ -65,6 +75,11 @@ body * {
   -ms-flex-order: 2;
   order: 2;
   text-align: right;
+  position: fixed;
+  top: 0;
+  left: 30%;
+  padding: 0.35em 0;
+  width: 70%;
 }
 .search {
   display: -webkit-flex;
@@ -75,11 +90,17 @@ body * {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  width: 100%;
   -webkit-order: 4;
   -webkit-box-ordinal-group: 5;
   -ms-flex-order: 4;
   order: 4;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   background: white;
+  width: 100%;
+  z-index: 99;
 }
  /*------------------------------------*
    APPLICATION
@@ -94,21 +115,22 @@ body * {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  height: calc(100% - 6em);
+  width: 100%;
+  height: 88%;
   display: -webkit-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  overflow: auto;
+  position: relative;
+  top: 3em;
+  overflow-y: auto;
 }
 .logged-out {
   margin: 0.5em;
-}
-.application footer {
-  background: transparent;
 }
 section {
   width: 100%;
@@ -139,6 +161,8 @@ section.row {
   -webkit-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  width: 100%;
+  display: block;
 }
 .tm-summary {
   display: none;
@@ -156,6 +180,7 @@ aside {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  width: 100%;
   background: white;
   overflow-y: auto;
   padding: 0.5em;
@@ -199,6 +224,7 @@ main {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  width: 100%;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -207,7 +233,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   overflow-y: auto;
-  padding: 10px;
+  padding: 0.5em;
 }
 section.row__label {
   background: transparent;
@@ -233,35 +259,45 @@ section.row__label {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  width: 100%;
   padding: 0 0.5em;
 }
-section.row__label > * {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-article {
+section.row__article {
+  background: transparent;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  -webkit-order: 1;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #dbdbdb;
-  padding: 0 2em 1em 2em;
-  margin: 1em 0;
-  border-radius: 3px;
+  width: 100%;
+  padding: 0 1em 0 1em;
+  display: inline-block;
 }
 .article-title {
   -webkit-box-flex: 30;
   -webkit-flex: 30;
       -ms-flex: 30;
           flex: 30;
+  height: 100%;
+  width: 95%;
+  display: inline-block;
 }
 .article-title h1 {
   margin: 0.5em 0;
@@ -283,6 +319,7 @@ article.result, article.search-term {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 100%;
 }
 article.search-term {
   -webkit-box-flex: 1;
@@ -308,10 +345,14 @@ article.result {
   -webkit-flex: 1 1 400px;
       -ms-flex: 1 1 400px;
           flex: 1 1 400px;
+  width: 30%;
   height: 100%;
+  min-height: 350px;
   margin: 0.5em;
   padding: 0;
   text-align: center;
+  border: 1px solid #dbdbdb;
+  background: white;
 }
 article.result h3 {
   color: #565656;
@@ -321,6 +362,7 @@ article.result h3 {
   line-height: 1.5em;
   -webkit-transition: 0.3s;
           transition: 0.3s;
+  height: 100px;
 }
 article.result a {
   text-decoration: none;
@@ -364,7 +406,8 @@ article.result a:hover h3 {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 /*------------------------------------*
    SUB-NAVIGATION
@@ -448,15 +491,11 @@ dd span.text {
 /*------------------------------------*
   LANDING PAGE
 *------------------------------------*/
-.landing-page {
-  background: #fafafa;
-  border-bottom: 1px solid #dbdbdb;
-}
-#landing-page {
-  -webkit-order: 6;
-  -webkit-box-ordinal-group: 7;
-      -ms-flex-order: 6;
-          order: 6;
+section.row__landing-page {
+  -webkit-order: 3;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 3;
+          order: 3;
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
@@ -468,15 +507,7 @@ dd span.text {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  overflow-y: auto;
-  background: white;
-}
-section {
-  width: 100%;
-  display: block;
-  overflow-y: auto;
-}
-.about, .reasons, .clients, .call-to-action, .about-us, .features, footer {
+  overflow: auto;
   background: white;
 }
 .about, .call-to-action, .usp {
@@ -566,11 +597,10 @@ footer ul li {
 .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance {
   height: 0;
   margin: 0 auto;
-}
-.fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance {
   background: url(../assets/icons/landing-page-icons.png) no-repeat;
-  width: 80%;
+  width: 20%;
   padding-top: 80%;
+  display: inline-block;
 }
 .fix-vulnerabilities, .reduce-vulnerabilities, .provides-guidance {
   background-size: 685%;
@@ -645,13 +675,14 @@ ul.article-info {
   list-style-type: none;
   margin: 0;
   padding: 0 2em 0 0;
-  margin: 1em 2em 0 0;
   border-right: 1px solid #dbdbdb;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: auto
   text-align: center;
+  display: inline-block;
 }
 ul.filters {
   display: -webkit-flex;
@@ -726,16 +757,6 @@ a:hover, a:active, a:focus {
   color: #8aaf3e;
   text-decoration: none;
 }
-a.action {
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 14px;
-  color: #8aaf3e;
-}
-a.action:hover, a.action:focus, a.action:active {
-  color: #b4cf7b;
-}
 .text-center {
   text-align: center;
   margin: 0 auto;
@@ -801,12 +822,13 @@ button:hover, .button:hover {
   -webkit-box-flex: 12%;
       -ms-flex: 12%;
           flex: 12%;
+  width: 100%;
   background: #8aaf3e;
   color: white;
   border: none;
   text-align: center;
   border-radius: 0;
-  padding: 18px 0;
+  padding: 1em;
   margin: 0 auto;
 }
 .btn-mobile:hover {
@@ -994,11 +1016,13 @@ input:-webkit-autofill {
   -webkit-flex: 76%;
       -ms-flex: 76%;
           flex: 76%;
+  width: 76%;
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 .search form input {
   height: 3em;
@@ -1006,6 +1030,7 @@ input:-webkit-autofill {
   -webkit-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+  width: 50%;
 }
 .search input, .search input:focus {
   border: none;
@@ -1020,6 +1045,7 @@ input:-webkit-autofill {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  width: 100%;
 }
 .conditions {
   margin: 1em 0;
@@ -1035,6 +1061,7 @@ input:-webkit-autofill {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  width: 100%;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1199,19 +1226,29 @@ span.alert-text {
     text-align: center;
   }
 }
-@media (min-width: 700px) {
-  .tm-logo, .lp-logo, .search, .links {
+@media (min-width: 900px) {
+  .logo, .search, .links {
     height: 4em;
   }
-  .tm-logo {
-    -webkit-flex: 5%;
-    -webkit-box-flex: 5%;
-        -ms-flex: 5%;
-            flex: 5%;
+  .logo {
+    background-color: white;
+    -webkit-flex: 50%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    width: 50%;
+    background-size: 35%;
+  }
+  .application-logo {
     background: url(../assets/logos/tm-icon.svg) no-repeat;
     background-color: white;
     background-size: 50%;
     background-position: 50% 50%;
+    -webkit-flex: 5%;
+    -webkit-box-flex: 5%;
+        -ms-flex: 5%;
+            flex: 5%;
+    width: 5%;
   }
   .links ul li {
     padding: 1em;
@@ -1227,14 +1264,19 @@ span.alert-text {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    -webkit-flex: 48%;
+    -webkit-flex: 95%;
     -webkit-box-flex: 95%;
         -ms-flex: 95%;
             flex: 95%;
+    width: 95%;
+    position: fixed;
+    top: 0;
+    left: 5%;
     overflow: hidden;
     border-bottom: 1px solid #dbdbdb;
     background-color: white;
     padding: 0.5em 0;
+    display: inline-block;
   }
   .search a.button {
     color: #aaaaaa;
@@ -1242,12 +1284,19 @@ span.alert-text {
   .search a.button:hover {
     color: #b4cf7b;
   }
+  .search form {
+    width: 100%;
+  }
   .search form button {
     text-align: left;
     -webkit-box-flex: 1%;
     -webkit-flex: 1%;
         -ms-flex: 1%;
             flex: 1%;
+    width: 5%;
+  }
+  .search form #search-button {
+    order: 1;
   }
   .search form input {
     background: transparent;
@@ -1262,16 +1311,19 @@ span.alert-text {
     -webkit-flex: 90%;
         -ms-flex: 90%;
             flex: 90%;
+    width: 90%;
   }
   .application {
     -webkit-order: 5;
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
-    height: calc(100% - 4em);
+    height: 92%;
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    position: relative;
+    top: 4em;
   }
   .logged-out {
     margin: 1em 0 0 0;
@@ -1289,7 +1341,7 @@ span.alert-text {
     -webkit-box-flex: 95%;
         -ms-flex: 95%;
             flex: 95%;
-    padding: 10px;
+    width: 95%;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
@@ -1297,6 +1349,12 @@ span.alert-text {
     -webkit-align-content: flex-start;
         -ms-flex-line-pack: start;
             align-content: flex-start;
+    overflow-y: scroll;
+    position: fixed;
+    top: 4em;
+    left: 5%;
+    height: 100%;
+    padding: 0 0 4em 0;
   }
   aside {
     display: block;
@@ -1304,9 +1362,12 @@ span.alert-text {
     -webkit-box-flex: 5%;
         -ms-flex: 5%;
             flex: 5%;
-    text-align:center;
+    width: 5%;
+    text-align: center;
     height: 100%;
     padding: 0;
+    position: fixed;
+    top: 4em;
   }
   aside#right-nav {
     height: 0;
@@ -1322,6 +1383,7 @@ span.alert-text {
     -webkit-flex: 70%;
         -ms-flex: 70%;
             flex: 70%;
+    width: 70%;
     height: 100%
   }
   aside#right-nav:target + #left-nav {
@@ -1349,18 +1411,23 @@ span.alert-text {
     -webkit-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
+    width: 100%;
+    height: 3.8em;
+    padding: 0.5em 0.5em;
   }
   section.row__label .label {
     -webkit-box-flex: 5;
     -webkit-flex: 5;
         -ms-flex: 5;
             flex: 5;
+    width: 100%;
   }
   section.row__label ul {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    width: 100%;
     text-align: right;
   }
   .col-1 {
