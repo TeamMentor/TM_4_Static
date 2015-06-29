@@ -10,7 +10,6 @@ html, body {
 }
 body {
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -49,19 +48,20 @@ body * {
   background: url('../assets/logos/tm-logo.svg') no-repeat;
   background-size: 120px;
   background-position: 8px 10px;
-  position: fixed;
   left: 0;
-  top: 0;
+  -webkit-flex: 35%;
+  -webkit-box-flex: 35%;
+  -ms-flex: 35%;
+  flex: 35%;
+  width: 35%;
   z-index: 99;
-  width: 30%;
+  width: 40%;
 }
 .logo, .links {
   background-color: white;
   border-bottom: 1px solid #dbdbdb;
-  -webkit-flex: 50%;
-  -webkit-box-flex: 50%;
-  -ms-flex: 50%;
-  flex: 50%;
+  top: 0;
+  position: fixed;
 }
 .application-logo {
   width: 100%;
@@ -75,15 +75,20 @@ body * {
   -ms-flex-order: 2;
   order: 2;
   text-align: right;
-  position: fixed;
-  top: 0;
-  left: 30%;
+  left: 35%;
   padding: 0.35em 0;
-  width: 70%;
+  -webkit-flex: 65%;
+  -webkit-box-flex: 65%;
+  -ms-flex: 65%;
+  flex: 65%;
+  width: 65%;
+  z-index: 99;
+}
+.links ul li:last-child {
+  display: none;
 }
 .search {
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex: 100%;
@@ -118,7 +123,6 @@ body * {
   width: 100%;
   height: 88%;
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
@@ -167,7 +171,6 @@ section.row {
 }
 aside {
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   display: none;
@@ -215,7 +218,6 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow-y: auto;
@@ -224,7 +226,6 @@ main {
 section.row__label {
   background: transparent;
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -251,7 +252,6 @@ section.row__label {
 section.row__article {
   background: transparent;
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -421,7 +421,6 @@ dt {
 dd {
   padding: 1em;
   margin: 0;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -487,7 +486,6 @@ section.row__landing-page {
       -ms-flex: 100%;
           flex: 100%;
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -514,24 +512,30 @@ section.row__landing-page {
 .usp {
   background-position: 0em 0em;
 }
+.reasons, .features {
+  padding: 1em;
+}
+.features {
+  height: 100%;
+  display: block;
+}
 .about h3, .usp h2, .call-to-action h2 {
   color: white;
   line-height: 1.5em;
+  font-size: 1.5em;
 }
-.reasons, .about-us, .features {
+.about-us {
   padding: 1em;
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: block;
   height: 100%;
+  background: white;
 }
 .call-to-action {
   background-position: 0em -18em;
 }
 .clients {
   padding: 0 1em 2em 1em;
+  background: white;
 }
 footer {
   width: 100%;
@@ -540,7 +544,6 @@ footer {
   -webkit-box-ordinal-group: 101;
       -ms-flex-order: 100;
           order: 100;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
@@ -593,10 +596,10 @@ footer ul li {
   margin: 0 auto;
   background: url(../assets/icons/landing-page-icons.png) no-repeat;
   width: 200px;
-  padding-top: 50%;
+  padding-top: 55%;
   display: inline-block;
   position: relative;
-  left: 25%;
+  left: 20%;
 }
 .fix-vulnerabilities, .reduce-vulnerabilities, .provides-guidance {
   background-size: 685%;
@@ -682,7 +685,6 @@ ul.article-info {
 }
 ul.filters {
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -704,7 +706,6 @@ ul.filters li a {
   border: 1px solid #dbdbdb;
   border-radius: 2em;
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
@@ -716,6 +717,7 @@ ul.filters li a:hover {
 ul.display-inline li {
   display: inline-block;
   padding: 0 0.5em;
+  vertical-align: middle;
 }
 code, pre {
   font-family: monospace, monospace;
@@ -933,7 +935,6 @@ button:hover, .button:hover {
 *------------------------------------*/
 form {
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex: 1;
@@ -1113,18 +1114,14 @@ img {
   height: 300px;
   margin: 0.5em 0 0 0;
 }
-.alert-box {
+.alert {
   width: 100%;
   border: none;
   border-radius: 3px;
   font-size: 14px;
   letter-spacing: 1px;
-  padding: 1em 1.5em;
-}
-.alert {
-  padding: 15px 20px;
-  margin-bottom: 5px;
-  border-radius: 3px;
+  padding: 1em;
+  margin: 0 0.5em;
 }
 .alert-ok {
   background: #b4cf7b;
@@ -1248,11 +1245,8 @@ span.alert-text {
     width: 5%;
   }
   .links ul li {
-    padding: 1em;
-  }
-  .links ul li:last-child {
-    display: inline-block;
-    padding: 0 0.5em 0 0;
+    padding: 0.5em 1em;
+    vertical-align: middle;
   }
   .search {
     -webkit-order: 3;
@@ -1325,7 +1319,6 @@ span.alert-text {
   }
   main {
     display: -webkit-flex;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-order: 2;
