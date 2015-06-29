@@ -500,6 +500,11 @@ section.row__landing-page {
       flex-wrap: wrap;
   overflow: auto;
   background: white;
+  top: 3em;
+  position: fixed;
+  height: 100%;
+  padding: 0 0 3em 0;
+  display: block;
 }
 .about, .call-to-action, .usp {
   background-image: url(../assets/stock-img/bg-img-small.jpg);
@@ -520,6 +525,12 @@ section.row__landing-page {
 }
 .reasons, .about-us, .features {
   padding: 1em;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+  height: 100%;
 }
 .call-to-action {
   background-position: 0em -18em;
@@ -527,12 +538,9 @@ section.row__landing-page {
 .clients {
   padding: 0 1em 2em 1em;
 }
-.features {
-  background: white;
-}
 footer {
   width: 100%;
-  padding: 0 0.5em;
+  padding: 0 0.5em 0.5em;
   -webkit-order: 100;
   -webkit-box-ordinal-group: 101;
       -ms-flex-order: 100;
@@ -589,9 +597,11 @@ footer ul li {
   height: 0;
   margin: 0 auto;
   background: url(../assets/icons/landing-page-icons.png) no-repeat;
-  width: 20%;
-  padding-top: 80%;
+  width: 200px;
+  padding-top: 50%;
   display: inline-block;
+  position: relative;
+  left: 25%;
 }
 .fix-vulnerabilities, .reduce-vulnerabilities, .provides-guidance {
   background-size: 685%;
@@ -1247,8 +1257,6 @@ span.alert-text {
   .links ul li:last-child {
     display: inline-block;
     padding: 0 0.5em 0 0;
-    vertical-align: middle;
-    margin-top: 5px;
   }
   .search {
     -webkit-order: 3;
@@ -1389,6 +1397,9 @@ span.alert-text {
   aside.border-right span.text {
     display: none;
   }
+  section.row__landing-page {
+    top: 4em;
+  }
   section.row__label {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1418,77 +1429,80 @@ span.alert-text {
     width: 100%;
     text-align: right;
   }
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    display: inline-block;
+  }
   .col-1 {
     -webkit-flex-basis: 8.333%;
         -ms-flex-preferred-size: 8.333%;
             flex-basis: 8.333%;
-    max-width: 8.333%;
+    width: 8.333%;
   }
   .col-2 {
     -webkit-flex-basis: 16.667%;
         -ms-flex-preferred-size: 16.667%;
             flex-basis: 16.667%;
-    max-width: 16.667%;
+    width: 16.667%;
   }
   .col-3 {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
-    max-width: 25%;
+    width: 25%;
   }
   .col-4 {
     -webkit-flex-basis: 33.333%;
         -ms-flex-preferred-size: 33.333%;
             flex-basis: 33.333%;
-    max-width: 33.333%;
+    width: 33.333%;
   }
   .col-5 {
     -webkit-flex-basis: 41.667%;
         -ms-flex-preferred-size: 41.667%;
             flex-basis: 41.667%;
-    max-width: 41.667%;
+    width: 41.667%;
   }
   .col-6 {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-    max-width: 50%;
+    width: 50%;
   }
   .col-7 {
     -webkit-flex-basis: 58.333%;
         -ms-flex-preferred-size: 58.333%;
             flex-basis: 58.333%;
-    max-width: 58.333%;
+    width: 58.333%;
   }
   .col-8 {
     -webkit-flex-basis: 66.667%;
         -ms-flex-preferred-size: 66.667%;
             flex-basis: 66.667%;
-    max-width: 66.667%;
+    width: 66.667%;
   }
   .col-9 {
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
-    max-width: 75%;
+    width: 75%;
   }
   .col-10 {
     -webkit-flex-basis: 83.333%;
         -ms-flex-preferred-size: 83.333%;
             flex-basis: 83.333%;
-    max-width: 83.333%;
+    width: 83.333%;
   }
   .col-11 {
     -webkit-flex-basis: 91.667%;
         -ms-flex-preferred-size: 91.667%;
             flex-basis: 91.667%;
-    max-width: 91.667%;
+    width: 91.667%;
   }
   .col-12 {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-    max-width: 100%;
+    width: 100%;
   }
   .btn-search {
     padding: 5px 0 0 10px;
@@ -1571,9 +1585,14 @@ span.alert-text {
   .call-to-action { background-position: 0px -800px; }
   .reasons, .about-us, .features { padding: 3em 10%; }
   .clients { padding: 0 10% 3em; }
+  .features p {
+    top: -30px;
+    position: relative;
+  }
   .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance {
-    width: 100%;
-    padding-top: 110%;
+    width: 100px;
+    padding: 0;
+    height: 100px;
   }
   .pagination {
     width: 50%;
