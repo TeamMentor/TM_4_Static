@@ -324,18 +324,6 @@ section.row__article {
   padding: 0 1em 0 1em;
   display: inline-block;
 }
-.article-title {
-  -webkit-box-flex: 30;
-  -webkit-flex: 30;
-      -ms-flex: 30;
-          flex: 30;
-  height: 100%;
-  width: 95%;
-  display: inline-block;
-}
-.article-title h1 {
-  margin: 0.5em 0;
-}
 article h1, article h2, article h3, article h4, article h5, article h6 {
   margin: 1em 0 0 0;
 }
