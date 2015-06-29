@@ -140,7 +140,6 @@ section {
 section.row {
   background: transparent;
   display: -webkit-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -162,13 +161,9 @@ section.row {
       -ms-flex: 100%;
           flex: 100%;
   width: 100%;
-  display: block;
 }
 .tm-summary {
   display: none;
-}
-.getting-started {
-  margin: 0.5em;
 }
 aside {
   display: -webkit-flex;
@@ -973,6 +968,7 @@ label, .label {
   font-size: 0.75em;
   font-weight: 500;
   color: #7b7b7b;
+  display: block;
 }
 .label {
   border-bottom: 1px solid #dbdbdb;
@@ -1586,7 +1582,6 @@ span.alert-text {
   .reasons, .about-us, .features { padding: 3em 10%; }
   .clients { padding: 0 10% 3em; }
   .features p {
-    top: -30px;
     position: relative;
   }
   .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance {
