@@ -468,6 +468,10 @@ dt {
   padding: 0.35em 0.5em;
   background: #dbdbdb;
 }
+.scroll {
+  height: 200px;
+  overflow-y: auto;
+}
 dd {
   padding: 1em;
   margin: 0;
@@ -1058,50 +1062,6 @@ input:-webkit-autofill {
   text-decoration: underline;
 }
 /*------------------------------------*
-   ACCORDIONS
-*------------------------------------*/
-.accordion {
-  -webkit-flex: 100%;
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
-  width: 100%;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow-y: auto;
-}
-.accordion-title {
-  width: 100%;
-  padding: 1em 0;
-  border-bottom: 1px solid #dbdbdb;
-  font-size: 0.85em !important;
-}
-.accordion-panel {
-  padding: 0 0.5em;
-  overflow: auto;
-  width: 100%;
-  border-bottom: 1px solid #dbdbdb;
-}
-.accordion-panel ul {
-  padding: 0 1em;
-}
-.accordion-panel ul li {
-  padding: 0.5em 2em;
-  border: 1px solid #dbdbdb;
-  background: #fafafa;
-  border-top: 0;
-  width: 100%;
-}
-.accordion-panel ul li:hover {
-  background: #dbdbdb;
-}
-/*------------------------------------*
    MICRO-ELEMENTS
 *------------------------------------*/
 .desktop-hide {
@@ -1619,6 +1579,9 @@ span.alert-text {
   }
   dl {
     margin: 0;
+  }
+  .scroll {
+    height: 100%;
   }
 }
 @media (min-width: 1285px) {
