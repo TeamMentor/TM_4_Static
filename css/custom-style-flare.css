@@ -1579,11 +1579,11 @@ span.alert-text {
     left: auto;
   }
   .links {
-    width:850px;
+    width:860px;
     top: 0;
     right: auto;
   }
-  .container {
+  .container, section.row__landing-page {
     width: 1285px;
     margin: 0 auto;
   }
