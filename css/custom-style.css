@@ -46,7 +46,6 @@ img, object {
   top: 0;
   z-index: 99;
   background: white;
-  border: 1px solid #dbdbdb;
 }
 #team-mentor-navigation, #customer-navigation {
   height: auto;
@@ -832,7 +831,11 @@ td.vertical-align {
     margin: 7px 0 0 20px;
     width: 36%;
   }
-  #landing-page { margin: 55px auto 0 auto; }
+  #landing-page {
+    margin: 55px auto 0 auto;
+    position: relative;
+    left: 0;
+  }
   #links {
     width: 60%;
     float: right;
@@ -921,7 +924,6 @@ td.vertical-align {
 @media (min-width: 1280px) {
   #landing-page, .landing-page {
     width: 80%;
-    left: 10%;
   }
   .fixed.landing-page { left: 10%; }
 }
