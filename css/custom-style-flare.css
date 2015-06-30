@@ -47,7 +47,7 @@ body * {
   position: relative;
   background: url('../assets/logos/tm-logo.svg') no-repeat;
   background-size: 120px;
-  background-position: 8px 10px;
+  background-position: 8px 8px;
   left: 0;
   -webkit-flex: 35%;
   -webkit-box-flex: 35%;
@@ -1209,6 +1209,9 @@ span.alert-text {
     padding: 0.5em 1em;
     vertical-align: middle;
   }
+  .links ul li:last-child {
+    display: inline-block;
+  }
   .search {
     -webkit-order: 3;
     -webkit-box-ordinal-group: 4;
@@ -1528,11 +1531,8 @@ span.alert-text {
   .button-field ul li {
     display: inline-block;
   }
-  .getting-started {
-    margin: 0;
-  }
   .tm-summary {
-    display: block;
+    display: inline-block;
   }
   section.tm-summary table tr td:last-child{
     width: 80%;
@@ -1573,6 +1573,16 @@ span.alert-text {
   }
 }
 @media (min-width: 1285px) {
+  .logo {
+    width: 642.5px;
+    top: 0;
+    left: auto;
+  }
+  .links {
+    width:850px;
+    top: 0;
+    right: auto;
+  }
   .container {
     width: 1285px;
     margin: 0 auto;
