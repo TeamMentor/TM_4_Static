@@ -84,6 +84,15 @@ body * {
   width: 65%;
   z-index: 99;
 }
+.links li a {
+  color: #8aaf3e;
+}
+.links li a:hover {
+  color: #6c9020;
+}
+.links a.button {
+  padding: 0.25em 1em;
+}
 .links ul li:last-child {
   display: none;
 }
@@ -386,7 +395,6 @@ article.result h3 {
   line-height: 1.5em;
   -webkit-transition: 0.3s;
           transition: 0.3s;
-  height: 100px;
 }
 article.result a {
   text-decoration: none;
@@ -400,6 +408,7 @@ article.result a:hover h3 {
   background: #b4cf7b;
   padding: 0.5em;
 }
+.metadata .label { padding: 0; }
 .metadata ul {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -413,8 +422,8 @@ article.result a:hover h3 {
 .metadata ul li {
   display: inline-block;
   text-align: center;
-  width: 16%;
-  padding: 0 2px;
+  width: 33%;
+  padding: 0.5em 0;
 }
 .summary {
   padding: 1.5em 1em 0.5em;
@@ -558,7 +567,7 @@ section.row__landing-page {
   padding: 1em;
 }
 .features {
-  height: 100%;
+  height: auto;
   display: block;
 }
 .about h3, .usp h2, .call-to-action h2 {
@@ -569,7 +578,7 @@ section.row__landing-page {
 .about-us {
   padding: 1em;
   display: block;
-  height: 100%;
+  height: auto;
   background: white;
 }
 .call-to-action {
@@ -839,7 +848,7 @@ button, .button {
   display: inline-block;
   background-color: #8aaf3e;
   margin: 5px 0;
-  color: white;
+  color: white !important;
   z-index: 1;
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
@@ -858,9 +867,7 @@ button:hover, .button:hover {
   background-color: #b4cf7b;
   -webkit-transition: 0.3s;
           transition: 0.3s;
-}
-.btn-nav {
-  padding: 0 1em;
+  color: white;
 }
 .btn-mobile:hover {
   color: white;
@@ -943,13 +950,14 @@ button:hover, .button:hover {
 }
 .btn-minor {
   background: transparent;
-  color: #444444;
+  color: #444444 !important;
   border: 1px solid #444444;
   width: auto;
 }
 .btn-minor:hover {
   background: transparent;
   border: 1px solid #aaaaaa;
+  color: #aaaaaa !important;
 }
 .full-width {
   display: block;
@@ -1202,8 +1210,8 @@ span.alert-text {
   .application-logo {
     background: url(../assets/logos/tm-icon.svg) no-repeat;
     background-color: white;
-    background-size: 6%;
-    background-position: 1em;
+    background-size: 30px;
+    background-position: 1.25em;
     -webkit-flex: 5%;
         -ms-flex: 5%;
             flex: 5%;
@@ -1215,6 +1223,7 @@ span.alert-text {
   }
   .links ul li:last-child {
     display: inline-block;
+    padding: 0.5em 0.5em 0 1em;
   }
   .search {
     -webkit-order: 3;
@@ -1342,7 +1351,7 @@ span.alert-text {
             order: 3;
   }
   aside#right-nav:target {
-    height: 100%;
+    height: auto;
     -webkit-flex: 25%;
     -webkit-box-flex: 25%;
         -ms-flex: 25%;
@@ -1350,6 +1359,7 @@ span.alert-text {
     width: 25%;
     text-align: left;
     padding: 1em;
+    z-index: 99;
   }
   aside#right-nav:target ~ main {
     display: block;
