@@ -738,10 +738,6 @@ ul.filters {
           flex: 100%;
 }
 ul.filters li {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 30%;
-      -ms-flex: 1 0 30%;
-          flex: 0 0 30%;
   margin: 0.25em;
 }
 ul.filters li a {
@@ -751,7 +747,16 @@ ul.filters li a {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 30%;
+      -ms-flex: 1 0 30%;
+          flex: 0 0 30%;
+  width:100%;
   padding: 0.25em 0.5em;
+}
+ul.filters .badge {
+  padding: 0 0.5em;
+  margin: 0 0 0 1em;
 }
 ul.filters li a:hover {
   background-color: #fafafa;
@@ -1197,10 +1202,9 @@ span.alert-text {
   .application-logo {
     background: url(../assets/logos/tm-icon.svg) no-repeat;
     background-color: white;
-    background-size: 50%;
-    background-position: 50% 50%;
+    background-size: 6%;
+    background-position: 1em;
     -webkit-flex: 5%;
-    -webkit-box-flex: 5%;
         -ms-flex: 5%;
             flex: 5%;
     width: 5%;
