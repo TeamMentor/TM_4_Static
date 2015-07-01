@@ -105,7 +105,7 @@ img, object {
    LANDING PAGES
 *------------------------------------*/
 #landing-page {
-  margin-top: 175px;
+  position: relative;
 }
 #landing-page form, #about-us, #clients, #features, #reasons {
   background: white;
@@ -280,6 +280,10 @@ img, object {
 }
 #customer #application, #customer #landing-page {
   padding-top: 70px;
+}
+#customer #landing-page { margin: 0 auto; }
+#customer #landing-page #application {
+  padding-top: 20px;
 }
 #customer #search-div, #customer #search-div-2 {
   top: 240px;
@@ -849,7 +853,7 @@ td.vertical-align {
   #loginwall { margin: 15px 7px 0 0; }
   #summary { margin: 15px 0 0 7px; }
   #application { margin-top: 70px; }
-  #customer #application, #customer #landing-page { padding-top: 60px; }
+  #customer #application, #customer #landing-page, #customer #landing-page #application { padding-top: 60px; }
   #customer #search-div, #customer #search-div-2  { top: 120px; }
   #search-div, #search-div-2  {
     top: 60px;
@@ -860,7 +864,7 @@ td.vertical-align {
     margin: 70px 0 0 0;
   }
   #help-nav { margin: 0 10px 0 0; }
-  #help { margin: 10px 0 0 10px; }
+  #help { margin: 0px 0 0 10px; }
   #search-button { width: 8%; }
   #search-div-2 input, #search-div input {
     width: 92%;
