@@ -131,20 +131,20 @@ body * {
 }
 .search form input {
   height: 3em;
-  -webkit-box-flex: 90%;
-  -webkit-flex: 90%;
-      -ms-flex: 90%;
-          flex: 90%;
-  width: 90%;
+  -webkit-box-flex: 80%;
+  -webkit-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
+  width: 80%;
 }
 .search form input, .search form input:focus {
   border: none !important;
 }
 .search form select {
-  -webkit-flex: 10%;
-      -ms-flex: 10%;
-          flex: 10%;
-  width: 10%;
+  -webkit-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  width: 20%;
   background: #fafafa;
   border: 1px solid #dbdbdb !important;
   color: #aaaaaa;
@@ -223,8 +223,14 @@ aside {
           flex: 100%;
   width: 100%;
   background: white;
+  border-bottom: 1px solid #dbdbdb;
 }
-aside ul.side-nav li {
+aside ul {
+  width: 100%;
+  text-align: center;
+}
+aside ul li {
+  padding: 1em;
   display: inline-block;
   border-right: 1px solid #dbdbdb;
   width: 33.32%;
@@ -359,7 +365,7 @@ article.result {
           flex: 1 1 400px;
   width: 30%;
   height: 100%;
-  min-height: 350px;
+  height:350px;
   margin: 0.5em;
   padding: 0;
   text-align: center;
@@ -425,17 +431,6 @@ article.result a:hover h3 {
 /*------------------------------------*
    SUB-NAVIGATION
 *------------------------------------*/
-ul.side-nav {
-  display: block;
-  width: 100%;
-}
-ul.side-nav li {
-  border-bottom: 1px solid #dbdbdb;
-  padding: 1em;
-  color: #7b7b7b;
-  font-size: 1em;
-  text-align: center;
-}
 dl {
   background: white;
   border: 1px solid #dbdbdb;
@@ -491,13 +486,13 @@ dd span.text {
   margin: 1em 0;
 }
 .previous, .next {
-  -webkit-box-flex: 2;
-  -webkit-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 100%;
   text-align: center;
-  padding: 0.75em
+  padding: 0.75em;
 }
 .number {
   -webkit-box-flex: 1;
@@ -1247,11 +1242,11 @@ span.alert-text {
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    -webkit-box-flex: 95%;
-    -webkit-flex: 95%;
-        -ms-flex: 95%;
-            flex: 95%;
-    width: 95%;
+    -webkit-box-flex: 85%;
+    -webkit-flex: 85%;
+        -ms-flex: 85%;
+            flex: 85%;
+    width: 85%;
   }
   .search form input:focus {
     border-bottom: 1px solid #8aaf3e;
@@ -1259,11 +1254,11 @@ span.alert-text {
             transition: 0.3s;
   }
   .search form select {
-    -webkit-box-flex: 5%;
-    -webkit-flex: 5%;
-        -ms-flex: 5%;
-            flex: 5%;
-    width: 5%;
+    -webkit-box-flex: 15%;
+    -webkit-flex: 15%;
+        -ms-flex: 15%;
+            flex: 15%;
+    width: 15%;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -1320,7 +1315,7 @@ span.alert-text {
     border-left: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
   }
-  aside ul.side-nav li {
+  aside ul li {
     display: block;
     width: 100%;
     border: 0;
