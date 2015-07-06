@@ -56,10 +56,11 @@ body * {
   width: 35%;
   z-index: 99;
   width: 40%;
+  border: 1px solid #dbdbdb;
+  border-right: 0;
 }
 .logo, .links {
   background-color: white;
-  border-bottom: 1px solid #dbdbdb;
   top: 0;
   position: fixed;
 }
@@ -83,6 +84,8 @@ body * {
   flex: 65%;
   width: 65%;
   z-index: 99;
+  border: 1px solid #dbdbdb;
+  border-left: 0;
 }
 .links li a {
   color: #8aaf3e;
@@ -435,11 +438,17 @@ dl {
   background: white;
   border: 1px solid #dbdbdb;
   border-bottom: 0;
-  margin: 0.5em;
+  margin: 0;
 }
 dt {
   padding: 0.35em 0.5em;
   background: #dbdbdb;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+dt span.sub-nav__icon {
+  padding: 1em 0.5em 0 0;
 }
 .scroll {
   height: 200px;
@@ -794,9 +803,6 @@ a:hover, a:active, a:focus {
 .text-right {
   text-align: right !important;
 }
-.vertical-align {
-  padding-top: 10px;
-}
 /*------------------------------------*
    TABLES
 *------------------------------------*/
@@ -824,7 +830,7 @@ button, .button {
   display: inline-block;
   background-color: #8aaf3e;
   margin: 5px 0;
-  color: white;
+  color: white !important;
   z-index: 1;
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
@@ -1166,11 +1172,17 @@ span.alert-text {
   .call-to-action { background-position: 0px -500px; }
   .reasons, .about-us, .features { padding: 2em 10%; }
   .clients { padding: 0 10% 2em;}
-  .reasons h2, .clients h2, .features h2 {
+  .usp h2, .call-to-action h2, .about h3 {
+    font-size: 1.75em;
+  }
+  .reasons h2, .clients h3, .features h2 {
     text-align: center;
   }
+  .links ul li:last-child {
+    display: inline-block;
+  }
 }
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .logo, .search, .links {
     height: 4em;
   }
