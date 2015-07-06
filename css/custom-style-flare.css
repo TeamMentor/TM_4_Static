@@ -1323,6 +1323,26 @@ span.alert-text {
     border-left: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
   }
+  aside#right-nav {
+    display: none;
+    right: 0;
+    top: 4em;
+    text-align: left;
+    padding: 0 1em;
+    overflow-y: auto;
+  }
+  aside#right-nav:target {
+    display: block;
+    -webkit-flex: 25%;
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+    width: 25%;
+    order: 3;
+  }
+  aside#right-nav:target ~ main {
+    width: 70%;
+  }
   aside ul li {
     display: block;
     width: 100%;
