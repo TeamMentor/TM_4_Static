@@ -39,6 +39,24 @@ body * {
 /*------------------------------------*
    NAVIGATION
 *------------------------------------*/
+nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 100%;
+  -webkit-box-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+  z-index: 99;
+  border: 1px solid #dbdbdb;
+  -webkit-order: 1;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 100%;
+  height: 3em;
+  background-color: white;
+}
 .logo {
   -webkit-order: 1;
   -webkit-box-ordinal-group: 2;
@@ -48,21 +66,11 @@ body * {
   background: url('../assets/logos/tm-logo.svg') no-repeat;
   background-size: 120px;
   background-position: 8px 8px;
-  left: 0;
-  -webkit-flex: 35%;
-  -webkit-box-flex: 35%;
-  -ms-flex: 35%;
-  flex: 35%;
-  width: 35%;
-  z-index: 99;
-  width: 40%;
-  border: 1px solid #dbdbdb;
-  border-right: 0;
-}
-.logo, .links {
-  background-color: white;
-  top: 0;
-  position: fixed;
+  -webkit-flex: 45%;
+  -webkit-box-flex: 45%;
+  -ms-flex: 45%;
+  flex: 45%;
+  width: 45%;
 }
 .application-logo {
   width: 100%;
@@ -78,23 +86,17 @@ body * {
   text-align: right;
   left: 35%;
   padding: 0.35em 0;
-  -webkit-flex: 65%;
-  -webkit-box-flex: 65%;
-  -ms-flex: 65%;
-  flex: 65%;
-  width: 65%;
-  z-index: 99;
-  border: 1px solid #dbdbdb;
-  border-left: 0;
+  -webkit-flex: 55%;
+  -webkit-box-flex: 55%;
+  -ms-flex: 55%;
+  flex: 55%;
+  width: 55%;
 }
 .links li a {
   color: #8aaf3e;
 }
 .links li a:hover {
   color: #6c9020;
-}
-.links a.button {
-  padding: 0.25em 1em;
 }
 .links ul li:last-child {
   display: none;
@@ -177,8 +179,6 @@ body * {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
-  top: 3em;
   overflow-y: auto;
 }
 .logged-out {
@@ -513,10 +513,10 @@ dd span.text {
   LANDING PAGE
 *------------------------------------*/
 section.row__landing-page {
-  -webkit-order: 3;
+  -webkit-order: 2;
   -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 3;
-          order: 3;
+      -ms-flex-order: 2;
+          order: 2;
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
@@ -529,15 +529,11 @@ section.row__landing-page {
       flex-wrap: wrap;
   overflow: auto;
   background: white;
-  top: 3em;
-  position: fixed;
   height: 100%;
-  padding: 0 0 3em 0;
-  display: block;
 }
 .about, .call-to-action, .usp {
   background-image: url(../assets/stock-img/bg-img-small.jpg);
-  padding: 1em;
+  padding: 0.5em;
 }
 .about {
   background-position: 0px 900px;
@@ -628,14 +624,12 @@ footer ul li {
   SPRITES
 *------------------------------------*/
 .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance {
-  height: 0;
-  margin: 0 auto;
+  height: 200px;
   background: url(../assets/icons/landing-page-icons.png) no-repeat;
+  background-position: top center;
   width: 200px;
-  padding-top: 55%;
   display: inline-block;
   position: relative;
-  left: 20%;
 }
 .fix-vulnerabilities, .reduce-vulnerabilities, .provides-guidance {
   background-size: 685%;
@@ -1178,16 +1172,13 @@ span.alert-text {
   .reasons h2, .clients h3, .features h2 {
     text-align: center;
   }
-  .links ul li:last-child {
-    display: inline-block;
-  }
 }
 @media (min-width: 800px) {
-  .logo, .search, .links {
+  nav, .logo, .search, .links {
     height: 4em;
   }
   .logo {
-    background-color: white;
+    background-color: transparent;
     -webkit-flex: 50%;
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -1205,13 +1196,19 @@ span.alert-text {
             flex: 5%;
     width: 5%;
   }
+  .links {
+    -webkit-flex: 50%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    width: 50%;
+  }
   .links ul li {
     padding: 0.5em 1em;
     vertical-align: middle;
   }
   .links ul li:last-child {
     display: inline-block;
-    padding: 0.5em 0.5em 0 1em;
   }
   .search {
     -webkit-order: 3;
@@ -1286,8 +1283,6 @@ span.alert-text {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    position: relative;
-    top: 4em;
   }
   .logged-out {
     margin: 1em 0 0 0;
@@ -1544,17 +1539,7 @@ span.alert-text {
   }
 }
 @media (min-width: 1285px) {
-  .logo {
-    width: 642.5px;
-    top: 0;
-    left: auto;
-  }
-  .links {
-    width:860px;
-    top: 0;
-    right: auto;
-  }
-  .container, section.row__landing-page {
+  .container {
     width: 1285px;
     margin: 0 auto;
   }
