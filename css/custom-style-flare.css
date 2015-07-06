@@ -1194,6 +1194,7 @@ span.alert-text {
     left: 5%;
     overflow: hidden;
     border-bottom: 1px solid #dbdbdb;
+    border-top: 0;
     background-color: white;
     display: inline-block;
   }
