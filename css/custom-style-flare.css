@@ -74,6 +74,7 @@ nav {
 }
 .application-logo {
   width: 100%;
+  background-color: white;
 }
 .logo, .links, .search {
   height: 3em;
@@ -154,7 +155,6 @@ nav {
   border: 1px solid #dbdbdb !important;
   color: #aaaaaa;
   border: none;
-  padding: 1.25em 0;
   margin: 0 auto;
   height: 3em;
 }
@@ -226,6 +226,7 @@ aside {
           flex: 100%;
   width: 100%;
   background: white;
+  border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
 }
 aside ul {
@@ -237,9 +238,6 @@ aside ul li {
   display: inline-block;
   border-right: 1px solid #dbdbdb;
   width: 33.32%;
-}
-aside [class^="icon-"], aside [class*=" icon-"] {
-  color: #565656;
 }
 .border-right { border-right: 1px solid #dbdbdb; }
 .border-left { border-left: 1px solid #dbdbdb; }
@@ -854,7 +852,7 @@ button:hover, .button:hover {
   padding: 0.75em 1em;
   border: none;
   background: transparent;
-  color: #aaaaaa;
+  color: #aaaaaa !important;
   font-size: 1em;
   overflow: visible;
   -webkit-transition: color 0.7s;
@@ -864,7 +862,7 @@ button:hover, .button:hover {
 }
 .btn-search:hover {
   background: none;
-  color: #b4cf7b;
+  color: #b4cf7b !important;
 }
 .btn-search:focus {
   outline: none;
@@ -1008,6 +1006,8 @@ input[type="number"], input[type="search"], input[type="tel"], input[type="time"
   border: none;
   border: 1px solid #dbdbdb;
   color: #444444;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   font-size: 1em;
   margin: 0 0 15px 0;
@@ -1190,7 +1190,7 @@ span.alert-text {
     background: url(../assets/logos/tm-icon.svg) no-repeat;
     background-color: white;
     background-size: 30px;
-    background-position: 1.25em;
+    background-position: 1.5%;
     -webkit-flex: 5%;
         -ms-flex: 5%;
             flex: 5%;
@@ -1319,6 +1319,7 @@ span.alert-text {
     padding: 0;
     position: fixed;
     top: 4em;
+    border-top: 0;
     border-left: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
   }
