@@ -143,9 +143,15 @@ nav {
       -ms-flex: 80%;
           flex: 80%;
   width: 80%;
+  -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
-.search form input, .search form input:focus {
-  border: none !important;
+.search form input, .search form input:focus{
+  border: none;
+  border-radius: 0;
+}
+.search form input:focus {
+  border-bottom: 1px solid #8aaf3e;
 }
 .search form select {
   -webkit-flex: 20%;
@@ -1219,8 +1225,7 @@ span.alert-text {
     width: 85%;
   }
   .search form input:focus {
-    margin-top: 0.5em;
-    background: #fafafa;
+    margin: 0.25em 0.75em;
     padding: 0.30em 0 0 1em;
     -webkit-transition: 0.3s;
             transition: 0.3s;
@@ -1333,10 +1338,10 @@ span.alert-text {
     padding: 0.5em 0.5em;
   }
   section.row__label .label {
-    -webkit-box-flex: 5;
-    -webkit-flex: 5;
-        -ms-flex: 5;
-            flex: 5;
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
     width: 100%;
   }
   section.row__label ul {
