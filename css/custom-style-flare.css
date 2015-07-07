@@ -450,7 +450,7 @@ article.result a:hover h3 {
           transition: 0.3s;
 }
 .metadata {
-  background: #444444;
+  background: #565656;
   border-bottom: 1px solid #dbdbdb;
   padding: 0.5em;
 }
@@ -1682,12 +1682,12 @@ span.alert-text {
 }
 .icon-Default .path1:before {
   content: "\e61a";
-  color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
 }
 .icon-Default .path2:before {
   content: "\e61b";
   margin-left: -1em;
-  color: rgb(68, 68, 68);
+  color: rgb(255, 255, 255);
 }
 .icon-Delete:before {
   content: "\e61c";
