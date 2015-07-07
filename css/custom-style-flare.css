@@ -286,6 +286,7 @@ aside#right-nav:target ~ main {
   padding: 0.5em 0.75em 0.25em 0.75em;
   border: 1px solid #dbdbdb;
   border-radius: 2em;
+  letter-spacing: 0;
 }
 #filters #filter-icon {
   font-size: 2.5em;
@@ -322,6 +323,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   overflow-y: auto;
+  border: 1px solid #dbdbdb;
 }
 section.row__label {
   background: transparent;
@@ -448,7 +450,8 @@ article.result a:hover h3 {
           transition: 0.3s;
 }
 .metadata {
-  background: #b4cf7b;
+  background: #444444;
+  border-bottom: 1px solid #dbdbdb;
   padding: 0.5em;
 }
 .metadata .label { padding: 0; }
@@ -460,13 +463,14 @@ article.result a:hover h3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: right;
 }
 .metadata ul li {
   display: inline-block;
   text-align: center;
-  width: 33%;
+  width: auto
   padding: 0.5em 0;
+  margin: 0 0.5em;
 }
 .summary {
   padding: 1.5em 1em 0.5em;
@@ -1186,7 +1190,6 @@ span.alert-text {
     top: 0;
     left: 5%;
     overflow: hidden;
-    border-bottom: 1px solid #dbdbdb;
     border-top: 0;
     background-color: white;
     display: inline-block;
@@ -1283,8 +1286,6 @@ span.alert-text {
     position: fixed;
     top: 4em;
     border-top: 0;
-    border-left: 1px solid #dbdbdb;
-    border-right: 1px solid #dbdbdb;
   }
   aside#left-nav ul li {
     display: block;
@@ -1681,12 +1682,12 @@ span.alert-text {
 }
 .icon-Default .path1:before {
   content: "\e61a";
-  color: rgb(68, 68, 68);
+  color: rgb(255, 255, 255);
 }
 .icon-Default .path2:before {
   content: "\e61b";
   margin-left: -1em;
-  color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
 }
 .icon-Delete:before {
   content: "\e61c";
