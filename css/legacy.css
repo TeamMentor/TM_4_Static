@@ -3,69 +3,34 @@
 *------------------------------------*/
 html {
   font: 100% Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 html, body {
   margin: 0;
   padding: 0;
   background: #fafafa;
+}
+html, body, #landing-page, #application {
   height: 100%;
   width: 100%;
 }
-body > * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+img, object, .lge-container {
+  margin: 0 auto;
 }
 img, object {
   height: auto;
   max-width: 100%;
 }
 .lge-container {
-  max-width:100%;
+  max-width: 100%;
   padding: 7px;
 }
 .right { float: right !important; }
 .left { float: left !important; }
 /*------------------------------------*
-   COLUMNS
-*------------------------------------*/
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; }
-.col-12 { width: 100%; }
-.col-11 { width: 91.66666667%; }
-.col-10 { width: 83.33333333%; }
-.col-9 { width: 75%; }
-.col-8 { width: 66.66666667%; }
-.col-7 { width: 58.33333333%; }
-.col-6 { width: 50%; }
-.col-5 { width: 41.66666667%; }
-.col-4 { width: 33.33333333%; }
-.col-3 { width: 25%; }
-.col-2 { width: 16.66666667%; }
-.col-1 { width: 8.33333333%; }
-.col-offset-12 { margin-left: 100%; }
-.col-offset-11 { margin-left: 91.66666667%; }
-.col-offset-10 { margin-left: 83.33333333%; }
-.col-offset-9 { margin-left: 75%; }
-.col-offset-8 { margin-left: 66.66666667%; }
-.col-offset-7 { margin-left: 58.33333333%; }
-.col-offset-6 { margin-left: 50%; }
-.col-offset-5 { margin-left: 41.66666667%; }
-.col-offset-4 { margin-left: 33.33333333%; }
-.col-offset-3 { margin-left: 25%; }
-.col-offset-2 { margin-left: 16.66666667%; }
-.col-offset-1 { margin-left: 8.33333333%; }
-.col-offset-0 { margin-left: 0; }
-.row { width: 100%; }
-.collapse { margin-bottom: -50px; }
-.row:before, .row:after {
-  display: table;
-  content: " ";
-}
-.row:after { clear: both; }
-/*------------------------------------*
    NAVIGATION
 *------------------------------------*/
-.fixed, #team-mentor-navigation, #customer-navigation {
+.fixed, #team-mentor-navigation, #customer-navigation, #links {
   width: 100%;
 }
 .fixed {
@@ -76,22 +41,22 @@ img, object {
   background: white;
   border: 1px solid #dbdbdb;
 }
+#team-mentor-navigation, #customer-navigation {
+  height: auto;
+  text-align: center;
+  float: left;
+}
 #customer-navigation {
   border-bottom: 1px solid #dbdbdb;
-  margin: 0;
 }
 #customer-logo {
-  height: auto;
-  padding: 3px 20px;
-  width:250px;
-  text-align: left;
-}
-#team-mentor-navigation, #customer-navigation {
-  height: 3.5em;
+  height: 50px;
+  padding: 5px 0;
 }
 #team-mentor-navigation #message {
   font-size: 0.65em !important;
-  margin: 0;
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 #team-mentor-navigation #message a {
   font-size: 1em !important;
@@ -99,30 +64,19 @@ img, object {
 #tm-logo {
   background:url('../assets/logos/logos.png') no-repeat;
   height: 40px;
-  background-position: 0px 0px;
-  float: left;
-  margin: 7px 0 0 20px;
-  width: 36%;
+  margin: 0 auto;
+  background-position: top center;
 }
-#tm-logo, #links {
-  display: inline-block;
-}
-#links {
-  width: 60%;
-  float: right;
+#tm-logo, #customer-navigation {
+  margin-bottom: 10px;
 }
 #links ul {
   list-style-type: none;
-  padding: 5px 0 0 0;
-  text-align:right;
+  padding: 0;
 }
 #links ul li {
-  display: inline-block;
-  margin: 0 0;
-  padding: 0 20px 0 0;
-}
-#links ul li:last-child {
-  padding: 0 20px 0 0;
+  display: block;
+  margin: 0px 0;
 }
 #links ul li [class^="icon-"], #links ul li [class*=" icon-"] {
   padding: 0 6px 0 0;
@@ -142,13 +96,8 @@ img, object {
    LANDING PAGES
 *------------------------------------*/
 #landing-page {
-  margin: 55px auto 0 auto;
+  margin-top: 175px;
 }
-#landing-page h1 { line-height: 2.5em; }
-#landing-page h2 { line-height: 1.5em; }
-#landing-page h3 { line-height: 1.5em; }
-#landing-page h5 { line-height: 1.5em; }
-#features h2 { text-align: center; }
 #landing-page form, #about-us, #clients, #features, #reasons {
   background: white;
 }
@@ -157,24 +106,12 @@ img, object {
   border-radius: 3px;
   padding-bottom: 20px;
 }
-#about-us, #reasons, #features {
+#about, #usp, #call-to-action, #about-us, #reasons, #features {
   padding: 1% 0 2% 0;
 }
-#about, #call-to-action, #usp {
-  background: url(../assets/stock-img/bg-img-large.jpg) no-repeat;
-  padding: 8% 0;
+#about, #usp, #call-to-action {
+  background: url(../assets/stock-img/bg-img-small.jpg) no-repeat;
   background-size: auto;
-}
-#usp {
-  background-position: 0px 0px;
-}
-#about { background-position: 0px -1400px; }
-#call-to-action { background-position: 0px -800px; }
-#reasons h2, #usp {
-  text-align: center;
-}
-#reasons img {
-  max-width: 100%
 }
 #about-us, #clients, #features, #reasons {
   border-left: 1px solid #dbdbdb;
@@ -183,9 +120,17 @@ img, object {
 #footer, #clients {
   text-align: center;
 }
-#about h2, #usp h1 { padding-top: 40px; }
 #about h3, #usp h2, #call-to-action h2 {
   color: white;
+}
+#about {
+  background-position: 0px -480px;
+}
+#call-to-action {
+  background-position: 0px -275px;
+}
+#usp {
+  background-position: 0px 0px;
 }
 #reasons {
   padding-bottom: 0;
@@ -193,14 +138,13 @@ img, object {
 #reasons img {
   max-width: 50%;
 }
+#reasons table tr td:first-child, #features table tr td:first-child {
+  width: 18%;
+  text-align: center;
+  padding: 0 1em;
+}
 #clients {
   padding: 0 0 5% 0;
-}
-#footer { text-align: left; }
-#footer ul.contact li:first-child {
-  width: auto;
-  display: inline-block;
-  text-align: left;
 }
 #footer ul {
   list-style: none;
@@ -222,14 +166,17 @@ img, object {
   padding: 0 10px 0 0;
 }
 #footer ul.contact li {
-  width: 20%;
-  margin: 0;
-  text-align: right;
+  width: 15%;
+  margin: 0 0 10px;
+  text-align: center;
+}
+#footer ul.contact li:first-child {
+  display: block;
+  width: 100%;
 }
 #footer ul.contact a {
   text-decoration: none;
 }
-#contact-information { margin-top: 10px; }
 /*------------------------------------*
    SPRITES
 *------------------------------------*/
@@ -239,7 +186,7 @@ img, object {
 }
 .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance {
   background: url(../assets/icons/landing-page-icons.png) no-repeat;
-  width: 1o00px;
+  width: 100%;
   padding-top: 110%;
 }
 .fix-vulnerabilities, .reduce-vulnerabilities, .provides-guidance {
@@ -269,14 +216,14 @@ img, object {
 .provides-guidance {
   background-position: 100% 0%;
 }
-.elsevier, .fedex, .mass-mutual, .microsoft, .ubs {
-  width: 100%;
-  padding-top: 33%;
-  background: url(../assets/clients/logos.jpg) no-repeat;
-  background-size: 100%;
-}
 .elsevier {
   background-position: 0% 0%;
+}
+.elsevier, .fedex, .mass-mutual, .microsoft, .ubs {
+  background: url(../assets/clients/logos.jpg) no-repeat;
+  background-size: 100%;
+  width: 50%;
+  padding-top: 18%;
 }
 .fedex {
   background-position: 0% 20%;
@@ -295,10 +242,10 @@ img, object {
 *------------------------------------*/
 #loginwall {
   background: transparent;
-  margin: 15px 7px 0 0;
+  margin: 15px 10px 0 10px;
 }
 #summary {
-  margin: 15px 0 0 7px;
+  margin: 10px;
 }
 #summary table td {
   padding: 10px;
@@ -317,42 +264,32 @@ img, object {
   background: #fafafa;
 }
 #application {
-  margin-top: 70px;
-}
-#search-div, #search-div-2  {
-  top: 60px;
-  padding-top: 10px;
-}
-#search-div-2 { width: 75%; }
-#search-div-2 input, #search-div input {
-  width: 92%;
+  margin-top: 180px;
 }
 #landing-page #application {
-  margin: 70px 0 0 0;
+  padding-top: 0 !important;
 }
 #customer #application {
-  padding-top: 60px;
+  padding-top: 70px;
 }
 #customer #search-div, #customer #search-div-2 {
-  top: 120px;
+  top: 240px;
 }
 #customer #results-2 {
   margin-top: 165px;
 }
-#results-2 { margin-top: 140px; }
 .bg, #results, #results-2, #search-input {
   background: white;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
-
 .bg {
   padding: 20px;
   padding-top: 5px;
   margin: 0 0 15px 0;
 }
 .bg.content {
-  padding: 1em 3em 2em 3em;
+  padding: 1em;
 }
 .bg#list-view-article {
   padding: 1em;
@@ -396,7 +333,7 @@ img, object {
   font-size: 1.25em;
  }
 #main-app-view {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 #main-app-view h5 {
   margin: 15px 0;
@@ -434,8 +371,12 @@ img, object {
   margin-top: 150px;
   border: none;
 }
-#help-nav { margin: 0 10px 0 0; }
-#help { margin: 10px 0 0 10px; }
+#help-nav {
+  margin: 10px 10px 15px 10px;
+}
+#help {
+  margin: 0 10px 10px 10px;
+}
 #help ul, #help ol {
   padding: 0 0 0 2em;
 }
@@ -589,32 +530,30 @@ h4, h5, h6, hr {
   color: #565656;
 }
 h1 {
-  font-size: 2.25em;
+  font-size: 2em;
   line-height: 1.25em;
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: 1.153em;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1.136em;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.3em;
 }
 h5 {
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1.11em;
 }
 h6 {
-  font-size: 1.15em;
+  font-size: 0.95em;
   line-height: 1.11em;
 }
 p, a {
-  font-size: 1em;
-  line-height: 1.75em;
   color: #444444;
 }
 .bg#list-view-article a:hover h4 {
@@ -668,7 +607,7 @@ a.minor{
   color: #7b7b7b;
   text-decoration: none !important;
   font-size: 0.85em;
-  line-height: 3.75em;
+  line-height: 4.5em;
   display: block;
 }
 a.minor:hover {
@@ -694,7 +633,7 @@ button, .button {
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
-  width: 100%;
+  width: auto;
   outline: none;
 }
 button:hover, button:active, .button:hover, .button:active {
@@ -707,7 +646,7 @@ button:hover, button:active, .button:hover, .button:active {
   -webkit-box-shadow: none;
   background: transparent;
   float: right;
-  width: 8%;
+  width: 15%;
   font-size: 1.2em;
   color: #8aaf3e;
 }
@@ -721,10 +660,6 @@ button:hover, button:active, .button:hover, .button:active {
   background: #aaaaaa;
   text-align: center;
   color: white !important;
-}
-.filter {
-  display: inline-block;
-  margin: 2px 5px 0;
 }
 .badge {
   min-width: 2em;
@@ -842,6 +777,169 @@ td.vertical-align {
   vertical-align: middle;
   text-align: right;
 }
+#about, #call-to-action, #usp {
+  padding: 7% 0 5% 0;
+  background: url(../assets/stock-img/bg-img-medium.jpg) no-repeat;
+  text-align: center;
+}
+#about {
+  background-position: 0px -820px;
+}
+#call-to-action {
+  background-position: 0px -500px;
+}
+button, .button {
+  width: 100%;
+}
+.elsevier, .fedex, .mass-mutual, .microsoft, .ubs {
+  width: 30%;
+  padding-top: 10%;
+}
+#team-mentor-navigation, #customer-navigation { height: 60px; }
+#customer-navigation {
+  margin-bottom: 0;
+}
+#customer-logo {
+  text-align: left;
+  width: 250px;
+  height: auto;
+  padding: 3px 20px;
+}
+#tm-logo, #links, #links ul li { display: inline-block; }
+#tm-logo {
+  background-position: 0px 0px;
+  float: left;
+  margin: 7px 0 0 20px;
+  width: 36%;
+}
+#landing-page { margin: 55px auto 0 auto; }
+#links {
+  width: 60%;
+  float: right;
+}
+#links ul {
+  padding-top: 5px;
+  text-align: right;
+}
+#links ul li { padding: 0 20px 0 0; }
+#links ul li:last-child { padding-right: 20px; }
+#loginwall { margin: 15px 7px 0 0; }
+#summary { margin: 15px 0 0 7px; }
+#application { margin-top: 70px; }
+#customer #application { padding-top: 60px; }
+#customer #search-div, #customer #search-div-2  { top: 120px; }
+#search-div, #search-div-2  {
+  top: 60px;
+  padding-top: 10px;
+}
+#results-2 { margin-top: 140px; }
+#landing-page #application {
+  margin: 70px 0 0 0;
+}
+#help-nav { margin: 0 10px 0 0; }
+#help { margin: 10px 0 0 10px; }
+#search-button { width: 8%; }
+#search-div-2 input, #search-div input {
+  width: 92%;
+}
+.landing-page #links {
+  margin: 0.75em 0 0 0;
+}
+#landing-page h1 { line-height: 2.5em; }
+#landing-page h2 { line-height: 1.5em; }
+#landing-page h3 { line-height: 1.5em; }
+#landing-page h5 { line-height: 1.5em; }
+#features h2 { text-align: center; }
+h1 { font-size: 2.25em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1.15em; }
+p {
+  font-size: 1em;
+  line-height: 1.75em;
+}
+#about, #call-to-action, #usp {
+  background: url(../assets/stock-img/bg-img-large.jpg) no-repeat;
+  padding: 8% 0;
+}
+#about { background-position: 0px -1400px; }
+#call-to-action { background-position: 0px -800px; }
+#reasons h2 {
+  text-align: center;
+}
+#reasons img {
+  max-width: 100%
+}
+#contact-information { margin-top: 10px; }
+#about h2, #usp h1 { padding-top: 40px; }
+#main-app-view { margin-top: 140px; }
+a.minor { line-height: 3.75em; }
+#search-div-2 { width: 75%; }
+.elsevier, .fedex, .mass-mutual, .microsoft, .ubs {
+  width: 100%;
+  padding-top: 33%;
+}
+#footer { text-align: left; }
+#footer ul.contact li {
+  width: 20%;
+  text-align: right;
+  margin: 0;
+}
+#footer ul.contact li:first-child {
+  width: auto;
+  display: inline-block;
+  text-align: left;
+}
+.bg.content {
+padding: 1em 3em 2em 3em;
+}
+#landing-page, .landing-page {
+  width: 80%;
+  left: 10%;
+}
+.fixed.landing-page { left: 10%; }
+#link-forgot-pwd { text-align: right; }
+.desktop  { display:block; }
+.mobile { display: none; }
+.filter {
+  display: inline-block;
+  margin: 2px 5px 0;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; }
+.col-12 { width: 100%; }
+.col-11 { width: 91.66666667%; }
+.col-10 { width: 83.33333333%; }
+.col-9 { width: 75%; }
+.col-8 { width: 66.66666667%; }
+.col-7 { width: 58.33333333%; }
+.col-6 { width: 50%; }
+.col-5 { width: 41.66666667%; }
+.col-4 { width: 33.33333333%; }
+.col-3 { width: 25%; }
+.col-2 { width: 16.66666667%; }
+.col-1 { width: 8.33333333%; }
+.col-offset-12 { margin-left: 100%; }
+.col-offset-11 { margin-left: 91.66666667%; }
+.col-offset-10 { margin-left: 83.33333333%; }
+.col-offset-9 { margin-left: 75%; }
+.col-offset-8 { margin-left: 66.66666667%; }
+.col-offset-7 { margin-left: 58.33333333%; }
+.col-offset-6 { margin-left: 50%; }
+.col-offset-5 { margin-left: 41.66666667%; }
+.col-offset-4 { margin-left: 33.33333333%; }
+.col-offset-3 { margin-left: 25%; }
+.col-offset-2 { margin-left: 16.66666667%; }
+.col-offset-1 { margin-left: 8.33333333%; }
+.col-offset-0 { margin-left: 0; }
+.row { width: 100%; }
+.collapse { margin-bottom: -50px; }
+.clearfix:before, .clearfix:after, .container:before, .container:after, .row:before, .row:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after, .container:after, .row:after { clear: both; }
 /*------------------------------------*
   HACKS
 *------------------------------------*/
@@ -879,7 +977,6 @@ td.vertical-align {
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icons';
   speak: none;
