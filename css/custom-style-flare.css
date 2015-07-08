@@ -120,6 +120,9 @@ nav {
   width: 100%;
   z-index: 99;
   border-top: 1px solid #dbdbdb;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .search form {
   -webkit-box-flex: 76%;
@@ -1197,6 +1200,7 @@ span.alert-text {
     border-top: 0;
     background-color: white;
     display: inline-block;
+    position: relative;
   }
   .search form {
     width: 100%;
@@ -1326,7 +1330,7 @@ span.alert-text {
     height: 100%;
     width: 70%;
   }
-  section.row__customer aside{
+  section.row__customer aside {
     top:8em;
   }
   section.row__landing-page {
