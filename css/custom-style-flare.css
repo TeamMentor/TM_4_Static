@@ -221,6 +221,7 @@ section.row {
       -ms-flex: 100%;
           flex: 100%;
   width: 100%;
+  height: 100%;
 }
 section.row__customer, section.row__customer-landing {
   position: fixed;
@@ -499,6 +500,7 @@ article.result a:hover h3 {
       -ms-flex: 100%;
           flex: 100%;
   width: 100%;
+  height: 100%;
   display: block;
 }
 /*------------------------------------*
@@ -1279,7 +1281,7 @@ span.alert-text {
     top: 4em;
     left: 5%;
     height: 92%;
-    padding: 0 0 4em 0;
+    padding: 0 0 1em 0;
   }
   section.row__customer, section.row__customer-landing {
     top: 8em;
