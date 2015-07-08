@@ -221,6 +221,14 @@ section.row {
           flex: 100%;
   width: 100%;
 }
+section.row__customer {
+  position: fixed;
+  top: 6em;
+  bottom: 3em;
+}
+section.row__customer .application {
+  height:100%;
+}
 .tm-summary {
   display: none;
 }
@@ -235,6 +243,7 @@ aside {
   background: white;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
+  top: 4em;
 }
 aside ul {
   width: 100%;
@@ -248,8 +257,6 @@ aside#left-nav ul li {
 }
 aside#right-nav {
   display: none;
-  right: 0;
-  top: 4em;
   text-align: left;
   padding: 0 1em;
   overflow-y: auto;
@@ -1187,7 +1194,7 @@ span.alert-text {
             flex: 95%;
     width: 95%;
     position: fixed;
-    top: 0;
+    top: 4em;
     left: 5%;
     overflow: hidden;
     border-top: 0;
@@ -1257,10 +1264,10 @@ span.alert-text {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-order: 2;
+    -webkit-order: 3;
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+        -ms-flex-order: 3;
+            order: 3;
     -webkit-flex: 95%;
     -webkit-box-flex: 95%;
         -ms-flex: 95%;
@@ -1272,6 +1279,13 @@ span.alert-text {
     left: 5%;
     height: 90%;
     padding: 0 0 4em 0;
+  }
+  section.row__customer {
+    top: 8em;
+    bottom: 0;
+  }
+  section.row__customer main {
+    top: 8em;
   }
   aside {
     display: block;
@@ -1296,7 +1310,6 @@ span.alert-text {
   aside#right-nav {
     display: none;
     right: 0;
-    top: 4em;
     text-align: left;
     padding: 0 1em;
     overflow-y: auto;
@@ -1315,6 +1328,9 @@ span.alert-text {
   aside#right-nav:target ~ main {
     height: 100%;
     width: 70%;
+  }
+  section.row__customer aside{
+    top:8em;
   }
   section.row__landing-page {
     top: 4em;
