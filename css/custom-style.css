@@ -839,7 +839,7 @@ td.vertical-align {
   }
   #landing-page {
     left: 0;
-    top: 50px;
+    top: 60px;
   }
   #links {
     width: 60%;
@@ -854,7 +854,7 @@ td.vertical-align {
   #loginwall { margin: 15px 7px 0 0; }
   #summary { margin: 15px 0 0 7px; }
   #application { margin-top: 70px; }
-  #customer #application { padding-top: 60px; }
+  #customer #application, #customer #landing-page { padding-top: 60px; }
   #customer #landing-page #application { margin: 10px 0 0 0;}
   #customer #search-div, #customer #search-div-2  { top: 120px; }
   #search-div, #search-div-2  {
@@ -863,7 +863,7 @@ td.vertical-align {
   }
   #results-2 { margin-top: 140px; }
   #landing-page #application {
-    margin: 70px 0 0 0;
+    margin: 10px 0 0 0;
   }
   #help-nav { margin: 0 10px 0 0; }
   #help { margin: 0px 0 0 10px; }
