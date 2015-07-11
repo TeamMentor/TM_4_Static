@@ -1,0 +1,83 @@
+nav
+  @extends .display-flex
+  flex(100%)
+  flex-order(1)
+  z-index: 99
+  border: $border
+  width: $fullwidth
+  height: 3em
+  background-color: $white
+
+.logo
+  flex-order(1)
+  flex(45%)
+  width: 45%
+  position: relative;
+  background: url('../assets/logos/tm-logo.svg') no-repeat;
+  background-size: 120px;
+  background-position: 8px 8px;
+
+.application-logo
+  width: $fullwidth
+  background-color: $white
+
+.logo, .links, .search
+  height: 3em;
+
+.links
+  flex-order(2)
+  flex(55%)
+  width: 55%
+  text-align: right;
+  left: 45%;
+  padding: 0.35em 0;
+  li
+    a
+      color: $brandcolor
+      &:hover
+        color: $alertoktext
+    &:last-child
+      display: none
+
+.search
+  @extends .display-flex
+  flex(100%)
+  flex-order(4)
+  width: 100%;
+  position: fixed
+  left: 0
+  bottom: 0
+  background-color: $white
+  z-index: 99
+  border-top: $border
+
+.search form
+  flex(76%)
+  width: 76%
+  height: $fullheight
+  flex-wrap(nowrap)
+  margin: 0
+  padding: 0
+
+.search form input
+  height: 3em
+  flex(80%)
+  width: 80%
+  transition(0.3s)
+
+.search form input, .search form input:focus
+  border: none;
+  border-radius: 0;
+
+.search form input:focus
+  border-bottom: 1px solid #8aaf3e;
+
+.search form select
+  flex(20%)
+  width: 20%
+  background: $bodycolor
+  border: $border
+  color: $basecolor
+  border: none
+  margin: 0 auto
+  height: 3em
