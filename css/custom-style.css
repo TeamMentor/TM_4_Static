@@ -106,7 +106,8 @@ img, object {
    LANDING PAGES
 *------------------------------------*/
 #landing-page {
-  margin-top: 175px;
+  position: relative;
+  top: 175px;
 }
 #landing-page form, #about-us, #clients, #features, #reasons {
   background: white;
@@ -279,8 +280,12 @@ img, object {
 #landing-page #application {
   padding-top: 0 !important;
 }
-#customer #application {
-  padding-top: 70px;
+#customer #application, #customer #landing-page {
+  padding: 70px 0 0 0;
+}
+#customer #landing-page #application {
+  margin: 0;
+  padding: 0;
 }
 #customer #search-div, #customer #search-div-2 {
   top: 240px;
@@ -663,6 +668,10 @@ button:hover, button:active, .button:hover, .button:active {
 #search-button:hover {
   color: #6c9020;
 }
+.team-professor {
+  background: #006699;
+  color: white;
+}
 /*------------------------------------*
    MICRO-ELEMENTS
 *------------------------------------*/
@@ -828,7 +837,10 @@ td.vertical-align {
     margin: 7px 0 0 20px;
     width: 36%;
   }
-  #landing-page { margin: 55px auto 0 auto; }
+  #landing-page {
+    left: 0;
+    top: 60px;
+  }
   #links {
     width: 60%;
     float: right;
@@ -842,7 +854,8 @@ td.vertical-align {
   #loginwall { margin: 15px 7px 0 0; }
   #summary { margin: 15px 0 0 7px; }
   #application { margin-top: 70px; }
-  #customer #application { padding-top: 60px; }
+  #customer #application, #customer #landing-page { padding-top: 60px; }
+  #customer #landing-page #application { margin: 10px 0 0 0;}
   #customer #search-div, #customer #search-div-2  { top: 120px; }
   #search-div, #search-div-2  {
     top: 60px;
@@ -850,10 +863,10 @@ td.vertical-align {
   }
   #results-2 { margin-top: 140px; }
   #landing-page #application {
-    margin: 70px 0 0 0;
+    margin: 10px 0 0 0;
   }
   #help-nav { margin: 0 10px 0 0; }
-  #help { margin: 10px 0 0 10px; }
+  #help { margin: 0px 0 0 10px; }
   #search-button { width: 8%; }
   #search-div-2 input, #search-div input {
     width: 92%;
@@ -917,7 +930,7 @@ td.vertical-align {
 @media (min-width: 1280px) {
   #landing-page, .landing-page {
     width: 80%;
-    left: 10%;
+    margin: 0 auto;
   }
   .fixed.landing-page { left: 10%; }
 }
