@@ -7,6 +7,9 @@ $fullheight = $fullwidth
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
 
+overflow(n)
+ overflow: n
+
 // Flexbox
 flex-order(n)
   -webkit-order: n
@@ -30,6 +33,11 @@ flex-align-items(n)
   -webkit-align-items: n
   -ms-flex-align: n
 
+flex-align-self(n)
+  -webkit-align-self: n
+  -ms-flex-item-align: n
+  align-self: n
+
 flex-justify-content(n)
   -webkit-box-pack: n
   -webkit-justify-content: n
@@ -41,6 +49,13 @@ flex-align-content(n)
   -ms-flex-line-pack: n
   align-content: n
 
+flex-direction(n)
+  flex-direction: n
+  -webkit-flex-direction: n
+  -webkit-flex-wrap: n
+  -ms-flex-wrap: n
+  flex-wrap: n
+
 .display-flex
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,7 +66,7 @@ $bodycolor      = #fafafa
 $textcolor      = #444444
 $headingcolor   = #7b7b7b
 $bordercolor    = $dbdbdb
-$basecolor 		= #aaaaaa
+$basecolor 		  = #aaaaaa
 $brandcolor     = #8aaf3e
 $brandaccent    = #b4cf7b
 $white          = #fff
@@ -60,6 +75,7 @@ $infocolor      = #565656
 $alertbadbg     = #cf7b7b
 $alertbadtext   = #902020
 $alertoktext    = #6c9020
+$transparent    = transparent
 
 // Typography
 $font-stack = 100% Helvetica, Arial, sans-serif

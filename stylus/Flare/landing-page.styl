@@ -1,0 +1,70 @@
+.about, .call-to-action, .usp
+  background: $textcolor url(../assets/stock-img/bg-img-small.jpg) no-repeat
+  padding: 0.5em
+
+  h3, h2
+    color: $white
+    line-height: 1.5em
+    font-size: 1.5em
+
+.about, .call-to-action
+  background-size: auto
+
+.about
+  background-position: 0 900px
+
+.about-us
+  padding: 1em
+  display: block
+  height: auto
+  background: $white
+
+.call-to-action
+  background-position: 0 -18em
+
+.clients
+  padding: 0 1em 2em 1em
+  background-color: white
+
+.features
+  height: auto
+  display: block
+
+footer
+  @extends .display-flex
+  flex-order(100)
+  flex-wrap(wrap)
+  width: $fullwidth
+  padding: 0 0.5em 0.5em
+  text-align: center
+
+  ul
+    list-style-type: none
+    list-style-position: outside
+    padding: 0
+    text-align: right
+
+    li
+      display: inline-block
+      width: auto
+      padding: 0 1em
+
+  .si-logo
+    background: $white url('../assets/logos/si-logo.svg') no-repeat;
+    background-size: cover
+    padding-top: 20px
+    height: 0
+    width: 15px
+    margin: 12px 0 0 0
+    flex(1)
+
+  .icons
+    flex(3)
+    text-align: center
+    font-size: 0.85em
+
+.usp
+  background-position: 0 0
+
+.reasons, .features
+  padding: 1em
