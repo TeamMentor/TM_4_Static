@@ -221,7 +221,7 @@ section.row {
           flex: 100%;
   width: 100%;
 }
-section.article-info {
+.article-info {
   background: #565656;
   align-self: stretch;
   height: 100%;
@@ -1295,7 +1295,7 @@ span.alert-text {
     top: 4em;
     left: 5%;
     height: 92%;
-    padding: 0 0 4em 0;
+    padding: 0;
   }
   aside {
     display: block;
