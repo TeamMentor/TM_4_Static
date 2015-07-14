@@ -1,7 +1,7 @@
 .application
   flex-order(3)
   flex($fullwidth)
-  flex-direction(n)
+  flex-direction(column)
   width: $fullwidth
   height: 88%
   display: block
@@ -109,7 +109,7 @@ aside
     padding: 0 1em
     overflow(auto)
 
-    &:target {
+    &:target
       flex($fullwidth)
       flex-order(3)
       width($fullwidth)
@@ -216,7 +216,7 @@ article
   input[type="checkbox"]
     display: none
 
-    &:checked + label {
+    &:checked + label
       background-color: $bodycolor
 
   label

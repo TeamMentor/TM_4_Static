@@ -1,0 +1,135 @@
+// First Level Navigation
+
+.fixed, #team-mentor-navigation, #customer-navigation, #links
+  width: $fullwidth
+
+.fixed
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 99
+  background-color: $white
+  border: $border
+
+  #team-mentor-navigation, #customer-navigation
+    height: auto
+    text-align: center
+    float: left
+
+  #customer-navigation
+    border-bottom: $border
+    margin: 0 0 10px 0
+
+    #customer-logo
+      height: 50px
+      padding: 5px 0
+
+  #team-mentor-navigation
+    #tm-logo
+      background: $white url('../assets/logos/logos.png') no-repeat
+      height: 40px
+      margin: 0 auto 10px auto
+      background-position: top center
+
+    #message
+      font-size: 0.65em !important
+      margin-top: 0
+      font-family: Helvetica, Arial, sans-serif
+
+      a
+        font-size: 1em !important
+
+    #links
+      ul
+        list-style-type: none
+        padding: 0
+
+        li
+          display: block
+          margin: 0
+
+          [class^="icon-"], #links ul li [class*=" icon-"]
+            padding: 0 6px 0 0
+
+      .text-links
+        margin-top: 7px
+
+      a
+        text-transform: uppercase
+        letter-spacing: 1px
+        color: $brandcolor
+        font-size: 0.85em
+        font-weight: 500
+
+        &:hover, &:focus, &:active
+         color: $alertoktext
+
+// Second Level Navigation
+
+.sub-nav
+  background-color: $white
+  border-radius: 3px
+  overflow(auto)
+  text-transform: uppercase
+  font-size: 0.75em
+  white-space: pre-wrap
+  padding: 12px 0
+  width: $fullwidth
+  margin: 0
+  border: $border
+  display: block
+
+  dt, dd, li
+    float: left
+    display: inline
+    font-weight: normal
+    margin: 0 0 0 10px
+    line-height: 2em
+
+    a
+      text-align: left
+      text-decoration: none
+      color: $basecolor
+
+      &:hover
+        color: $alertoktext
+
+  dd
+    &:last-child
+      > a
+        &:after
+          content: ""
+
+    &.active
+      a
+        color: $brandcolor
+
+        &:hover
+          color: $alertoktext
+
+  a
+    &:before
+      content: " "
+    &:after
+      content: " / "
+      padding-left: 10px
+      color: $basecolor
+
+table.nav
+  background-color: $bodycolor
+  font-size: 0.9em
+
+  tr
+    border: $border
+
+    &:hover
+      background-color: $bordercolor
+
+    td
+      padding: 5px 10px
+      word-wrap: break-word
+
+      a
+        display: block
+        color: inherit
+        text-decoration: none !important
