@@ -164,31 +164,35 @@
       img
       max-width: $fullwidth
 
-  #footer
-    text-align: left
+    #footer
+      padding: 1em 0;
+      ul
+        text-align: left
 
-    ul
-      li
-        display: inline-block
-
-      &.contact
         li
-          width: 20%
+          display: inline-block
+
+        &.contact
           text-align: right
-          margin: 0
-          font-size: 0.85em
+          padding: 0 1em 0 0
 
-          &:first-child
-            width: auto
-            display: inline-block
-            text-align: left
+          li
+            width: 20%
+            text-align: right
+            margin: 0
+            font-size: 0.85em
 
-      &.si
-        padding: 0 1em
+            &:first-child
+              width: auto
+              display: inline-block
+              text-align: left
 
-        li
-          &:first-child
-            padding: 0 1em 0 0
+        &.si
+          padding: 0 1em
+
+          li
+            &:first-child
+              padding: 0 1em 0 0
 
   #contact-information
     margin-top: 10px
@@ -230,6 +234,10 @@
     padding: 1em 3em 2em
 
   // Sprites
+
+  .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance
+    width: 100px
+    height: 100px
 
   .elsevier, .fedex, .mass-mutual, .microsoft, .ubs
     width: $fullwidth
