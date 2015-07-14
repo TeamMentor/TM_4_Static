@@ -1,0 +1,100 @@
+// Structural
+$fullwidth = 100%
+$fullheight = $fullwidth
+
+.border-box-sizing
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+
+overflow(n)
+ overflow: n
+
+// Flexbox
+flex-order(n)
+  -webkit-order: n
+  -webkit-box-ordinal-group: n
+  -ms-flex-order: n
+  order: n
+
+flex(n)
+  -webkit-flex: n
+  -webkit-box-flex: n
+  -ms-flex: n
+  flex: n
+
+flex-basis(n)
+  -webkit-flex-basis: n
+  -ms-flex-preferred-size: n
+  flex-basis: n
+
+flex-wrap(n)
+  -webkit-flex-wrap: n
+  -ms-flex-wrap: n
+  flex-wrap: n
+
+flex-align-items(n)
+  -webkit-box-align: n
+  -webkit-align-items: n
+  -ms-flex-align: n
+
+flex-align-self(n)
+  -webkit-align-self: n
+  -ms-flex-item-align: n
+  align-self: n
+
+flex-justify-content(n)
+  -webkit-box-pack: n
+  -webkit-justify-content: n
+  -ms-flex-pack: n
+  justify-content: n
+
+flex-align-content(n)
+  -webkit-align-content: n
+  -ms-flex-line-pack: n
+  align-content: n
+
+flex-direction(n)
+  flex-direction: n
+  -webkit-flex-direction: n
+  -webkit-flex-wrap: n
+  -ms-flex-wrap: n
+  flex-wrap: n
+
+.display-flex
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+// Colours
+$bodycolor      = #fafafa
+$textcolor      = #444444
+$headingcolor   = #7b7b7b
+$bordercolor    = #dbdbdb
+$basecolor 		  = #aaaaaa
+$brandcolor     = #8aaf3e
+$brandaccent    = #b4cf7b
+$white          = #fff
+$black          = #000
+$infocolor      = #565656
+$alertbadbg     = #cf7b7b
+$alertbadtext   = #902020
+$alertoktext    = #6c9020
+$transparent    = transparent
+
+// Typography
+$font-stack = 100% Helvetica, Arial, sans-serif
+$code-font = Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
+
+// Transitions
+transitions(n)
+  -webkit-transition: n
+  transition: n
+
+// Borders
+$border = 1px solid $bordercolor
+
+// Break Points
+$micro            = "only screen and (min-width: 500px)";
+$small            = "only screen and (min-width: 800px)";
+$medium           = "only screen and (min-width: 1285px)";
