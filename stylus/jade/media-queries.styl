@@ -139,45 +139,56 @@
     h5
       line-height: 1.5em
 
-  #features, #reasons
-    h2
-      text-align: center
+    #features, #reasons
+      h2
+        text-align: center
 
-  #about, #call-to-action, #usp
-    background: url(../assets/stock-img/bg-img-large.jpg) no-repeat
-    padding: 8% 0
+    #about, #call-to-action, #usp
+      background: url(../assets/stock-img/bg-img-large.jpg) no-repeat
+      padding: 8% 0
 
-  #about
-    background-position: 0 -1400px
+    #about
+      background-position: 0 -1400px
 
-    h2
-      padding-top: 40px
+      h2
+        padding-top: 40px
 
-  #usp
-    h1
-      padding-top: 40px
+    #usp
+      h1
+        padding-top: 40px
 
-  #call-to-action
-    background-position: 0 -800px
+    #call-to-action
+      background-position: 0 -800px
 
-  #reasons
-    img
-    max-width: $fullwidth
+    #reasons
+      img
+      max-width: $fullwidth
 
   #footer
     text-align: left
 
     ul
+      li
+        display: inline-block
+
       &.contact
         li
           width: 20%
           text-align: right
           margin: 0
+          font-size: 0.85em
 
           &:first-child
             width: auto
             display: inline-block
             text-align: left
+
+      &.si
+        padding: 0 1em
+
+        li
+          &:first-child
+            padding: 0 1em 0 0
 
   #contact-information
     margin-top: 10px
