@@ -1,313 +1,251 @@
-@media (min-width: 500px) {
-  .si-logo { margin: 15px 10px 0 10px; }
-  .icons { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
-  .about, .call-to-action, .usp {
-    background: url(../assets/stock-img/bg-img-medium.jpg) no-repeat;
-    padding: 7% 10% 5%;
-    text-align: center;
-  }
-  .about { background-position: 0px -820px; }
-  .call-to-action { background-position: 0px -500px; }
-  .reasons, .about-us, .features { padding: 2em 10%; }
-  .clients { padding: 0 10% 2em;}
-  .usp h2, .call-to-action h2, .about h3 {
-    font-size: 1.75em;
-  }
-  .reasons h2, .clients h3, .features h2 {
-    text-align: center;
-  }
-}
-@media (min-width: 800px) {
-  nav, .logo, .search, .links {
-    height: 4em;
-  }
-  .logo {
-    background-color: transparent;
-    -webkit-flex: 50%;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    width: 50%;
-    background-size: 35%;
-  }
-  .application-logo {
-    background: url(../assets/logos/tm-icon.svg) no-repeat;
-    background-color: white;
-    background-size: 30px;
-    background-position: 1.5%;
-    -webkit-flex: 5%;
-        -ms-flex: 5%;
-            flex: 5%;
-    width: 5%;
-  }
-  .links {
-    -webkit-flex: 50%;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    width: 50%;
-  }
-  .links ul li {
-    padding: 0.5em 1em;
-    vertical-align: middle;
-  }
-  .links ul li:last-child {
-    display: inline-block;
-  }
-  .search {
-    -webkit-order: 3;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    -webkit-flex: 95%;
-    -webkit-box-flex: 95%;
-        -ms-flex: 95%;
-            flex: 95%;
-    width: 95%;
-    position: fixed;
-    top: 0;
-    left: 5%;
-    overflow: hidden;
-    border-top: 0;
-    background-color: white;
-    display: inline-block;
-  }
-  .search form {
-    width: 100%;
-  }
-  .search form button {
-    -webkit-box-flex: 5%;
-    -webkit-flex: 5%;
-        -ms-flex: 5%;
-            flex: 5%;
-    width: 5%;
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;
-    text-align: center;
-  }
-  .search form input {
-    background: transparent;
-    padding: 1em 0 0 1em;
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-    -webkit-box-flex: 85%;
-    -webkit-flex: 85%;
-        -ms-flex: 85%;
-            flex: 85%;
-    width: 85%;
-  }
-  .search form input:focus {
-    margin: 0.25em 0.75em;
-    padding: 0.30em 0 0 1em;
-    -webkit-transition: 0.3s;
-            transition: 0.3s;
-  }
-  .search form select {
-    -webkit-box-flex: 15%;
-    -webkit-flex: 15%;
-        -ms-flex: 15%;
-            flex: 15%;
-    width: 15%;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-    margin: 0.5em 0;
-  }
-  .application {
-    -webkit-order: 5;
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-    height: 92%;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .logged-out {
-    margin: 1em 0 0 0;
-  }
-  main {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-order: 2;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    -webkit-flex: 95%;
-    -webkit-box-flex: 95%;
-        -ms-flex: 95%;
-            flex: 95%;
-    width: 95%;
-    overflow-y: scroll;
-    position: fixed;
-    top: 4em;
-    left: 5%;
-    height: 90%;
-    padding: 0 0 4em 0;
-  }
+@media ($micro)
+  .si-logo
+    margin: 15px 10px 0
+
+  .icons
+    flex(1)
+
+  .about, .call-to-action, .usp
+    background: $textcolor url(../assets/stock-img/bg-img-medium.jpg) no-repeat
+    padding: 7% 10% 5%
+    text-align: center
+
+    h2, h3
+      font-size: 1.75em
+
+  .about
+    background-position: 0px -820px
+
+  .call-to-action
+    background-position: 0px -500px
+
+  .reasons, .about-us, .features
+    padding: 2em 10%
+
+    h2, h3
+      text-align: center
+
+  .clients
+    padding: 0 10% 2em
+
+@media ($small)
+
+  // Navigation
+
+  nav
+    *
+    height: 4em
+
+    .logo
+      background-color: transparent;
+      background-size: 35%;
+      flex(50%)
+      width: 50%
+
+    .application-logo
+      background: $white url(../assets/logos/tm-icon.svg) no-repeat
+      background-size: 30px
+      background-position: 1.5%
+      flex(5%)
+      width: 5%
+
+    .links
+      flex(50%)
+      width: 50%
+
+      ul
+        li
+          padding: 0.5em 1em
+          vertical-align: middle
+
+          &:last-child
+            display: inline-block
+
+    .search
+      flex-order(3)
+      flex(95%)
+      width: 95%
+      position: fixed
+      top: 0
+      left: 5%
+      overflow(hidden)
+      border-top: 0
+      background-color: white
+      display: inline-block
+
+      form
+        width: $fullwidth
+
+        button
+          flex(5%)
+          flex-order(3)
+          width: 5%
+          text-align: center
+
+        input
+          background-color: $transparent
+          padding: 1em 0 0 1em
+          flex-order(2)
+          flex(85%)
+          width: 85%
+
+          &:focus
+            margin: 0.25em 0.75em
+            padding: 0.30em 0 0 1em
+            transition(0.3s)
+
+        select
+          flex(15%)
+          width: 15%
+          flex-order(1)
+          margin: 0.5em 0
+
+  // Application
+
+  .application
+    flex-order(5)
+    height: 92%
+    flex-wrap(no-wrap)
+
+  main
+    @extends .display-flex
+    flex-order(2)
+    flex(95%)
+    width: 95%
+    overflow(scroll)
+    position: fixed
+    top: 4em
+    left: 5%
+    height: 90%
+    padding: 0
+
+  // Asides
+
   aside {
-    display: block;
-    -webkit-flex: 5%;
-    -webkit-box-flex: 5%;
-        -ms-flex: 5%;
-            flex: 5%;
-    width: 5%;
-    text-align: center;
-    height: 100%;
-    padding: 0;
-    position: fixed;
-    top: 4em;
-    border-top: 0;
-  }
-  aside#left-nav ul li {
-    display: block;
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid #dbdbdb;
-  }
-  aside#right-nav {
-    display: none;
-    right: 0;
-    top: 4em;
-    text-align: left;
-    padding: 0 1em;
-    overflow-y: auto;
-  }
-  aside#right-nav:target {
-    border-top: 0;
-    display: block;
-    -webkit-flex: 25%;
-    -webkit-box-flex: 25%;
-        -ms-flex: 25%;
-            flex: 25%;
-    width: 25%;
-    height: 92%;
-    order: 3;
-  }
-  aside#right-nav:target ~ main {
-    height: 100%;
-    width: 70%;
-  }
-  section.row__landing-page {
-    top: 4em;
-  }
-  section.row__label {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-flex: 100%;
-    -webkit-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    width: 100%;
-    height: 3.8em;
-    padding: 0.5em 0.5em;
-  }
-  section.row__label .label {
-    -webkit-box-flex: 3;
-    -webkit-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
-    width: 100%;
-  }
-  section.row__label ul {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    width: 100%;
-    text-align: right;
-  }
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    display: inline-block;
-  }
-  .col-1 {
-    -webkit-flex-basis: 8.333%;
-        -ms-flex-preferred-size: 8.333%;
-            flex-basis: 8.333%;
-    width: 8.333%;
-  }
-  .col-2 {
-    -webkit-flex-basis: 16.667%;
-        -ms-flex-preferred-size: 16.667%;
-            flex-basis: 16.667%;
-    width: 16.667%;
-  }
-  .col-3 {
-    -webkit-flex-basis: 25%;
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%;
-    width: 25%;
-  }
-  .col-4 {
-    -webkit-flex-basis: 33.333%;
-        -ms-flex-preferred-size: 33.333%;
-            flex-basis: 33.333%;
-    width: 33.333%;
-  }
-  .col-5 {
-    -webkit-flex-basis: 41.667%;
-        -ms-flex-preferred-size: 41.667%;
-            flex-basis: 41.667%;
-    width: 41.667%;
-  }
-  .col-6 {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    display: block
+    flex(5%)
+    width: 5%
+    text-align: center
+    height: $fullheight
+    padding: 0
+    position: fixed
+    top: 4em
+    border-top: 0
+
+    #left-nav
+      ul
+        li
+          display: block
+          width: $fullwidth
+          border: 0
+          border-bottom: $border
+
+    #right-nav
+      display: none
+      right: 0
+      top: 4em
+      text-align: left
+      padding: 0 1em
+      overflow(auto)
+
+      &:target
+        flex-order(3)
+        border-top: 0
+        display: block
+        flex(25%)
+        width: 25%
+        height: 92%
+
+        ~ main
+          height: 90%
+          width: 70%
+
+  // Sections
+
+  section
+    .row_landing-page
+      top: 4em
+
+    .row__label
+      flex-direction(row)
+      flex($fullwidth)
+      width: $fullwidth
+      height: 3.8em
+      padding: 0.5em
+
+      .label
+        flex(3)
+        width: $fullwidth
+
+      ul
+        flex(1)
+        width: $fullwidth
+        text-align: right
+
+  // Columns
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+    display: inline-block
+
+  .col-1
+    flex-basis(8.333%)
+    width: 8.333%
+
+  .col-2
+    flex-basis(16.667%)
+    width: 16.667%
+
+  .col-3
+    flex-basis(25%)
+    width: 25%
+
+  .col-4
+    flex-basis(33.33%)
+    width: 33.333%
+
+  .col-5
+    flex-basis(41.667%)
+    width: 41.667%
+
+  .col-6
+    flex-basis(50%)
     width: 50%;
-  }
-  .col-7 {
-    -webkit-flex-basis: 58.333%;
-        -ms-flex-preferred-size: 58.333%;
-            flex-basis: 58.333%;
-    width: 58.333%;
-  }
-  .col-8 {
-    -webkit-flex-basis: 66.667%;
-        -ms-flex-preferred-size: 66.667%;
-            flex-basis: 66.667%;
-    width: 66.667%;
-  }
-  .col-9 {
-    -webkit-flex-basis: 75%;
-        -ms-flex-preferred-size: 75%;
-            flex-basis: 75%;
-    width: 75%;
-  }
-  .col-10 {
-    -webkit-flex-basis: 83.333%;
-        -ms-flex-preferred-size: 83.333%;
-            flex-basis: 83.333%;
-    width: 83.333%;
-  }
-  .col-11 {
-    -webkit-flex-basis: 91.667%;
-        -ms-flex-preferred-size: 91.667%;
-            flex-basis: 91.667%;
-    width: 91.667%;
-  }
-  .col-12 {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-    width: 100%;
-  }
-  .btn-search {
-    padding: 5px 0 0 10px;
-    font-size: 1.25em;
-  }
-  .btn-mobile {
-    display: none;
-  }
+
+  .col-7
+    flex-basis(58.333%)
+    width: 58.333%
+
+  .col-8
+    flex-basis(66.667%)
+    width: 66.667%
+
+  .col-9
+    flex-basis(75%)
+    width: 75%
+
+  .col-10
+    flex-basis(83.333%)
+    width: 83.333%
+
+  .col-11
+    flex-basis(91.667%)
+    width: 91.667%
+
+  .col-12
+    flex-basis(100%)
+    width: 100%
+
+  // Buttons
+
+  .btn-search
+    padding: 5px 0 0 10px
+    font-size: 1.25em
+
+  //
+
+  .btn-mobile
+    display: none
+
   .btn-desktop {
     display: block;
     -webkit-box-ordinal-group: 4;
