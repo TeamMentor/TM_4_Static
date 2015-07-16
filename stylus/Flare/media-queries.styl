@@ -1,4 +1,4 @@
-@media ($micro)
+@media $micro
   .si-logo
     margin: 15px 10px 0
 
@@ -28,13 +28,13 @@
   .clients
     padding: 0 10% 2em
 
-@media ($small)
+@media $small
 
   // Navigation
 
   nav
     *
-    height: 4em
+      height: 4em
 
     .logo
       background-color: transparent;
@@ -105,7 +105,7 @@
   .application
     flex-order(5)
     height: 92%
-    flex-wrap(no-wrap)
+    flex-wrap(nowrap)
 
   main
     @extends .display-flex
@@ -339,7 +339,7 @@
   .scroll
     height: $fullheight
 
-@media ($medium)
+@media $medium
   .container
     width: 1285px
     margin: 0 auto
