@@ -79,6 +79,9 @@
   #loginwall
     margin: 15px 7px 0 0
 
+    a#link-forgot-pwd.minor
+      float: right
+
   #summary
     margin: 15px 0 0 7px
 
@@ -86,6 +89,37 @@
 
   #application
     margin-top: 70px
+
+  #landing-page, #application
+    #footer
+      padding: 1em 0;
+      ul
+        text-align: left
+
+        li
+          display: inline-block
+
+        &.contact
+          text-align: right
+          padding: 0 1em 0 0
+
+          li
+            width: 20%
+            text-align: right
+            margin: 0
+            font-size: 0.85em
+
+            &:first-child
+              width: auto
+              display: inline-block
+              text-align: left
+
+        &.si
+          padding: 0 1em
+
+          li
+            &:first-child
+              padding: 0 1em 0 0
 
   #customer
     #application, #landing-page
@@ -163,36 +197,6 @@
     #reasons
       img
       max-width: $fullwidth
-
-    #footer
-      padding: 1em 0;
-      ul
-        text-align: left
-
-        li
-          display: inline-block
-
-        &.contact
-          text-align: right
-          padding: 0 1em 0 0
-
-          li
-            width: 20%
-            text-align: right
-            margin: 0
-            font-size: 0.85em
-
-            &:first-child
-              width: auto
-              display: inline-block
-              text-align: left
-
-        &.si
-          padding: 0 1em
-
-          li
-            &:first-child
-              padding: 0 1em 0 0
 
   #contact-information
     margin-top: 10px
