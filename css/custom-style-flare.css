@@ -1069,13 +1069,13 @@ img {
   margin: 0.5em 0 0 0;
 }
 .alert {
-  width: 98%;
+  width: 99%;
   border: none;
   border-radius: 3px;
   font-size: 14px;
   letter-spacing: 1px;
   padding: 1em;
-  margin: 0 0.5em;
+  margin: 0.5em;
 }
 .alert-ok {
   background: #b4cf7b;
@@ -1353,7 +1353,6 @@ span.alert-text {
         -ms-flex: 100%;
             flex: 100%;
     width: 100%;
-    height: 3.8em;
     padding: 0.5em 0.5em;
   }
   section.row__label .label {
@@ -1583,6 +1582,9 @@ span.alert-text {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+  content: "\e65c";
 }
 .icon-All .path1:before {
   content: "\e600";
@@ -1991,4 +1993,7 @@ span.alert-text {
 }
 .icon-Edit:before {
   content: "\e65b";
+}
+.icon-home:before {
+  content: "\e65c";
 }
