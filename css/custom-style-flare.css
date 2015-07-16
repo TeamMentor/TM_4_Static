@@ -1069,13 +1069,13 @@ img {
   margin: 0.5em 0 0 0;
 }
 .alert {
-  width: 98%;
+  width: 99%;
   border: none;
   border-radius: 3px;
   font-size: 14px;
   letter-spacing: 1px;
   padding: 1em;
-  margin: 0 0.5em;
+  margin: 0.5em;
 }
 .alert-ok {
   background: #b4cf7b;
@@ -1993,4 +1993,7 @@ span.alert-text {
 }
 .icon-Edit:before {
   content: "\e65b";
+}
+.icon-home:before {
+  content: "\e65c";
 }
