@@ -1,9 +1,12 @@
 @media $micro
+  // Footer
   .si-logo
     margin: 15px 10px 0
 
   .icons
     flex(1)
+
+  // Landing Page
 
   .about, .call-to-action, .usp
     background: $textcolor url(../assets/stock-img/bg-img-medium.jpg) no-repeat
@@ -33,72 +36,72 @@
   // Navigation
 
   nav
-    *
-      height: 4em
+    height: 4em
 
-    .logo
-      background-color: transparent;
-      background-size: 35%;
-      flex(50%)
-      width: 50%
+  .logo
+    background-color: transparent;
+    background-size: 35%;
+    flex(50%)
+    width: 50%
+    height: 4em
 
-    .application-logo
-      background: $white url(../assets/logos/tm-icon.svg) no-repeat
-      background-size: 30px
-      background-position: 1.5%
-      flex(5%)
-      width: 5%
+  .application-logo
+    background: $white url(../assets/logos/tm-icon.svg) no-repeat
+    background-size: 30px
+    background-position: 1.5%
+    flex(5%)
+    width: 5%
 
-    .links
-      flex(50%)
-      width: 50%
+  .links
+    flex(50%)
+    width: 50%
 
-      ul
-        li
-          padding: 0.5em 1em
-          vertical-align: middle
+    ul
+      li
+        padding: 0.5em 1em
+        vertical-align: middle
 
-          &:last-child
-            display: inline-block
+        &:last-child
+          display: inline-block
 
-    .search
-      flex-order(3)
-      flex(95%)
-      width: 95%
-      position: fixed
-      top: 0
-      left: 5%
-      overflow(hidden)
-      border-top: 0
-      background-color: white
-      display: inline-block
+  .search
+    flex-order(3)
+    flex(95%)
+    width: 95%
+    position: fixed
+    top: 0
+    left: 5%
+    overflow(hidden)
+    border-top: 0
+    background-color: white
+    display: inline-block
+    height: 4em
 
-      form
-        width: $fullwidth
+    form
+      width: $fullwidth
 
-        button
-          flex(5%)
-          flex-order(3)
-          width: 5%
-          text-align: center
+      button
+        flex(5%)
+        flex-order(3)
+        width: 5%
+        text-align: center
 
-        input
-          background-color: $transparent
-          padding: 1em 0 0 1em
-          flex-order(2)
-          flex(85%)
-          width: 85%
+      input
+        background-color: $transparent
+        padding: 1em 0 0 1em
+        flex-order(2)
+        flex(85%)
+        width: 85%
 
-          &:focus
-            margin: 0.25em 0.75em
-            padding: 0.30em 0 0 1em
-            transition(0.3s)
+        &:focus
+          margin: 0
+          transition(0.3s)
 
-        select
-          flex(15%)
-          width: 15%
-          flex-order(1)
-          margin: 0.5em 0
+      select
+        flex(15%)
+        width: 15%
+        flex-order(1)
+        margin: 0.25em 0
 
   // Application
 
@@ -116,7 +119,7 @@
     position: fixed
     top: 4em
     left: 5%
-    height: 90%
+    height: 92%
     padding: 0
 
   // Asides
@@ -132,7 +135,7 @@
     top: 4em
     border-top: 0
 
-    #left-nav
+    &#left-nav
       ul
         li
           display: block
@@ -140,7 +143,7 @@
           border: 0
           border-bottom: $border
 
-    #right-nav
+    &#right-nav
       display: none
       right: 0
       top: 4em
@@ -166,7 +169,7 @@
     .row_landing-page
       top: 4em
 
-    .row__label
+    &.row__label
       flex-direction(row)
       flex($fullwidth)
       width: $fullwidth
@@ -181,7 +184,7 @@
         width: $fullwidth
         text-align: right
 
-    .tm-summary
+    &.tm-summary
       display: inline-block
 
       table
@@ -265,6 +268,10 @@
   article
     padding: 1em 2em
     margin: 0 0 1em 1em
+
+    &.result
+      display: inline-block
+      width: 31%
 
   // Typography
 
