@@ -25,7 +25,7 @@ button, .button
     color: $white
     transition(0.3s)
 
-  .btn-search
+  &.btn-search
     position: relative
     display: inline-block
     padding: 0.75em 1em
@@ -45,7 +45,7 @@ button, .button
       outline: none
       color: $brandcolor
 
-  .btn-result
+  &.btn-result
     font-size: 0.95em
     padding: 0.5em
     color: $white
@@ -58,7 +58,7 @@ button, .button
     -moz-osx-font-smoothing: grayscale
     position: relative
 
-  .btn-minor
+  &.btn-minor
     background-color: $transparent
     color: $textcolor !important;
     border: $border
@@ -66,17 +66,17 @@ button, .button
 
     &:hover
       background-color: $transparent
-      border: $border
-      color: $basecolor !important
+      border: 1px solid $infocolor
+      color: $infocolor !important
 
-  .full-width
+  &.full-width
     display: block
     width: $fullwidth !important
 
-  .half-width
+  &.half-width
     width: 50%
     margin: 0 auto
 
-  .one-third
+  &.one-third
     width: 33%
     margin: 0 auto

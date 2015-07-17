@@ -14,7 +14,7 @@ section
   display: block
   overflow(auto)
 
-  .row, .row__article, .row__label, .row__landing-page
+  &.row, &.row__article, &.row__label, &.row__landing-page
     @extends .display-flex
     flex-wrap(wrap)
     flex-justify-content(flex-start)
@@ -24,11 +24,11 @@ section
     width: $fullwidth
     background-color: $transparent
 
-  .row__article
+  &.row__article
     padding: 0 1em
     display: inline-block
 
-  .article-info
+  &.article-info
     flex-align-self(stretch)
     height: $fullheight
     background: $infocolor
@@ -49,7 +49,7 @@ section
       &:hover
         color: $brandaccent
 
-  .article-body
+  &.article-body
     flex-align-self(stretch)
     height: $fullheight
     padding: 1em
@@ -57,16 +57,16 @@ section
     a
       text-decoration: underline;
 
-  .row__label
+  &.row__label
     padding: 0 0.5em
 
-  .row__landing-page
-    order(2)
+  &.row__landing-page
+    flex-order(2)
     overflow(auto)
     background-color: $white
-    height: $fullheight
+    height: 92%
 
-  .tm-summary
+  &.tm-summary
     display: none
 
     table
@@ -93,15 +93,15 @@ aside
     width: $fullwidth
     text-align: center
 
-  #left-nav
+  &#left-nav
     ul
       li
         padding: 1em
         display: inline-block
         border-right: $border
-        width: 33.32%
+        width: 25%
 
-  #right-nav
+  &#right-nav
     display: none
     right: 0
     top: 4em
@@ -133,6 +133,7 @@ main
   width: $fullwidth
   overflow(auto)
   border: $border
+  height: 92%
 
 // Articles
 
@@ -140,13 +141,14 @@ article
   .result, .search-term
     flex(1)
     width: $fullwidth
+    display: inline-block
 
-  .search-term
+  &.search-term
     flex(1 0 auto)
     width: auto
     border-radius: 30px
     padding: 1em
-    margin: 0.5em 0
+    margin: 0.5em
     word-wrap: normal
     background-color: $white
     color: $textcolor
@@ -159,9 +161,8 @@ article
     a
       text-decoration: none
 
-  .result
+  &.result
     flex(1 1 400px)
-    width: 30%
     height: 350px
     margin: 0.5em
     padding: 0
@@ -187,7 +188,6 @@ article
     .metadata
       background-color: $infocolor
       border-bottom: $border
-      padding: 0.5em
 
       .label
         padding: 0
