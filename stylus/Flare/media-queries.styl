@@ -1,0 +1,307 @@
+@media $micro
+  // Footer
+  .si-logo
+    margin: 15px 10px 0
+
+  .icons
+    flex(1)
+
+  // Landing Page
+
+  .about, .call-to-action, .usp
+    background: $textcolor url(../assets/stock-img/bg-img-medium.jpg) no-repeat
+    padding: 7% 10% 5%
+    text-align: center
+
+    h2, h3
+      font-size: 1.75em
+
+  .about
+    background-position: 0px -820px
+
+  .call-to-action
+    background-position: 0px -500px
+
+  .reasons, .about-us, .features
+    padding: 2em 10%
+
+    h2, h3
+      text-align: center
+
+  .clients
+    padding: 0 10% 2em
+
+@media $small
+
+  // Navigation
+
+  nav
+    height: 4em
+
+  .logo
+    background-color: transparent;
+    background-size: 35%;
+    flex(50%)
+    width: 50%
+    height: 4em
+
+  .application-logo
+    background: $white url(../assets/logos/tm-icon.svg) no-repeat
+    background-size: 30px
+    background-position: 1.5%
+    flex(5%)
+    width: 5%
+
+  .links
+    flex(50%)
+    width: 50%
+
+    ul
+      li
+        padding: 0.5em 1em
+        vertical-align: middle
+
+        &:last-child
+          display: inline-block
+
+  .search
+    flex-order(3)
+    flex(95%)
+    width: 95%
+    position: fixed
+    top: 0
+    left: 5%
+    overflow(hidden)
+    border-top: 0
+    background-color: white
+    display: inline-block
+    height: 4em
+
+    form
+      width: $fullwidth
+
+      button
+        flex(5%)
+        flex-order(3)
+        width: 5%
+        text-align: center
+
+      input
+        background-color: $transparent
+        padding: 1em 0 0 1em
+        flex-order(2)
+        flex(85%)
+        width: 85%
+
+        &:focus
+          margin: 0
+          transition(0.3s)
+
+      select
+        flex(15%)
+        width: 15%
+        flex-order(1)
+        margin: 0.25em 0
+
+  // Application
+
+  .application
+    flex-order(5)
+    height: 92%
+    flex-wrap(nowrap)
+
+  main
+    @extends .display-flex
+    flex-order(2)
+    flex(95%)
+    width: 95%
+    overflow(scroll)
+    position: fixed
+    top: 4em
+    left: 5%
+    padding: 0
+
+  // Asides
+
+  aside
+    display: block
+    flex(5%)
+    width: 5%
+    text-align: center
+    height: $fullheight
+    padding: 0
+    position: fixed
+    top: 4em
+    border-top: 0
+
+    &#left-nav
+      ul
+        li
+          display: block
+          width: $fullwidth
+          border: 0
+          border-bottom: $border
+
+    &#right-nav
+      display: none
+      right: 0
+      top: 4em
+      text-align: left
+      padding: 0 1em
+      overflow(auto)
+
+      &:target
+        flex-order(3)
+        border-top: 0
+        display: block
+        flex(25%)
+        width: 25%
+        height: 92%
+
+        ~ main
+          height: 90%
+          width: 70%
+
+  // Sections
+
+  section
+    .row_landing-page
+      top: 4em
+
+    &.row__label
+      flex-direction(row)
+      flex($fullwidth)
+      width: $fullwidth
+      padding: 0.5em
+
+      .label
+        flex(3)
+        width: $fullwidth
+
+      ul
+        flex(1)
+        width: $fullwidth
+        text-align: right
+
+    &.tm-summary
+      display: inline-block
+
+      table
+        tr
+          td
+            &:last-child
+              width: 80%
+              margin: 0
+              padding: 0 0 0 1em
+
+  // Buttons
+
+  .btn-search
+    padding: 5px 0 0 10px
+    font-size: 1.25em
+
+  // Footer
+
+  footer
+    ul
+      text-align: right
+
+    .icons
+      flex(2)
+
+  // Article
+
+  article
+    padding: 1em 2em
+    margin: 0 0 1em 1em
+
+    &.result
+      display: inline-block
+      width: 31%
+
+  // Typography
+
+  h1
+    font-size: 2.25em
+
+  h2
+    font-size: 2em
+
+  h3
+    font-size: 1.75em
+
+  h4
+    font-size: 1.5em
+
+  h5
+    font-size: 1.25em
+
+  p, ul
+    font-size: 1em
+    line-height: 1.75em
+
+  // Forms
+
+  .input-field, .button-field, .conditions
+    flex(1 1 50%)
+    padding: 0 0.5em
+
+  .button-field
+    ul
+      li
+        display: inline-block
+
+  // Landing Page
+
+  .about, .call-to-action, .usp
+    background: $textcolor url(../assets/stock-img/bg-img-large.jpg) no-repeat
+    padding: 8% 15%
+
+  .about
+    background-position: 0px -1400px
+
+  .call-to-action
+    background-position: 0px -800px
+
+  .reasons, .about-us, .features
+    padding: 3em 10%
+
+  .clients
+    padding: 0 10% 3em
+
+  .features
+    p
+      position: relative
+
+  // Sprites
+
+  .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance
+    width: 100px
+    padding: 0
+    height: 100px
+
+  // Sub Navigation
+
+  .pagination
+    width: 50%
+    margin: 0 auto
+
+  dl
+    margin: 0
+
+  .scroll
+    height: $fullheight
+
+@media $medium
+  .container
+    width: 1285px
+    margin: 0 auto
+
+  .about, .call-to-action, .usp
+    padding: 8% 20%
+
+  .reasons, .about-us, .features
+    padding: 3em 20%
+
+  .clients
+    padding: 0em 20% 3em

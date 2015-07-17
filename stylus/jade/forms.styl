@@ -1,0 +1,56 @@
+form, .form-group
+  margin-bottom: 15px
+  list-style-type: none
+
+form
+  border-radius: 3px
+  padding: 20px 20px 0 20px
+
+  p
+    font-size: 0.75em
+    margin-top: 0
+
+  h4
+    margin: 5px 0 20px
+    padding: 0 0 10px 0
+    border-bottom: $border
+
+  input[type="text"], input[type="password"], input[type="date"], input[type="datetime"],
+  input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"],
+  input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select
+    width: $fullwidth
+    background-color: $bodycolor
+    font-family: inherit
+    border: $border
+    color: $textcolor
+    font-size: 1em
+    margin: 0 0 5px 0
+    padding: 0 0 0 0.5rem
+    height: 3em
+    border-radius: 3px
+    @extends .border-box-sizing
+
+    &:focus
+      outline: none
+      border: 1px solid #aaaaaa
+
+  .input-group
+    display: table
+    width: 98.5%
+    background-color: $bodycolor
+    border: $border
+    border-radius: 3px
+    height: 3em
+    margin: 10px 0 0 0
+
+    &.form-control
+      display: table-cell
+
+label, .label
+  display: inline-block
+  margin-bottom: 5px
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: 0.75em
+  font-weight: 700
+  color: $textcolor

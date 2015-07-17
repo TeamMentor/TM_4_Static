@@ -1,0 +1,69 @@
+form
+  @extends .display-flex
+  flex(1)
+  flex-wrap(wrap)
+  padding: 0.5em
+
+  p
+    font-size: 0.65em
+    margin: 0 0 10px 0
+
+  ul
+    display: block
+    width: $fullwidth
+
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"],
+input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select
+  @extends .border-box-sizing
+  width: $fullwidth
+  background-color: $white;
+  font-family: inherit
+  border: none
+  border: $border
+  color: $textcolor
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 1em
+  margin: 0 0 15px 0
+  padding: 0 0.5em
+  height: 2.5em
+
+  &:focus
+    outline: none;
+    border: 1px solid #aaaaaa;
+
+  .input-field, .button-field, .conditions
+    flex($fullwidth)
+    width: $fullwidth
+
+  .conditions
+    margin: 1em 0
+
+    a
+      text-decoration: underline
+
+label, .label
+  display: inline-block
+  padding: 3px 0 0
+  margin: 0 0 5px
+  text-transform: uppercase
+  text-decoration: none
+  letter-spacing: 1px
+  font-size: 0.75em
+  font-weight: 500
+  color: $headingcolor
+  display: block
+
+.label
+  border-bottom: $border
+  padding: 1.5em 0 12px
+  width: $fullwidth
+
+  a
+    text-decoration: underline
+
+  &.no-underline
+    border: 0

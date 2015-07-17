@@ -1,0 +1,82 @@
+button, .button
+  width: $fullwidth
+  border-radius: 2em
+  padding: 1em
+  border: none
+  display: inline-block
+  background-color: $brandcolor
+  margin: 5px 0
+  color: $white !important
+  z-index: 1
+  -webkit-backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
+  box-shadow: none
+  overflow(hidden)
+  text-align: center
+  font-size: 0.85em
+  letter-spacing: 1px
+  transition(0.3s)
+
+  &:focus
+    outline: none
+
+  &:hover
+    background-color: $brandaccent
+    color: $white
+    transition(0.3s)
+
+  &.btn-search
+    position: relative
+    display: inline-block
+    padding: 0.75em 1em
+    border: none
+    background-color: $transparent
+    color: $basecolor !important
+    font-size: 1em
+    overflow(visible)
+    transition(0.3s)
+    width: auto;
+
+    &:hover
+      background: none
+      color: $brandaccent !important
+
+    &:focus
+      outline: none
+      color: $brandcolor
+
+  &.btn-result
+    font-size: 0.95em
+    padding: 0.5em
+    color: $white
+    box-shadow: none
+    display: inline-block
+    vertical-align: sup
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    -moz-osx-font-smoothing: grayscale
+    position: relative
+
+  &.btn-minor
+    background-color: $transparent
+    color: $textcolor !important;
+    border: $border
+    width: auto
+
+    &:hover
+      background-color: $transparent
+      border: 1px solid $infocolor
+      color: $infocolor !important
+
+  &.full-width
+    display: block
+    width: $fullwidth !important
+
+  &.half-width
+    width: 50%
+    margin: 0 auto
+
+  &.one-third
+    width: 33%
+    margin: 0 auto
