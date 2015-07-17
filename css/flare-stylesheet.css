@@ -33,18 +33,6 @@ aside,
 main,
 #filters label,
 footer,
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12,
 form {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -79,6 +67,7 @@ body {
 nav {
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   -webkit-order: 1;
@@ -98,6 +87,7 @@ nav {
   order: 1;
   -webkit-flex: 45%;
   -webkit-box-flex: 45%;
+  -moz-flex: 45%;
   -ms-flex: 45%;
   flex: 45%;
   width: 45%;
@@ -116,6 +106,7 @@ nav {
   order: 2;
   -webkit-flex: 55%;
   -webkit-box-flex: 55%;
+  -moz-flex: 55%;
   -ms-flex: 55%;
   flex: 55%;
   width: 55%;
@@ -135,6 +126,7 @@ nav {
 .search {
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   -webkit-order: 4;
@@ -152,6 +144,7 @@ nav {
 .search form {
   -webkit-flex: 76%;
   -webkit-box-flex: 76%;
+  -moz-flex: 76%;
   -ms-flex: 76%;
   flex: 76%;
   width: 76%;
@@ -165,6 +158,7 @@ nav {
 .search form input {
   -webkit-flex: 80%;
   -webkit-box-flex: 80%;
+  -moz-flex: 80%;
   -ms-flex: 80%;
   flex: 80%;
   width: 80%;
@@ -181,6 +175,7 @@ nav {
 .search form select {
   -webkit-flex: 20%;
   -webkit-box-flex: 20%;
+  -moz-flex: 20%;
   -ms-flex: 20%;
   flex: 20%;
   width: 20%;
@@ -269,6 +264,7 @@ dl dd .help dd {
 .pagination .next {
   -webkit-flex: 1;
   -webkit-box-flex: 1;
+  -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
   height: 100%;
@@ -278,6 +274,7 @@ dl dd .help dd {
 .pagination .number {
   -webkit-flex: 1;
   -webkit-box-flex: 1;
+  -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
@@ -288,6 +285,7 @@ dl dd .help dd {
   order: 3;
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   flex-direction: column;
@@ -321,6 +319,7 @@ section.row__landing-page {
   align-content: flex-start;
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   width: 100%;
@@ -368,9 +367,13 @@ section.row__label {
   padding: 0 0.5em;
 }
 section.row__landing-page {
+  -webkit-order: 2;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  order: 2;
   overflow: auto;
   background-color: #fff;
-  height: 100%;
+  height: 92%;
 }
 section.tm-summary {
   display: none;
@@ -386,6 +389,7 @@ section.tm-summary table tr td:first-child {
 aside {
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   width: 100%;
@@ -414,6 +418,7 @@ aside#right-nav {
 aside#right-nav:target {
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   -webkit-order: 3;
@@ -435,6 +440,7 @@ main {
   order: 3;
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   -webkit-box-align: flex-start;
@@ -449,12 +455,13 @@ main {
   width: 100%;
   overflow: auto;
   border: 1px solid #dbdbdb;
-  height: 90%;
+  height: 92%;
 }
 article .result,
 article .search-term {
   -webkit-flex: 1;
   -webkit-box-flex: 1;
+  -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
   width: 100%;
@@ -463,12 +470,13 @@ article .search-term {
 article.search-term {
   -webkit-flex: 1 0 auto;
   -webkit-box-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   width: auto;
   border-radius: 30px;
   padding: 1em;
-  margin: 0.5em 0;
+  margin: 0.5em;
   word-wrap: normal;
   background-color: #fff;
   color: #444;
@@ -485,6 +493,7 @@ article.search-term a {
 article.result {
   -webkit-flex: 1 1 400px;
   -webkit-box-flex: 1 1 400px;
+  -moz-flex: 1 1 400px;
   -ms-flex: 1 1 400px;
   flex: 1 1 400px;
   height: 350px;
@@ -512,7 +521,6 @@ article.result a:hover h3 {
 article.result .metadata {
   background-color: #565656;
   border-bottom: 1px solid #dbdbdb;
-  padding: 0.5em;
 }
 article.result .metadata .label {
   padding: 0;
@@ -520,6 +528,7 @@ article.result .metadata .label {
 article.result .metadata ul {
   -webkit-flex: 1;
   -webkit-box-flex: 1;
+  -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
   list-style-type: none;
@@ -551,6 +560,7 @@ article.result .summary {
   justify-content: space-between;
   -webkit-flex: 0 0 30%;
   -webkit-box-flex: 0 0 30%;
+  -moz-flex: 0 0 30%;
   -ms-flex: 0 0 30%;
   flex: 0 0 30%;
   width: 100%;
@@ -640,12 +650,14 @@ footer .si-logo {
   margin: 12px 0 0 0;
   -webkit-flex: 1;
   -webkit-box-flex: 1;
+  -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 footer .icons {
   -webkit-flex: 3;
   -webkit-box-flex: 3;
+  -moz-flex: 3;
   -ms-flex: 3;
   flex: 3;
   text-align: center;
@@ -672,10 +684,101 @@ footer .icons {
 .col-12 {
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   width: 100%;
-  height: 100%;
+  display: block;
+}
+@media only screen and (min-width: 800px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    display: inline-block;
+  }
+  .col-1 {
+    -webkit-flex: 8.333%;
+    -webkit-box-flex: 8.333%;
+    -moz-flex: 8.333%;
+    -ms-flex: 8.333%;
+    flex: 8.333%;
+    width: 8.333%;
+  }
+  .col-2 {
+    -webkit-flex-basis: 16.667%;
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    width: 16.667%;
+  }
+  .col-3 {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    width: 25%;
+  }
+  .col-4 {
+    -webkit-flex-basis: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    width: 33.333%;
+  }
+  .col-5 {
+    -webkit-flex-basis: 41.667%;
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    width: 41.667%;
+  }
+  .col-6 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    width: 50%;
+  }
+  .col-7 {
+    -webkit-flex-basis: 58.333%;
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    width: 58.333%;
+  }
+  .col-8 {
+    -webkit-flex-basis: 66.667%;
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    width: 66.667%;
+  }
+  .col-9 {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    width: 75%;
+  }
+  .col-10 {
+    -webkit-flex-basis: 83.333%;
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    width: 83.333%;
+  }
+  .col-11 {
+    -webkit-flex-basis: 91.667%;
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    width: 91.667%;
+  }
+  .col-12 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    width: 100%;
+  }
 }
 .desktop-hide {
   display: block;
@@ -688,6 +791,7 @@ img {
 }
 .alert {
   width: 99%;
+  height: 4em;
   border: none;
   border-radius: 3px;
   font-size: 0.85em;
@@ -832,8 +936,8 @@ button.btn-minor,
 button.btn-minor:hover,
 .button.btn-minor:hover {
   background-color: transparent;
-  border: 1px solid #dbdbdb;
-  color: #aaa !important;
+  border: 1px solid #565656;
+  color: #565656 !important;
 }
 button.full-width,
 .button.full-width {
@@ -853,6 +957,7 @@ button.one-third,
 form {
   -webkit-flex: 1;
   -webkit-box-flex: 1;
+  -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
   -webkit-flex-wrap: wrap;
@@ -962,6 +1067,7 @@ textarea .conditions,
 select .conditions {
   -webkit-flex: 100%;
   -webkit-box-flex: 100%;
+  -moz-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
   width: 100%;
@@ -1631,6 +1737,7 @@ article ul {
   .icons {
     -webkit-flex: 1;
     -webkit-box-flex: 1;
+    -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
   }
@@ -1681,6 +1788,7 @@ article ul {
     background-size: 35%;
     -webkit-flex: 50%;
     -webkit-box-flex: 50%;
+    -moz-flex: 50%;
     -ms-flex: 50%;
     flex: 50%;
     width: 50%;
@@ -1692,6 +1800,7 @@ article ul {
     background-position: 1.5%;
     -webkit-flex: 5%;
     -webkit-box-flex: 5%;
+    -moz-flex: 5%;
     -ms-flex: 5%;
     flex: 5%;
     width: 5%;
@@ -1699,6 +1808,7 @@ article ul {
   .links {
     -webkit-flex: 50%;
     -webkit-box-flex: 50%;
+    -moz-flex: 50%;
     -ms-flex: 50%;
     flex: 50%;
     width: 50%;
@@ -1717,6 +1827,7 @@ article ul {
     order: 3;
     -webkit-flex: 95%;
     -webkit-box-flex: 95%;
+    -moz-flex: 95%;
     -ms-flex: 95%;
     flex: 95%;
     width: 95%;
@@ -1735,6 +1846,7 @@ article ul {
   .search form button {
     -webkit-flex: 5%;
     -webkit-box-flex: 5%;
+    -moz-flex: 5%;
     -ms-flex: 5%;
     flex: 5%;
     -webkit-order: 3;
@@ -1753,6 +1865,7 @@ article ul {
     order: 2;
     -webkit-flex: 85%;
     -webkit-box-flex: 85%;
+    -moz-flex: 85%;
     -ms-flex: 85%;
     flex: 85%;
     width: 85%;
@@ -1763,6 +1876,7 @@ article ul {
   .search form select {
     -webkit-flex: 15%;
     -webkit-box-flex: 15%;
+    -moz-flex: 15%;
     -ms-flex: 15%;
     flex: 15%;
     width: 15%;
@@ -1789,6 +1903,7 @@ article ul {
     order: 2;
     -webkit-flex: 95%;
     -webkit-box-flex: 95%;
+    -moz-flex: 95%;
     -ms-flex: 95%;
     flex: 95%;
     width: 95%;
@@ -1796,13 +1911,13 @@ article ul {
     position: fixed;
     top: 4em;
     left: 5%;
-    height: 92%;
     padding: 0;
   }
   aside {
     display: block;
     -webkit-flex: 5%;
     -webkit-box-flex: 5%;
+    -moz-flex: 5%;
     -ms-flex: 5%;
     flex: 5%;
     width: 5%;
@@ -1836,6 +1951,7 @@ article ul {
     display: block;
     -webkit-flex: 25%;
     -webkit-box-flex: 25%;
+    -moz-flex: 25%;
     -ms-flex: 25%;
     flex: 25%;
     width: 25%;
@@ -1853,6 +1969,7 @@ article ul {
     -webkit-flex-direction: row;
     -webkit-flex: 100%;
     -webkit-box-flex: 100%;
+    -moz-flex: 100%;
     -ms-flex: 100%;
     flex: 100%;
     width: 100%;
@@ -1861,6 +1978,7 @@ article ul {
   section.row__label .label {
     -webkit-flex: 3;
     -webkit-box-flex: 3;
+    -moz-flex: 3;
     -ms-flex: 3;
     flex: 3;
     width: 100%;
@@ -1868,6 +1986,7 @@ article ul {
   section.row__label ul {
     -webkit-flex: 1;
     -webkit-box-flex: 1;
+    -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
     width: 100%;
@@ -1881,92 +2000,6 @@ article ul {
     margin: 0;
     padding: 0 0 0 1em;
   }
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12 {
-    display: inline-block;
-  }
-  .col-1 {
-    -webkit-flex-basis: 8.333%;
-    -ms-flex-preferred-size: 8.333%;
-    flex-basis: 8.333%;
-    width: 8.333%;
-  }
-  .col-2 {
-    -webkit-flex-basis: 16.667%;
-    -ms-flex-preferred-size: 16.667%;
-    flex-basis: 16.667%;
-    width: 16.667%;
-  }
-  .col-3 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    width: 25%;
-  }
-  .col-4 {
-    -webkit-flex-basis: 33.33%;
-    -ms-flex-preferred-size: 33.33%;
-    flex-basis: 33.33%;
-    width: 33.333%;
-  }
-  .col-5 {
-    -webkit-flex-basis: 41.667%;
-    -ms-flex-preferred-size: 41.667%;
-    flex-basis: 41.667%;
-    width: 41.667%;
-  }
-  .col-6 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    width: 50%;
-  }
-  .col-7 {
-    -webkit-flex-basis: 58.333%;
-    -ms-flex-preferred-size: 58.333%;
-    flex-basis: 58.333%;
-    width: 58.333%;
-  }
-  .col-8 {
-    -webkit-flex-basis: 66.667%;
-    -ms-flex-preferred-size: 66.667%;
-    flex-basis: 66.667%;
-    width: 66.667%;
-  }
-  .col-9 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    width: 75%;
-  }
-  .col-10 {
-    -webkit-flex-basis: 83.333%;
-    -ms-flex-preferred-size: 83.333%;
-    flex-basis: 83.333%;
-    width: 83.333%;
-  }
-  .col-11 {
-    -webkit-flex-basis: 91.667%;
-    -ms-flex-preferred-size: 91.667%;
-    flex-basis: 91.667%;
-    width: 91.667%;
-  }
-  .col-12 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    width: 100%;
-  }
   .btn-search {
     padding: 5px 0 0 10px;
     font-size: 1.25em;
@@ -1977,6 +2010,7 @@ article ul {
   footer .icons {
     -webkit-flex: 2;
     -webkit-box-flex: 2;
+    -moz-flex: 2;
     -ms-flex: 2;
     flex: 2;
   }
@@ -2013,6 +2047,7 @@ article ul {
   .conditions {
     -webkit-flex: 1 1 50%;
     -webkit-box-flex: 1 1 50%;
+    -moz-flex: 1 1 50%;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
     padding: 0 0.5em;
