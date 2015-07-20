@@ -35,8 +35,9 @@
 
   // Navigation
 
-  nav
-    height: 4em
+  landing-bar
+    nav
+      height: 4em
 
   .logo
     background-color: transparent;
@@ -48,9 +49,7 @@
   .application-logo
     background: $white url(../assets/logos/tm-icon.svg) no-repeat
     background-size: 30px
-    background-position: 1.5%
-    flex(5%)
-    width: 5%
+    background-position: 10px 12px
 
   .links
     flex(50%)
@@ -131,7 +130,6 @@
     height: $fullheight
     padding: 0
     position: fixed
-    top: 4em
     border-top: 0
 
     &#left-nav
@@ -141,6 +139,10 @@
           width: $fullwidth
           border: 0
           border-bottom: $border
+
+          &:first-child
+            height: 4em
+            float: none
 
     &#right-nav
       display: none
@@ -217,7 +219,6 @@
 
     &.result
       display: inline-block
-      width: 31%
 
   // Typography
 
