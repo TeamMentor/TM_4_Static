@@ -118,12 +118,31 @@ dl
     span.sub-nav__icon
       padding: 1em 0.5em 0 0
 
-    ul
-      width: $fullwidth
+    &.editor
+      padding: 0
 
-      li
-        display: inline-block
-        width: 25%
+      form
+        width: $fullwidth
+        padding: 0
+
+        div
+          width: 25%
+          display: inline-block
+          padding: 1em
+          border-right: 1px solid $basecolor
+
+          &:last-child
+            border-right: 0
+
+          label
+            margin: 0
+
+          input[type=radio]
+            display: none
+
+            &:checked
+              + label
+                color: $brandcolor
 
   .scroll
     height: 200px
@@ -151,6 +170,12 @@ dl
       li
         padding: 0.5em
         border-bottom: $border
+
+    form
+      padding: 0
+
+      input
+        margin: 0 !important
 
     .help
       dd
