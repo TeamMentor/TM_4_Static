@@ -81,13 +81,11 @@ section
 
 // Asides
 
-aside
+aside, left-navigation
   @extends .display-flex
   flex($fullwidth)
   width: $fullwidth
   background-color: $white
-  border-top: $border
-  border-bottom: $border
 
   ul
     width: $fullwidth
@@ -95,11 +93,17 @@ aside
 
   &#left-nav
     ul
+      height: 4em
+
       li
         padding: 1em
         display: inline-block
         border-right: $border
-        width: 25%
+        width: 20%
+
+        &:first-child
+          padding: 0
+          float: left
 
   &#right-nav
     display: none
@@ -163,8 +167,8 @@ article
 
   &.result
     flex(1 1 400px)
-    height: 350px
     margin: 0.5em
+    min-height: 350px
     padding: 0
     text-align: center
     border: $border
