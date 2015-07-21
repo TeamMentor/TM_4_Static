@@ -29,30 +29,29 @@
   // First Level Navigation
 
   .fixed
-    #team-mentor-navigation, #customer-navigation
+    #team-mentor-navigation
       height: 60px
 
-    #customer-navigation
-      margin-bottom: 0
-
-      #customer-logo
-        text-align: left
-        width: 250px
-        height: auto
-        padding: 3px 20px
-
-    #team-mentor-navigation
       #tm-logo, #links, #links ul li
         display: inline-block
 
+      #tm-logo, #customer-logo
+        float: left
+        margin: 12px 0
+
       #tm-logo
         background-position: 0 0
-        float: left
-        margin: 7px 0 0 20px
-        width: 36%
+        width: 15%
+        height: 20px
+        background-size: 100%
+
+      #customer-logo
+        width: 15%
+        height: 20px
+        margin: 12px 10px
 
       #links
-        width: 60%
+        width: auto
         float: right
 
         ul
@@ -122,14 +121,20 @@
               padding: 0 1em 0 0
 
   #customer
-    #application, #landing-page
+    #application
+      padding-top: 0
+
+    #landing-page
       padding-top: 60px
 
     #landing-page #application
       margin: 10px 0 0 0
 
     #search-div, #search-div-2
-      top: 120px
+      top: 55px
+
+    #results-2
+      margin-top: 140px
 
   #search-div, #search-div-2
     top: 60px
@@ -153,6 +158,16 @@
     width: 8%
 
 @media (min-width: 853px)
+  // Navigation
+
+  #team-mentor-navigation
+    #tm-logo, #customer-logo
+      margin: 5px 10px !important
+      width: 200px !important
+      height: 35px !important
+
+    #tm-logo
+      background-size: 180px !important
 
   // Landing Page
 
@@ -229,7 +244,7 @@
   // Application
 
   #main-app-view
-    margin-top: 140px
+    margin-top: 70px
 
   #search-div-2
     width: 75%
