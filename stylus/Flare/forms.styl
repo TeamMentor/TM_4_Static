@@ -12,7 +12,6 @@ form
     display: block
     width: $fullwidth
 
-
   input[type="text"], input[type="password"], input[type="date"], input[type="datetime"],
   input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"],
   input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select
@@ -35,18 +34,16 @@ form
       outline: none;
       border: 1px solid #aaaaaa;
 
-    .input-field, .button-field, .conditions
-      flex($fullwidth)
-      width: $fullwidth
-    
-    .conditions
-      margin: 1em 0
+  .input-field, .button-field, .conditions
+    flex($fullwidth)
+    width: $fullwidth
+    margin: 0.15em 0
 
-      a
-        text-decoration: underline
+  a
+    text-decoration: underline
 
-    label
-      margin: 1em
+  label, .label
+    margin: 0
 
 label, .label
   display: inline-block
