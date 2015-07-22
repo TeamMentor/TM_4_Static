@@ -57,7 +57,7 @@
 
     ul
       li
-        padding: 0.5em 1em
+        padding: 0.75em 1em
         vertical-align: middle
 
         &:last-child
@@ -71,14 +71,12 @@
     top: 0
     left: 5%
     overflow(hidden)
-    border-top: 0
     background-color: white
     display: inline-block
     height: 4em
 
     form
       width: $fullwidth
-      border-bottom: $border
 
       button
         flex(5%)
@@ -106,7 +104,7 @@
   // Application
 
   .application
-    flex-order(5)
+    flex-order(2)
     height: 92%
     flex-wrap(nowrap)
 
@@ -131,6 +129,7 @@
     height: $fullheight
     padding: 0
     position: fixed
+    top: 0
     border-top: 0
 
     &#left-nav
@@ -244,14 +243,19 @@
 
   // Forms
 
-  .input-field, .button-field, .conditions
-    flex(1 1 50%)
-    padding: 0 0.5em
+  form
+    .input-field, .button-field, .conditions
+      flex(1 1 50%)
+      width: 50%
+      padding: 0.5em
 
-  .button-field
-    ul
-      li
-        display: inline-block
+    .conditions
+      margin: 1em 0
+
+    .button-field
+      ul
+        li
+          display: inline-block
 
   // Landing Page
 
@@ -278,9 +282,7 @@
   // Sprites
 
   .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance
-    width: 100px
     padding: 0
-    height: 100px
 
   // Sub Navigation
 
