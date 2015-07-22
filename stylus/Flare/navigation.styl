@@ -25,7 +25,7 @@ landing-bar
 .application-logo
   background: $white url(../assets/logos/tm-icon.svg) no-repeat
   background-size: 25px
-  background-position: 10px
+  background-position: 10px 12px
   width: 50px
   height: 45px
   display:inline-block
@@ -49,14 +49,14 @@ landing-bar
 .search
   @extends .display-flex
   flex(100%)
-  flex-order(4)
+  flex-order(1)
   width: $fullwidth
   position: fixed
   left: 0
-  bottom: 0
+  top: 0
   background-color: $white
   z-index: 99
-  border-top: $border
+  border-bottom: $border
 
   form
     flex(76%)
