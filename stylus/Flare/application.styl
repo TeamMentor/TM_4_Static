@@ -1,9 +1,13 @@
 .application
-  flex-order(3)
+  @extends .display-flex
+  flex-order(2)
   flex($fullwidth)
   flex-direction(column)
   width: $fullwidth
-  height: 88%
+  height: 94%
+  position: fixed
+  top: 3.5em
+  left: 0
   display: block
   overflow(auto)
 
@@ -67,8 +71,6 @@ section
     height: 92%
 
   &.tm-summary
-    display: none
-
     table
       border: 0
       margin: 0.5em 0
@@ -79,12 +81,41 @@ section
             width: 30%
             margin: 0
 
+
 // Asides
 
-aside, left-navigation
+left-navigation
   @extends .display-flex
   flex($fullwidth)
   width: $fullwidth
+  flex-order(99)
+  background-color: $white
+  flex-order(2)
+  position: fixed
+  left: 0
+  bottom: 0
+  border-top: $border
+
+  ul
+    width: $fullwidth
+    text-align: center
+    height: 4em
+
+    li
+      padding: 1em
+      display: inline-block
+      border-right: $border
+      width: 20%
+
+      &:first-child
+        padding: 0
+        float: left
+
+aside
+  @extends .display-flex
+  flex($fullwidth)
+  width: $fullwidth
+  flex-order(99)
   background-color: $white
 
   ul
@@ -92,6 +123,9 @@ aside, left-navigation
     text-align: center
 
   &#left-nav
+    border-bottom: $border
+    flex-order(2)
+
     ul
       height: 4em
 
@@ -129,7 +163,7 @@ aside, left-navigation
 
 main
   @extends .display-flex
-  flex-order(3)
+  flex-order(1)
   flex($fullwidth)
   flex-align-items(flex-start)
   flex-align-content(flex-start)
