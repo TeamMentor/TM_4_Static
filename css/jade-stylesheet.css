@@ -50,7 +50,7 @@ img,
 }
 img,
 object {
-  height: auto;
+  max-height: 100%;
   max-width: 100%;
 }
 .lge-container {
@@ -101,10 +101,10 @@ object {
 }
 #customer #search-div,
 #customer #search-div-2 {
-  top: 240px;
+  top: 179px;
 }
 #customer #results-2 {
-  margin-top: 165px;
+  margin-top: 140px;
 }
 .bg,
 #results,
@@ -178,7 +178,7 @@ object {
   font-size: 1.25em;
 }
 #main-app-view {
-  margin-top: 120px;
+  margin-top: 110px;
 }
 #main-app-view h5 {
   margin: 15px 0;
@@ -187,7 +187,7 @@ object {
 #search-div-2 {
   margin-bottom: 5px;
   position: fixed;
-  top: 165px;
+  top: 170px;
   left: 0;
   z-index: 96;
   margin: 0 auto;
@@ -249,25 +249,34 @@ object {
   background-color: #fff;
   border: 1px solid #dbdbdb;
 }
-.fixed #team-mentor-navigation,
-.fixed #customer-navigation {
+.fixed #team-mentor-navigation {
   height: auto;
   text-align: center;
   float: left;
-}
-.fixed #customer-navigation {
-  border-bottom: 1px solid #dbdbdb;
-  margin: 0 0 10px 0;
-}
-.fixed #customer-navigation #customer-logo {
-  height: 50px;
-  padding: 5px 0;
+  padding: 0.25em;
 }
 .fixed #team-mentor-navigation #tm-logo {
   background: #fff url("../assets/logos/logos.png") no-repeat;
+  background-size: 187px;
   height: 40px;
   margin: 0 auto 10px auto;
   background-position: top center;
+}
+.fixed #team-mentor-navigation #tm-logo.customization {
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  margin: 0 auto 10px auto;
+  display: inline-block;
+  float: left;
+}
+.fixed #team-mentor-navigation #customer-logo {
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  margin: 0 auto 10px auto;
+  display: inline-block;
+  float: left;
 }
 .fixed #team-mentor-navigation #message {
   font-size: 0.65em !important;
@@ -303,6 +312,26 @@ object {
 .fixed #team-mentor-navigation #links a:focus,
 .fixed #team-mentor-navigation #links a:active {
   color: #6c9020;
+}
+.fixed #team-mentor-navigation.sony {
+  background-color: #000;
+}
+.fixed #team-mentor-navigation.sony #tm-logo {
+  background-image: none;
+  background-color: #000;
+  height: 50px;
+}
+.fixed #team-mentor-navigation.sony #message,
+.fixed #team-mentor-navigation.sony #links {
+  color: #fff;
+}
+.fixed #team-mentor-navigation.sony #message a,
+.fixed #team-mentor-navigation.sony #links a {
+  color: #fff;
+}
+.fixed #team-mentor-navigation.sony #message a:hover,
+.fixed #team-mentor-navigation.sony #links a:hover {
+  color: #dbdbdb;
 }
 .sub-nav {
   background-color: #fff;
@@ -1504,18 +1533,9 @@ table.data thead {
   }
 }
 @media (min-width: 660px) {
-  .fixed #team-mentor-navigation,
-  .fixed #customer-navigation {
+  .fixed #team-mentor-navigation {
     height: 60px;
-  }
-  .fixed #customer-navigation {
-    margin-bottom: 0;
-  }
-  .fixed #customer-navigation #customer-logo {
-    text-align: left;
-    width: 250px;
-    height: auto;
-    padding: 3px 20px;
+    padding: 0.5em;
   }
   .fixed #team-mentor-navigation #tm-logo,
   .fixed #team-mentor-navigation #links,
@@ -1524,12 +1544,25 @@ table.data thead {
   }
   .fixed #team-mentor-navigation #tm-logo {
     background-position: 0 0;
+    background-size: 100%;
+    width: 33%;
     float: left;
-    margin: 7px 0 0 20px;
-    width: 36%;
+  }
+  .fixed #team-mentor-navigation #tm-logo.customization {
+    width: 15%;
+    height: 20px;
+    line-height: 20px;
+    background-size: 100%;
+    margin: 10px;
+  }
+  .fixed #team-mentor-navigation #customer-logo {
+    margin: 10px;
+    width: 15%;
+    height: 20px;
+    line-height: 20px;
   }
   .fixed #team-mentor-navigation #links {
-    width: 60%;
+    width: auto;
     float: right;
   }
   .fixed #team-mentor-navigation #links ul {
@@ -1599,7 +1632,9 @@ table.data thead {
   #application #footer ul.si li:first-child {
     padding: 0 1em 0 0;
   }
-  #customer #application,
+  #customer #application {
+    padding-top: 0;
+  }
   #customer #landing-page {
     padding-top: 60px;
   }
@@ -1608,7 +1643,10 @@ table.data thead {
   }
   #customer #search-div,
   #customer #search-div-2 {
-    top: 120px;
+    top: 55px;
+  }
+  #customer #results-2 {
+    margin-top: 140px;
   }
   #search-div,
   #search-div-2 {
@@ -1633,6 +1671,28 @@ table.data thead {
   }
 }
 @media (min-width: 853px) {
+  .fixed #team-mentor-navigation #tm-logo.customization {
+    width: 200px;
+    height: 38px;
+    line-height: 40px;
+    margin: 0;
+  }
+  .fixed #team-mentor-navigation #customer-logo {
+    width: 200px;
+    height: 38px;
+    line-height: 40px;
+  }
+  .fixed #team-mentor-navigation #tm-logo {
+    margin: 0;
+    background-size: 180px;
+    height: 33px;
+  }
+  .fixed #team-mentor-navigation #customer-logo {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto 10px;
+  }
   .landing-page #links {
     margin: 0.75em 0 0 0;
   }
@@ -1703,7 +1763,7 @@ img
     line-height: 3.75em;
   }
   #main-app-view {
-    margin-top: 140px;
+    margin-top: 130px;
   }
   #search-div-2 {
     width: 75%;
