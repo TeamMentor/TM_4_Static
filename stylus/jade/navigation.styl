@@ -11,25 +11,35 @@
   background-color: $white
   border: $border
 
-  #team-mentor-navigation, #customer-navigation
+  #team-mentor-navigation
     height: auto
     text-align: center
     float: left
+    padding: 0.25em
 
-  #customer-navigation
-    border-bottom: $border
-    margin: 0 0 10px 0
-
-    #customer-logo
-      height: 50px
-      padding: 5px 0
-
-  #team-mentor-navigation
     #tm-logo
       background: $white url('../assets/logos/logos.png') no-repeat
+      background-size: 187px
       height: 40px
       margin: 0 auto 10px auto
       background-position: top center
+
+      &.customization
+        height: 40px
+        line-height: 40px
+        width: 50%
+        margin: 0 auto 10px auto
+        display: inline-block
+        float: left
+
+    #customer-logo
+      height: 40px
+      line-height: 40px
+      width: 50%
+      margin: 0 auto 10px auto
+      display: inline-block
+      float: left
+
 
     #message
       font-size: 0.65em !important
@@ -63,6 +73,23 @@
 
         &:hover, &:focus, &:active
          color: $alertoktext
+
+    &.sony
+      background-color: black
+
+      #tm-logo
+        background-image: none
+        background-color: black
+        height: 50px
+
+      #message, #links
+        color: $white
+
+        a
+          color: $white
+
+          &:hover
+            color: $bordercolor
 
 // Second Level Navigation
 
