@@ -17,6 +17,15 @@
     float: left
     padding: 0.25em
 
+    &.sony
+      background-color: black
+
+      a
+        color: $white
+
+        &:hover
+          color: $bordercolor
+
     #tm-logo
       background: $white url('../assets/logos/logos.png') no-repeat
       background-size: 187px
@@ -31,6 +40,10 @@
         margin: 0 auto 10px auto
         display: inline-block
         float: left
+
+      &.sony
+        background-image: none
+        background-color: black
 
     #customer-logo
       height: 40px
