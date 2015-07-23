@@ -10,7 +10,8 @@
 
   .about, .call-to-action, .usp
     background: $textcolor url(../assets/stock-img/bg-img-medium.jpg) no-repeat
-    padding: 7% 10% 5%
+    padding: 2em
+    min-height: 200px
     text-align: center
 
     h2, h3
@@ -54,6 +55,7 @@
   .links
     flex(50%)
     width: 50%
+    font-size: 0.85em
 
     ul
       li
@@ -118,6 +120,13 @@
     top: 4em
     left: 5%
     padding: 0
+
+  .container
+    main
+      position: relative
+      top: 0
+      left: 0
+      width: 100%
 
   // Asides
 
@@ -261,7 +270,8 @@
 
   .about, .call-to-action, .usp
     background: $textcolor url(../assets/stock-img/bg-img-large.jpg) no-repeat
-    padding: 8% 15%
+    padding: 5em 15em
+    min-height: 300px
 
   .about
     background-position: 0px -1400px
@@ -300,14 +310,6 @@
   .container
     width: 1285px
     margin: 0 auto
-
-    main
-      position: relative
-      top: 0
-      left: 0
-
-  .about, .call-to-action, .usp
-    padding: 8% 20%
 
   .reasons, .about-us, .features
     padding: 3em 20%
