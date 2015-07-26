@@ -12,7 +12,7 @@
 
       #tm-logo
         background-position: 0 0
-        background-size: 100%
+        background-size: 200px
         width: 33%
         float: left
 
@@ -71,36 +71,35 @@
   #application
     margin-top: 70px
 
-  #landing-page, #application
-    #footer
-      padding: 1em 0;
-      ul
-        text-align: left
+  #footer
+    padding: 1em 0;
+    ul
+      text-align: left
+
+      li
+        display: inline-block
+
+      &.contact
+        text-align: right
+        padding: 0 1em 0 0
 
         li
-          display: inline-block
-
-        &.contact
+          width: 20%
           text-align: right
-          padding: 0 1em 0 0
+          margin: 0
+          font-size: 0.85em
 
-          li
-            width: 20%
-            text-align: right
-            margin: 0
-            font-size: 0.85em
+          &:first-child
+            width: auto
+            display: inline-block
+            text-align: left
 
-            &:first-child
-              width: auto
-              display: inline-block
-              text-align: left
+      &.si
+        padding: 0 1em
 
-        &.si
-          padding: 0 1em
-
-          li
-            &:first-child
-              padding: 0 1em 0 0
+        li
+          &:first-child
+            padding: 0 1em 0 0
 
   #customer
     #application

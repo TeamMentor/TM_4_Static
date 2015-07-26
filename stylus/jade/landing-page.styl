@@ -24,7 +24,7 @@
     border-left: $border
     border-right: $border
 
-  #footer, #clients
+  #clients
     text-align: center
 
   #about
@@ -62,35 +62,37 @@
   #clients
     padding: 0 0 5% 0
 
-  #footer
-    ul
-      margin: 0
-      padding: 10px 0
-      font-size: 0.75em
+#footer
+  text-align: center
+  
+  ul
+    margin: 0
+    padding: 10px 0
+    font-size: 0.75em
 
-      &.si
-        padding: 1em 0 0 1em
+    &.si
+      padding: 1em 0 0 1em
 
-        a
-          text-decoration: underline
+      a
+        text-decoration: underline
 
+    li
+      list-style-type: none
+      display: inline-block
+
+      img
+        vertical-align: middle
+        padding: 0 5px 0 0
+
+    &.contact
       li
-        list-style-type: none
-        display: inline-block
+        width: 15%
+        margin: 0 0 10px
+        text-align: center
 
-        img
-          vertical-align: middle
-          padding: 0 5px 0 0
+        &:first-child
+          display: block
+          width: 100%
 
-      &.contact
-        li
-          width: 15%
-          margin: 0 0 10px
-          text-align: center
-
-          &:first-child
-            display: block
-            width: 100%
-
-        a
-          text-decoration: none
+      a
+        text-decoration: none
