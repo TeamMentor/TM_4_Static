@@ -32,6 +32,12 @@ section
     padding: 0 1em
     display: inline-block
 
+    form
+      padding: 0
+
+      textarea
+        min-height: 20em
+
   &.article-info
     flex-align-self(stretch)
     height: $fullheight
@@ -44,7 +50,10 @@ section
 
     ul
       width: 100%
-      padding: 0.5em 0
+      padding: 0.5em
+
+      &.display-inline
+        padding: 0
 
     span.text
       padding: 0 0 0 1em
