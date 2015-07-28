@@ -32,17 +32,13 @@ section
     padding: 0 1em
     display: inline-block
 
-    form
-      padding: 0
-
-      textarea
-        min-height: 20em
-
-  &.article-info
+  &.article-info, &.article-body
     flex-align-self(stretch)
     height: $fullheight
-    background: $infocolor
     padding: 1em
+
+  &.article-info
+    background: $infocolor
     overflow(hidden)
 
     .label, ul, a
@@ -63,15 +59,11 @@ section
         color: $brandaccent
 
   &.article-body
-    flex-align-self(stretch)
-    height: $fullheight
-    padding: 1em
-
     a
-      text-decoration: underline;
+      text-decoration: underline
 
   &.row__label
-    padding: 0 0.5em
+    padding: 1em 0
 
   &.row__landing-page
     flex-order(2)
@@ -89,6 +81,13 @@ section
           &:first-child
             width: 30%
             margin: 0
+
+  &.import-files
+    background-color: $bordercolor
+    padding: 0.5em 1em
+
+    p
+      font-size: 0.85em
 
 
 // Asides

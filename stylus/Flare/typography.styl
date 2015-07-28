@@ -36,12 +36,17 @@ ul, ol
   margin: 0
   padding: 0
   list-style-type: none
+  width: $fullwidth
 
   &.display-inline
     li
       display: inline-block
       padding: 0.5em
       vertical-align: top
+
+  &.toggle-bar
+    background-color: $brandaccent
+    border: $border
 
 code, pre
   font-family: monospace, monospace
@@ -73,7 +78,7 @@ a
   text-decoration: none
   transitions(color 0.3s)
 
-  &:hover, &:active, &:focus
+  &:hover, &:active, &:focus, &.active
     color: $brandcolor
     text-decoration: none
     transitions(color 0.3s)

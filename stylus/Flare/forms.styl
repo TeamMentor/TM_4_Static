@@ -4,9 +4,33 @@ form
   flex-wrap(wrap)
   padding: 0.5em
 
+  &.article-editor
+    padding: 0
+
+    textarea
+      min-height: 20em
+      margin: 1em 0 0 0
+
+    label
+      margin: 0
+      color: $textcolor
+      font-size: 1em
+
+    input[type=radio]
+      display: none
+
+      &:checked
+        + label
+          color: $headingcolor
+
+    li
+      border-left: 1px solid $brandcolor
+
+      &:first-child
+        border-left: none
+
   p
     font-size: 0.65em
-    margin: 0 0 10px 0
 
   ul
     display: block
@@ -59,7 +83,7 @@ label, .label
 
 .label
   border-bottom: $border
-  padding: 1.5em 0 12px
+  padding: 1.5em 0
   width: $fullwidth
 
   a
