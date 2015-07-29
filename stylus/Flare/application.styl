@@ -192,13 +192,19 @@ article
     display: inline-block
 
   &.search-term
-    @extends .display-flex
-    flex(0 0 auto)
-    flex-direction(row)
+    flex(1 0 auto)
     width: auto
+    border-radius: 30px
+    padding: 1em
     margin: 0.5em
     word-wrap: normal
+    background-color: $white
     color: $textcolor
+    border: $border
+
+    [class^="icon-"], [class*=" icon-"]
+      padding: 0 10px 0 0
+      font-size: 0.85em
 
     div
       width: 40%
@@ -214,10 +220,10 @@ article
         color: $bodycolor
 
     a
-      width: 55%
+      //width: 55%
       text-decoration: none
-      display: inline-block
-      padding: 0 1em
+      //display: inline-block
+      //padding: 0 1em
 
   &.result
     flex(1 1 400px)
