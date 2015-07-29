@@ -192,16 +192,19 @@ article
     display: inline-block
 
   &.search-term
-    @extends .display-flex
-    flex(0 0 auto)
-    flex-direction(row)
+    flex(1 0 auto)
     width: auto
+    border-radius: 30px
+    padding: 1em
     margin: 0.5em
     word-wrap: normal
-    color: $textcolor
     background-color: $white
+    color: $textcolor
     border: $border
-    padding: 1em
+
+    [class^="icon-"], [class*=" icon-"]
+      padding: 0 10px 0 0
+      font-size: 0.85em
 
     div
       width: 40%
