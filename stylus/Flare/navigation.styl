@@ -157,7 +157,7 @@ dl
                 color: $white
 
   .scroll
-    height: 200px
+    max-height: 200px
     overflow(auto)
 
   dd
@@ -183,6 +183,33 @@ dl
     .help
       dd
         flex-direction(column)
+
+  &.breadcrumbs
+    @extends .display-flex
+    margin: 0.5em
+    border-bottom: $border
+    flex-align-items(flex-start)
+    flex-wrap(wrap)
+
+    dd
+      flex(0 0 auto)
+      border: 0
+      display: inline-block
+      height: $fullheight
+      background-color: $bodycolor
+
+      &::after
+        content: " / "
+        padding: 0 0.5em 0 2em
+        color: $basecolor
+
+      &:last-child
+        &::after
+          content: ''
+          padding: 0
+
+      &.active
+        background-color: $white
 
 // Pagination
 
