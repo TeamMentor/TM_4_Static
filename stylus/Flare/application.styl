@@ -63,7 +63,7 @@ section
       text-decoration: underline
 
   &.row__label
-    padding: 1em 0
+    padding: 1em
 
   &.row__landing-page
     flex-order(2)
@@ -186,29 +186,38 @@ main
 
 article
   width: $fullwidth
-  
+
   &.result, &.search-term
     flex(1)
-    width: $fullwidth
     display: inline-block
 
   &.search-term
-    flex(1 0 auto)
+    @extends .display-flex
+    flex(0 0 auto)
+    flex-direction(row)
     width: auto
-    border-radius: 30px
-    padding: 1em
     margin: 0.5em
     word-wrap: normal
-    background-color: $white
     color: $textcolor
-    border: $border
 
-    [class^="icon-"], [class*=" icon-"]
-      padding: 0 10px 0 0
-      font-size: 0.85em
+    div
+      width: 40%
+      background-color: $textcolor
+      display: inline-block
+
+      .number
+        width: $fullwidth
+        font-size: 1.5em
+        color: $brandaccent
+
+      .label
+        color: $bodycolor
 
     a
+      width: 55%
       text-decoration: none
+      display: inline-block
+      padding: 0 1em
 
   &.result
     flex(1 1 400px)
