@@ -183,7 +183,6 @@
       flex-direction(row)
       flex($fullwidth)
       width: $fullwidth
-      padding: 0.5em
 
       .label
         flex(3)
@@ -227,6 +226,9 @@
 
     &.result
       display: inline-block
+
+    &.search-term
+      padding: 0
 
   // Typography
 
@@ -303,7 +305,7 @@
     margin: 0
 
     .scroll
-      height: $fullheight
+      max-height: $fullheight
 
 @media $medium
   .container
