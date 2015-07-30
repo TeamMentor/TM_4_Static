@@ -88,13 +88,11 @@
 
       input
         background-color: $transparent
-        padding: 1em 0 0 1em
         flex-order(2)
         flex(85%)
         width: 85%
 
         &:focus
-          margin: 0
           transition(0.3s)
 
       select
@@ -128,20 +126,18 @@
       left: 0
       width: 100%
 
-  // Asides
+  // Left Navigation
 
-  aside
-    display: block
+  left-navigation
+    top: 0
+    width:5%
     flex(5%)
-    width: 5%
+    display: block
     text-align: center
     height: $fullheight
     padding: 0
-    position: fixed
-    top: 0
-    border-top: 0
 
-    &#left-nav
+    aside
       ul
         li
           display: block
@@ -153,25 +149,11 @@
             height: 4em
             float: none
 
-    &#right-nav
-      display: none
-      right: 0
-      top: 4em
-      text-align: left
-      padding: 0 1em
-      overflow(auto)
+  // Filter
 
-      &:target
-        flex-order(3)
-        border-top: 0
-        display: block
-        flex(25%)
-        width: 25%
-        height: 92%
-
-        ~ main
-          height: 90%
-          width: 70%
+  filters
+    height: $fullheight
+    padding: 0
 
   // Sections
 
@@ -187,6 +169,7 @@
       .label
         flex(3)
         width: $fullwidth
+        padding: 0.5em 0 1em
 
       ul
         flex(1)
