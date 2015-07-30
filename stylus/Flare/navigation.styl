@@ -71,7 +71,7 @@ landing-bar
       flex(80%)
       width: 80%
       transitions(0.3s)
-      padding: 1.15em 1.5em 0
+      padding: .5em .5em 0
       border: 0 !important
 
       :focus
@@ -124,6 +124,7 @@ dl
     flex-justify-content(space-between)
     padding: 0.35em 0.5em
     background-color: $bordercolor
+    font-size: 1.08em
 
     span.sub-nav__icon
       padding: 1em 0.5em 0 0
@@ -166,7 +167,7 @@ dl
     padding: 1em
     margin: 0
     border-bottom: $border
-    font-size: 0.85em
+    font-size: 0.95em
 
     a
       text-decoration: none !important
@@ -190,6 +191,8 @@ dl
     border-bottom: $border
     flex-align-items(flex-start)
     flex-wrap(wrap)
+    text-transform: uppercase
+    letter-spacing: 1px
 
     dd
       flex(0 0 auto)
@@ -197,6 +200,7 @@ dl
       display: inline-block
       height: $fullheight
       background-color: $bodycolor
+      font-size: 0.75em
 
       &::after
         content: " / "
