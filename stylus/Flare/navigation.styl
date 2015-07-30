@@ -157,7 +157,7 @@ dl
                 color: $white
 
   .scroll
-    height: 200px
+    max-height: 200px
     overflow(auto)
 
   dd
@@ -168,20 +168,11 @@ dl
     border-bottom: $border
     font-size: 0.85em
 
+    a
+      text-decoration: none !important
+
     span.text
       padding: 0.35em 0 0 0
-
-    ul
-      padding: 0
-      list-style-type: none
-      background-color: $bodycolor
-      border: $border
-      border-bottom: 0
-      margin: 1em 0
-
-      li
-        padding: 0.5em
-        border-bottom: $border
 
     form
       padding: 0
@@ -192,6 +183,35 @@ dl
     .help
       dd
         flex-direction(column)
+
+  &.breadcrumbs
+    @extends .display-flex
+    margin: 0.5em
+    border-bottom: $border
+    flex-align-items(flex-start)
+    flex-wrap(wrap)
+    text-transform: uppercase
+    letter-spacing: 1px
+
+    dd
+      flex(0 0 auto)
+      border: 0
+      display: inline-block
+      height: $fullheight
+      background-color: $bodycolor
+
+      &::after
+        content: " / "
+        padding: 0 0.5em 0 2em
+        color: $basecolor
+
+      &:last-child
+        &::after
+          content: ''
+          padding: 0
+
+      &.active
+        background-color: $white
 
 // Pagination
 

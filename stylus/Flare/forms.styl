@@ -4,9 +4,49 @@ form
   flex-wrap(wrap)
   padding: 0.5em
 
+  &.article-editor
+    padding: 0
+
+    textarea
+      min-height: 20em
+      margin: 1em 0 0 0
+
+    label
+      margin: 0
+      color: $textcolor
+      font-size: 1em
+
+    input[type='radio'], input[type='checkbox']
+      display: none
+
+      &:checked
+        + label
+          color: $headingcolor
+
+  &.article-editor-grid
+    flex-align-items(flex-start)
+    flex-justify-content(flex-start)
+    flex-align-content(flex-start)
+
+    div
+      flex(0 0 auto)
+
+      input[type='checkbox']
+        display: none
+
+        &:checked
+          + label
+            background-color: $white
+
+      label
+        font-size: 1.5em
+        padding: 0.5em
+        margin: 0.5em
+        border: $border
+        border-radius: 2em
+
   p
     font-size: 0.65em
-    margin: 0 0 10px 0
 
   ul
     display: block
@@ -59,7 +99,7 @@ label, .label
 
 .label
   border-bottom: $border
-  padding: 1.5em 0 12px
+  padding: 1.5em 0
   width: $fullwidth
 
   a

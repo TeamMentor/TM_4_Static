@@ -32,11 +32,13 @@ section
     padding: 0 1em
     display: inline-block
 
-  &.article-info
+  &.article-info, &.article-body
     flex-align-self(stretch)
     height: $fullheight
-    background: $infocolor
     padding: 1em
+
+  &.article-info
+    background: $infocolor
     overflow(hidden)
 
     .label, ul, a
@@ -44,7 +46,10 @@ section
 
     ul
       width: 100%
-      padding: 0.5em 0
+      padding: 0.5em
+
+      &.display-inline
+        padding: 0
 
     span.text
       padding: 0 0 0 1em
@@ -54,21 +59,21 @@ section
         color: $brandaccent
 
   &.article-body
-    flex-align-self(stretch)
-    height: $fullheight
-    padding: 1em
-
     a
-      text-decoration: underline;
+      text-decoration: underline
 
   &.row__label
-    padding: 0 0.5em
+    padding: 1em
 
   &.row__landing-page
     flex-order(2)
     overflow(auto)
     background-color: $white
     height: 92%
+
+    button, .button
+      width: auto
+
 
   &.tm-summary
     table
@@ -80,6 +85,13 @@ section
           &:first-child
             width: 30%
             margin: 0
+
+  &.import-files
+    background-color: $bordercolor
+    padding: 0.5em 1em
+
+    p
+      font-size: 0.85em
 
 
 // Asides
@@ -178,10 +190,9 @@ main
 
 article
   width: $fullwidth
-  
+
   &.result, &.search-term
     flex(1)
-    width: $fullwidth
     display: inline-block
 
   &.search-term
@@ -199,8 +210,24 @@ article
       padding: 0 10px 0 0
       font-size: 0.85em
 
+    div
+      width: 40%
+      background-color: $textcolor
+      display: inline-block
+
+      .number
+        width: $fullwidth
+        font-size: 1.5em
+        color: $brandaccent
+
+      .label
+        color: $bodycolor
+
     a
+      //width: 55%
       text-decoration: none
+      //display: inline-block
+      //padding: 0 1em
 
   &.result
     flex(1 1 400px)
