@@ -67,6 +67,9 @@ landing-bar
     margin: 0
     padding: 0
 
+    ul
+      display: none
+
     input
       flex(80%)
       width: 80%
@@ -91,26 +94,6 @@ landing-bar
       margin: 0 auto
       height: 3.5em
 
-    button
-      position: relative
-      display: inline-block
-      padding: 0.75em 1em
-      border: none
-      background-color: $transparent
-      color: $basecolor !important
-      font-size: 1em
-      overflow(visible)
-      transitions(0.3s)
-      width: auto;
-
-      &:hover
-        background: none
-        color: $brandaccent !important
-
-      &:focus
-        outline: none
-        color: $brandcolor
-
 // Second Level Navigation
 
 dl
@@ -124,7 +107,7 @@ dl
     flex-justify-content(space-between)
     padding: 0.35em 0.5em
     background-color: $bordercolor
-    font-size: 1.08em
+    font-size: 0.95em
 
     span.sub-nav__icon
       padding: 1em 0.5em 0 0
@@ -167,7 +150,7 @@ dl
     padding: 1em
     margin: 0
     border-bottom: $border
-    font-size: 0.95em
+    font-size: 0.65em
 
     a
       text-decoration: none !important

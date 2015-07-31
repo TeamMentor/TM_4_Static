@@ -1,16 +1,3 @@
-.application
-  @extends .display-flex
-  flex-order(2)
-  flex($fullwidth)
-  flex-direction(column)
-  width: $fullwidth
-  height: 94%
-  position: fixed
-  top: 3.5em
-  left: 0
-  display: block
-  overflow(auto)
-
 // Sections
 
 section
@@ -44,6 +31,9 @@ section
     background: $infocolor
     overflow(hidden)
 
+    #icon-Type, #icon-Phase, #icon-technology
+      font-size: 1.5em
+
     .label, ul, a
       color: $white
 
@@ -60,6 +50,9 @@ section
     a
       &:hover
         color: $brandaccent
+
+    section.row__label
+      padding: 0
 
   &.article-body
     a
@@ -152,16 +145,17 @@ filters
         letter-spacing: 0
 
         #filter-icon
-          font-size: 2em
+          font-size: 1.5em
           margin: 0 0.25em 0 0
 
         .badge
+          font-size: 0.65em
           max-height: 25px
           padding: 0.45em 0.5em 0.5em
-          margin: 0.15em 0 0
 
         &:hover
           background-color: $white
+          cursor:pointer
 
 // Main container
 
@@ -209,7 +203,7 @@ article-box
           transitions(0.3s)
 
       .metadata
-        background-color: $infocolor
+        background-color: $bordercolor
         border-bottom: $border
         padding: 0 1em
 
@@ -231,15 +225,17 @@ article-box
             margin: 0 0.5em
 
             #icon-technology
-              font-size: 2em
+              font-size: 1.5em
 
       .summary
-        padding: 1.5em 1.5em 0.5em;
+        padding: 1em 1.5em 1em;
         width: $fullwidth
+        text-align: justify
 
 
 article
   width: $fullwidth
+  padding: 0 1em
 
   &.search-term
     flex(1)
