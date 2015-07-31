@@ -50,7 +50,9 @@
   .application-logo
     background: $white url(../assets/logos/tm-icon.svg) no-repeat
     background-size: 30px
-    background-position: 10px 12px
+    background-position: 25px 12px
+    width: $fullwidth
+    height: 4em
 
   .links
     flex(50%)
@@ -67,11 +69,11 @@
 
   .search
     flex-order(3)
-    flex(95%)
-    width: 95%
+    flex(72%)
+    width: 72%
     position: fixed
     top: 0
-    left: 5%
+    left: 0
     overflow(hidden)
     background-color: white
     display: inline-block
@@ -79,11 +81,17 @@
 
     form
       width: $fullwidth
+      padding: 0 0.5em 0 0
+
+      ul
+        display: inline-block
+        width: 10%
+        background-color: $white
 
       button
-        flex(5%)
+        flex(10%)
         flex-order(3)
-        width: 5%
+        width: 10%
         text-align: center
 
       input
@@ -99,7 +107,7 @@
         flex(15%)
         width: 15%
         flex-order(1)
-        margin: 0.25em 0
+        margin: 0.25em
 
   // Application
 
@@ -111,11 +119,11 @@
   main
     @extends .display-flex
     flex-order(2)
-    flex(95%)
-    width: 95%
+    flex($fullwidth)
+    width: $fullwidth
     overflow(scroll)
     top: 4em
-    left: 5%
+    left: 0
     padding: 0
     height: 92%
 
@@ -128,26 +136,25 @@
 
   // Left Navigation
 
-  //left-navigation
+  left-navigation
     top: 0
-    width:5%
-    flex(5%)
+    left: 72%
+    width: 28%
+    flex(28%)
     display: block
     text-align: center
-    height: $fullheight
+    height: 4em
     padding: 0
+    border-bottom: $border
 
     aside
       ul
         li
-          display: block
-          width: $fullwidth
-          border: 0
-          border-bottom: $border
-
+          width:25%
+          border-right:0
+          border-left: $border
           &:first-child
-            height: 4em
-            float: none
+            display: none
 
   // Filter
 
@@ -286,7 +293,6 @@
     margin: 0 auto
 
   dl
-    margin: 0
 
     .scroll
       max-height: $fullheight

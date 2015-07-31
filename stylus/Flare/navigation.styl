@@ -67,6 +67,9 @@ landing-bar
     margin: 0
     padding: 0
 
+    ul
+      display: none
+
     input
       flex(80%)
       width: 80%
@@ -90,26 +93,6 @@ landing-bar
       border: none
       margin: 0 auto
       height: 3.5em
-
-    button
-      position: relative
-      display: inline-block
-      padding: 0.75em 1em
-      border: none
-      background-color: $transparent
-      color: $basecolor !important
-      font-size: 1em
-      overflow(visible)
-      transitions(0.3s)
-      width: auto;
-
-      &:hover
-        background: none
-        color: $brandaccent !important
-
-      &:focus
-        outline: none
-        color: $brandcolor
 
 // Second Level Navigation
 
