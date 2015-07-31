@@ -1,16 +1,3 @@
-.application
-  @extends .display-flex
-  flex-order(2)
-  flex($fullwidth)
-  flex-direction(column)
-  width: $fullwidth
-  height: 94%
-  position: fixed
-  top: 3.5em
-  left: 0
-  display: block
-  overflow(auto)
-
 // Sections
 
 section
@@ -44,6 +31,9 @@ section
     background: $infocolor
     overflow(hidden)
 
+    #icon-Type, #icon-Phase, #icon-technology
+      font-size: 2em
+
     .label, ul, a
       color: $white
 
@@ -60,6 +50,9 @@ section
     a
       &:hover
         color: $brandaccent
+
+    section.row__label
+      padding: 0
 
   &.article-body
     a
@@ -240,6 +233,7 @@ article-box
 
 article
   width: $fullwidth
+  padding: 0 1em
 
   &.search-term
     flex(1)
