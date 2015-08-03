@@ -135,27 +135,33 @@ filters
       margin: 0.25em
 
       a
-        @extends .display-flex
-        flex-justify-content(space-between)
-        flex(0 0 30%)
-        width: $fullwidth
-        padding: 0.5em 0.75em 0.25em
-        border: $border
-        border-radius: 2em
-        letter-spacing: 0
+        &.filter
+          @extends .display-flex
+          flex-justify-content(space-between)
+          flex(0 0 30%)
+          width: $fullwidth
+          padding: 0.5em 0.75em 0.25em
+          border: $border
+          border-radius: 2em
+          letter-spacing: 0
 
-        #filter-icon
-          font-size: 1.5em
-          margin: 0 0.25em 0 0
+          #filter-icon
+            font-size: 1.5em
+            margin: 0 0.25em 0 0
 
-        .badge
-          font-size: 0.65em
-          max-height: 25px
-          padding: 0.45em 0.5em 0.5em
+          .badge
+            font-size: 0.65em
+            max-height: 25px
+            padding: 0.45em 0.5em 0.5em
 
-        &:hover
-          background-color: $white
-          cursor:pointer
+          .text
+            font-size: 0.85em
+            margin: 0.35em 0.25em 0 0
+
+          &:hover
+            background-color: $white
+            cursor:pointer
+
 
 // Main container
 
@@ -178,62 +184,61 @@ article-box
   width: $fullwidth
   margin: 0.5em
 
-  article
-    &.result
-      flex(1 1 400px)
-      display: inline-block
-      padding: 0
-      text-align: center
-      border: $border
-      background-color: $white
+  .result
+    flex(1 1 400px)
+    display: inline-block
+    padding: 0
+    text-align: center
+    border: $border
+    background-color: $white
 
-      h3
-        color: $infocolor
-        margin: 0 0 1em 0
-        padding: 0 0 0.5em 0
-        border-bottom: $border
-        line-height: 1.5em
+    h3
+      color: $infocolor
+      margin: 0 0 1em 0
+      padding: 0 0 0.5em 0
+      border-bottom: $border
+      line-height: 1.5em
+      transitions(0.3s)
+
+    a
+      text-decoration: none
+
+      &:hover h3
+        color: $brandcolor
         transitions(0.3s)
 
-      a
-        text-decoration: none
+    .metadata
+      background-color: $bordercolor
+      border-bottom: $border
+      padding: 0 1em
 
-        &:hover h3
-          color: $brandcolor
-          transitions(0.3s)
+      .label
+        padding: 0
 
-      .metadata
-        background-color: $bordercolor
-        border-bottom: $border
-        padding: 0 1em
+      ul
+        flex(1)
+        list-style-type: none
+        padding: 0
+        margin: 0
+        text-align: right
 
-        .label
-          padding: 0
+        li
+          display: inline-block
+          text-align: center
+          width: auto
+          padding: 0.5em 0
+          margin: 0 0.5em
 
-        ul
-          flex(1)
-          list-style-type: none
-          padding: 0
-          margin: 0
-          text-align: right
+          #icon-technology
+            font-size: 1.5em
 
-          li
-            display: inline-block
-            text-align: center
-            width: auto
-            padding: 0.5em 0
-            margin: 0 0.5em
-
-            #icon-technology
-              font-size: 1.5em
-
-      .summary
-        padding: 1em 1.5em 1em;
-        width: $fullwidth
-        text-align: justify
+    .summary
+      padding: 1em 1.5em 1em;
+      width: $fullwidth
+      text-align: justify
 
 
-article
+.article
   width: $fullwidth
   padding: 0 1em
 
