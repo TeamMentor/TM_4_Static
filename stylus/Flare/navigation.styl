@@ -22,14 +22,6 @@ landing-bar
   background-size: 70px
   border-bottom: $border
 
-.application-logo
-  background: $white url(../assets/logos/tm-icon.svg) no-repeat
-  background-size: 25px
-  background-position: 10px 12px
-  width: 50px
-  height: 45px
-  display:inline-block
-
 .links
   flex-order(2)
   flex(75%)
@@ -74,15 +66,12 @@ landing-bar
       flex(80%)
       width: 80%
       transitions(0.3s)
-      padding: .5em .5em 0
-      border: 0 !important
+      padding: 0 0.5em
+      height: 2.5em
+      margin: 0.5em 0
 
       :focus
         border-bottom: 1px solid $brandcolor
-
-    input, input:focus
-      border: none;
-      border-radius: 0;
 
     select
       flex(20%)
@@ -91,8 +80,13 @@ landing-bar
       border: $border
       color: $basecolor
       border: none
-      margin: 0 auto
-      height: 3.5em
+      margin: 0.5em 0 0.5em 0.5em
+      height: 2.5em
+
+    button
+      height: 2.5em
+      margin: 0.5em 0.5em 0.5em 0
+      border-radius: 3px
 
 // Second Level Navigation
 

@@ -47,13 +47,6 @@
     width: 50%
     height: 4em
 
-  .application-logo
-    background: $white url(../assets/logos/tm-icon.svg) no-repeat
-    background-size: 30px
-    background-position: 25px 12px
-    width: $fullwidth
-    height: 4em
-
   .links
     flex(50%)
     width: 50%
@@ -85,29 +78,46 @@
 
       ul
         display: inline-block
-        width: 10%
+        width: 55%
         background-color: $white
+        border-right: $border
+
+        li
+          div.logo
+            background-size: 60%
+            width: $fullwidth
+            background-position: 0.75em 0.5em
 
       button
         flex(10%)
         flex-order(3)
         width: 10%
         text-align: center
+        height: 2.5em
+        margin: 0.75em 0.25em 0 0
 
       input
         background-color: $transparent
         flex-order(2)
-        flex(85%)
-        width: 85%
+        flex(70%)
+        width: 70%
+        height: 2.5em
+        margin: 0.75em 0
+        padding: 0 0 0 0.5em
+        border: $border
+        border-radius: 3px
 
         &:focus
           transition(0.3s)
+          border: 1px solid $brandaccent
+          border-radius: 3px
 
       select
-        flex(15%)
-        width: 15%
+        flex(20%)
+        width: 20%
         flex-order(1)
-        margin: 0.25em
+        margin: 0.75em 0 0.75em 0.75em
+        height: 2.5em
 
   // Application
 
@@ -145,6 +155,7 @@
     text-align: center
     height: 4em
     padding: 0
+    border-top: 0
     border-bottom: $border
 
     aside
