@@ -132,35 +132,34 @@ left-navigation
 // Filters
 
 filters
-  @extends .display-flex
-  flex($fullwidth)
-  width: $fullwidth
-
   div
     width: $fullwidth
-
-  #filters
     dl
       width: $fullwidth
 
-      dd
+      #filters
+        width: $fullwidth
+
         a
-          #filter-icon
-            font-size: 1.5em
-            margin: 0 0.25em 0 0
-
-          .badge
-            font-size: 0.65em
-            max-height: 25px
-            padding: 0.45em 0.5em 0.5em
-
-          .text
-            font-size: 0.85em
-            margin: 0.35em 0.25em 0 0
+          width: $fullwidth
 
           &:hover
-            background-color: $white
             cursor:pointer
+
+          dd
+            @extends .display-flex
+            flex-justify-content(space-between)
+            width: $fullwidth
+
+            span
+              #filter-icon
+                font-size: 1.5em
+
+              #filter-icon, span.text
+                margin: 0 1em 0 0
+
+            span.badge
+              flex-align-self(flex-end)
 
 
 // Main container
