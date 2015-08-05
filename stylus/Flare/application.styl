@@ -137,36 +137,23 @@ filters
   width: $fullwidth
 
   #filters
-    filter-item
-      margin: 0.25em
+    a
+      #filter-icon
+        font-size: 1.5em
+        margin: 0 0.25em 0 0
 
-      a
-        &.filter
-          @extends .display-flex
-          flex-justify-content(space-between)
-          flex(0 0 30%)
-          width: $fullwidth
-          padding: 0.5em 0.75em 0.25em
-          border: $border
-          border-radius: 2em
-          letter-spacing: 0
+      .badge
+        font-size: 0.65em
+        max-height: 25px
+        padding: 0.45em 0.5em 0.5em
 
-          #filter-icon
-            font-size: 1.5em
-            margin: 0 0.25em 0 0
+      .text
+        font-size: 0.85em
+        margin: 0.35em 0.25em 0 0
 
-          .badge
-            font-size: 0.65em
-            max-height: 25px
-            padding: 0.45em 0.5em 0.5em
-
-          .text
-            font-size: 0.85em
-            margin: 0.35em 0.25em 0 0
-
-          &:hover
-            background-color: $white
-            cursor:pointer
+      &:hover
+        background-color: $white
+        cursor:pointer
 
 
 // Main container
