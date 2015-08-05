@@ -15,6 +15,12 @@ section
     width: $fullwidth
     background-color: $transparent
 
+  &.row
+    ul
+      &.display-inline
+        li
+          padding: 0.5em
+
   &.row__article
     padding: 0 1em
     display: inline-block
@@ -256,6 +262,9 @@ article-box
 .article
   width: $fullwidth
   padding: 0 1em
+
+  img
+    width: auto
 
   &.search-term
     flex(1)
