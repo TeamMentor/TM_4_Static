@@ -184,32 +184,19 @@ article-box
   margin: 0.5em
 
   .result
+    @extends .display-flex
+    flex-direction(row)
     flex(1 1 400px)
-    display: inline-block
     padding: 0
     text-align: center
     border: $border
     background-color: $white
 
-    h3
-      color: $infocolor
-      margin: 0 0 1em 0
-      padding: 0 0 0.5em 0
-      border-bottom: $border
-      line-height: 1.5em
-      transitions(0.3s)
-
-    a
-      text-decoration: none
-
-      &:hover h3
-        color: $brandcolor
-        transitions(0.3s)
-
     .metadata
+      flex(1)
       background-color: $bordercolor
       border-bottom: $border
-      padding: 0 1em
+      padding: 1em 0
 
       .label
         padding: 0
@@ -222,19 +209,32 @@ article-box
         text-align: right
 
         li
-          display: inline-block
           text-align: center
           width: auto
-          padding: 0.5em 0
-          margin: 0 0.5em
+          padding: 0.25em 0
 
           #icon-technology
             font-size: 1.5em
 
     .summary
+      flex(8)
       padding: 1em 1.5em 1em;
-      width: $fullwidth
       text-align: justify
+
+      h3
+        color: $infocolor
+        margin: 0 0 1em 0
+        padding: 0 0 0.5em 0
+        border-bottom: $border
+        line-height: 1.5em
+        transitions(0.3s)
+
+      a
+        text-decoration: none
+
+        &:hover h3
+          color: $brandcolor
+          transitions(0.3s)
 
 
 .article
@@ -274,7 +274,4 @@ article-box
         color: $bodycolor
 
     a
-      //width: 55%
       text-decoration: none
-      //display: inline-block
-      //padding: 0 1em
