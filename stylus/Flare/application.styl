@@ -202,15 +202,19 @@ main
 // Articles
 
 article-box
-  margin: 0.5em
   @extends .display-flex
-  flex-direction(row)
   flex(1 1 400px)
+  width: $fullwidth
+  margin: 0.5em
   padding: 0
   text-align: center
   border: $border
   background-color: $white
+  min-height: 290px
 
+  .result
+    @extends .display-flex
+    flex-direction(row)
     .metadata
       flex(8%)
       background-color: $bordercolor
