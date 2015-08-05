@@ -140,26 +140,33 @@ filters
       #filters
         width: $fullwidth
 
-        a
+        dd
           width: $fullwidth
+          @extends .display-flex
 
-          &:hover
-            cursor:pointer
+          a
+            &.filter-link, &.close-link
+              @extends .display-flex
+              flex-justify-content(space-between)
 
-          dd
-            @extends .display-flex
-            flex-justify-content(space-between)
-            width: $fullwidth
+            &.filter-link
+              flex(80%)
+
+            &.close-link
+              padding: 0.35em 0 0 0
+
+            &:hover
+              cursor:pointer
 
             span
               #filter-icon
                 font-size: 1.5em
 
               #filter-icon, span.text
-                margin: 0 1em 0 0
+                margin: 0 0.75em 0 0
 
             span.badge
-              flex-align-self(flex-end)
+              margin: 0 0.75em 0 0
 
 
 // Main container
