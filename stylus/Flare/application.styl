@@ -67,12 +67,10 @@
 
     .label
       flex(95%)
-      width: $fullwidth
       padding: 0.5em 0 1em
 
     ul
       flex(5%)
-      width: $fullwidth
       text-align: right
 
   &.row__landing-page
@@ -103,7 +101,6 @@
 
     p
       font-size: 0.85em
-
 
 // Left Navigation
 
@@ -300,3 +297,18 @@ article-box
 
     a
       text-decoration: none
+
+// Results
+
+results
+  section.row__label
+    padding: 0.5em
+    .label
+      flex(90%)
+      width: 90%
+      display: inline-block
+
+    ul
+      flex(10%)
+      width: 10%
+      display: inline-block
