@@ -127,7 +127,7 @@
     height: 92%
     flex-wrap(nowrap)
 
-  main
+  .main
     @extends .display-flex
     flex-order(2)
     flex($fullwidth)
@@ -139,7 +139,7 @@
     height: 92%
 
   .container
-    main
+    .main
       position: relative
       top: 0
       left: 0
@@ -184,7 +184,7 @@
 
   // Sections
 
-  section
+  .section
     .row_landing-page
       top: 4em
 
@@ -192,16 +192,6 @@
       flex-direction(row)
       flex($fullwidth)
       width: $fullwidth
-
-      .label
-        flex(3)
-        width: $fullwidth
-        padding: 0.5em 0 1em
-
-      ul
-        flex(1)
-        width: $fullwidth
-        text-align: right
 
     &.tm-summary
       display: inline-block
@@ -216,7 +206,7 @@
 
     &.article-info
       position: fixed
-      right: 0.3em
+      right: 0.5em
       top: 4em
       height: 93%
       width: 25%
@@ -232,7 +222,7 @@
 
   // Footer
 
-  footer
+  .footer
     ul
       text-align: right
 
@@ -241,7 +231,7 @@
 
   // Article
 
-  article
+  .article
     padding: 1em 2em
 
   .result
@@ -334,10 +324,6 @@
 
   // Sub Navigation
 
-  .pagination
-    width: 50%
-    margin: 0 auto
-
   dl
 
     .scroll
@@ -349,7 +335,8 @@
     dd
       font-size: 0.85em
 
-@media $medium
+
+@media $large
   .container
     width: 1285px
     margin: 0 auto

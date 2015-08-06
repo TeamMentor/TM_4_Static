@@ -1,6 +1,6 @@
 // Sections
 
-section
+.section
   width: $fullwidth
   display: block
   overflow(auto)
@@ -44,6 +44,9 @@ section
       &.display-inline
         padding: 0
 
+        li
+          padding: 0.5em
+
     span.text
       padding: 0 0 0 1em
 
@@ -62,15 +65,26 @@ section
     padding: 1em
     text-align: left
 
+    .label
+      flex(95%)
+      width: $fullwidth
+      padding: 0.5em 0 1em
+
+    ul
+      flex(5%)
+      width: $fullwidth
+      text-align: right
+
   &.row__landing-page
     flex-order(2)
     overflow(auto)
     background-color: $white
     height: 92%
+    position: relative
+    top: 4em
 
     button, .button
-      width: auto
-
+      width: 50%
 
   &.tm-summary
     table
@@ -140,31 +154,38 @@ filters
       #filters
         width: $fullwidth
 
-        a
+        dd
           width: $fullwidth
+          @extends .display-flex
 
-          &:hover
-            cursor:pointer
+          a
+            &.filter-link, &.close-link
+              @extends .display-flex
+              flex-justify-content(space-between)
 
-          dd
-            @extends .display-flex
-            flex-justify-content(space-between)
-            width: $fullwidth
+            &.filter-link
+              flex(80%)
+
+            &.close-link
+              padding: 0.35em 0 0 0
+
+            &:hover
+              cursor:pointer
 
             span
               #filter-icon
                 font-size: 1.5em
 
               #filter-icon, span.text
-                margin: 0 1em 0 0
+                margin: 0 0.75em 0 0
 
             span.badge
-              flex-align-self(flex-end)
+              margin: 0 0.75em 0 0
 
 
 // Main container
 
-main
+.main
   @extends .display-flex
   flex-order(1)
   flex($fullwidth)
@@ -180,20 +201,21 @@ main
 // Articles
 
 article-box
+  @extends .display-flex
+  flex(1 1 400px)
   width: $fullwidth
   margin: 0.5em
+  padding: 0
+  text-align: center
+  border: $border
+  background-color: $white
+  min-height: 290px
 
   .result
     @extends .display-flex
     flex-direction(row)
-    flex(1 1 400px)
-    padding: 0
-    text-align: center
-    border: $border
-    background-color: $white
-
     .metadata
-      flex(1)
+      flex(8%)
       background-color: $bordercolor
       border-bottom: $border
       padding: 1em 0
@@ -217,7 +239,7 @@ article-box
             font-size: 1.5em
 
     .summary
-      flex(8)
+      flex(92%)
       padding: 1em 1.5em 1em;
       text-align: justify
 
@@ -240,6 +262,9 @@ article-box
 .article
   width: $fullwidth
   padding: 0 1em
+
+  img
+    width: auto
 
   &.search-term
     flex(1)
