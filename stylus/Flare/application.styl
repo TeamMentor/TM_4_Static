@@ -76,7 +76,6 @@
   &.row__landing-page
     flex-order(2)
     overflow(auto)
-    background-color: $white
     height: 92%
     position: relative
     top: 4em
@@ -156,15 +155,9 @@ filters
           @extends .display-flex
 
           a
-            &.filter-link, &.close-link
-              @extends .display-flex
-              flex-justify-content(space-between)
-
-            &.filter-link
-              flex(80%)
-
-            &.close-link
-              padding: 0.35em 0 0 0
+            @extends .display-flex
+            flex-justify-content(space-between)
+            width: $fullwidth
 
             &:hover
               cursor:pointer
@@ -179,6 +172,25 @@ filters
             span.badge
               margin: 0 0.75em 0 0
 
+.active-filter
+  @extends .display-flex
+  flex-justify-content(space-between)
+  flex(0 1 auto)
+  background: $basecolor
+  margin: 0.5em
+  border-radius: 2em
+  color: white
+
+  span
+    padding: 0.5em 0.25em
+
+    &.close
+      font-size: 1em
+      border-left: 1px solid $white
+      padding: 0.5em 1em
+
+      a
+        color: $white
 
 // Main container
 
