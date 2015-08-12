@@ -209,8 +209,9 @@ filters
 
 // Articles
 
-article-box
+.result
   @extends .display-flex
+  flex-direction(row)
   flex(1 1 400px)
   width: $fullwidth
   margin: 0.5em
@@ -219,53 +220,49 @@ article-box
   border: $border
   background-color: $white
 
-  .result
-    @extends .display-flex
-    flex-direction(row)
-    .metadata
-      flex(8%)
-      background-color: $bordercolor
+  .metadata
+    flex(8%)
+    background-color: $bordercolor
+    border-bottom: $border
+    padding: 1em 0
+
+    .label
+      padding: 0
+
+    ul
+      flex(1)
+      list-style-type: none
+      padding: 0
+      margin: 0
+      text-align: right
+
+      li
+        text-align: center
+        width: auto
+        padding: 0.25em 0
+
+        #icon-technology
+          font-size: 1.5em
+
+  .summary
+    flex(92%)
+    padding: 1em 1.5em 1em;
+    text-align: justify
+
+    h3
+      color: $infocolor
+      margin: 0 0 1em 0
+      padding: 0 0 0.5em 0
       border-bottom: $border
-      padding: 1em 0
+      line-height: 1.5em
+      transitions(0.3s)
 
-      .label
-        padding: 0
+    a
+      text-decoration: none
 
-      ul
-        flex(1)
-        list-style-type: none
-        padding: 0
-        margin: 0
-        text-align: right
-
-        li
-          text-align: center
-          width: auto
-          padding: 0.25em 0
-
-          #icon-technology
-            font-size: 1.5em
-
-    .summary
-      flex(92%)
-      padding: 1em 1.5em 1em;
-      text-align: justify
-
-      h3
-        color: $infocolor
-        margin: 0 0 1em 0
-        padding: 0 0 0.5em 0
-        border-bottom: $border
-        line-height: 1.5em
+      &:hover h3
+        color: $brandcolor
         transitions(0.3s)
-
-      a
-        text-decoration: none
-
-        &:hover h3
-          color: $brandcolor
-          transitions(0.3s)
-
 
 .article
   width: $fullwidth
