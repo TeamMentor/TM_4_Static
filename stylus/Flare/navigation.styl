@@ -200,20 +200,39 @@ dl
 // Pagination
 
 .pagination
-  width: 50% !important
-  height: 3em
-  margin: 2em auto
+  @extends .display-flex
+  width: 60%
+  padding: 0 0.5em
 
   .previous, .next
     flex(1)
     height: $fullheight
-    text-align: center;
-    padding: 0.75em;
+    text-align: center
+    background-color: $brandaccent
+
+    span
+      &.text, &.icon
+        width: $fullwidth
+        display: block
+
+      &.text
+        font-size: 0.65em
 
   .number
     flex(1)
+    background-color: $white
 
     select
-      background-color: $white
-      height: 3em
+      background-color: $transparent
+      border: 0
+      height: 3.2em
       width: $fullwidth
+
+.number-of-results
+  width:40%
+  padding: 0 0.5em
+
+  ul
+    li
+      border: $border
+      padding: 0.25em 1em
