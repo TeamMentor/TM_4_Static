@@ -176,21 +176,21 @@ filters
   @extends .display-flex
   flex-justify-content(space-between)
   flex(0 1 auto)
-  background: $basecolor
+  background-color: $bordercolor
   margin: 0.5em
   border-radius: 2em
   color: white
+  padding: 0.25em 0.65em
 
   span
-    padding: 0.5em 0.25em
+    &.text
+      padding: 0.5em 0.75em
+      font-size: 0.95em
 
     &.close
-      font-size: 1em
+      font-size: 0.65em
       border-left: 1px solid $white
-      padding: 0.5em 1em
-
-      a
-        color: $white
+      padding: 0.1em 0.5em 0 0.75em
 
 // Main container
 
