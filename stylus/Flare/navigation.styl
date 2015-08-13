@@ -200,20 +200,59 @@ dl
 // Pagination
 
 .pagination
-  width: 50% !important
-  height: 3em
-  margin: 2em auto
+  @extends .display-flex
+  padding: 1em 0.5em
+  width: 40%
 
   .previous, .next
-    flex(1)
+    flex(0 0 auto)
     height: $fullheight
-    text-align: center;
-    padding: 0.75em;
+    text-align: center
+    padding: 0.5em 0
+
+    span
+      background-color: $bordercolor
+      border: $border
+      padding: 0.5em
+      margin: 0.5em 0
+      border-radius: 50%
+
+      &.text
+        width: $fullwidth
+        display: block
+        font-size: 0.65em
+        background-color: $transparent
+        border: 0
 
   .number
-    flex(1)
+    flex(0 0 auto)
+    padding: 0 0.5em
 
     select
       background-color: $white
-      height: 3em
+      height: 3.2em
       width: $fullwidth
+
+.number-of-results
+  padding: 0.65em 0
+  width: 60%
+
+  form
+    float:right
+
+    label
+      background-color: $bordercolor
+      border: $border
+      padding: 0.5em 0.75em
+      text-align: center
+      font-size: 0.85em
+      color: $textcolor
+      transitions(0.3s)
+
+    input[type='radio']
+      display: none
+
+      &:checked
+        + label
+          background-color: $white
+          transitions(0.3s)
