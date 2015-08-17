@@ -239,11 +239,14 @@ dl
 
   form
     float:right
+    padding: 0.25em 0.5em
+    height: 3em
 
     label
+      min-width:40px
       background-color: $bordercolor
       border: $border
-      padding: 0.5em 0.75em
+      padding: 0.75em
       text-align: center
       font-size: 0.85em
       color: $textcolor
@@ -256,3 +259,14 @@ dl
         + label
           background-color: $white
           transitions(0.3s)
+
+  ul
+    margin: 3em 0 0 0
+    padding: 0 0.5em 0 0
+
+  span.text
+    font-size: 0.75em
+    display: block
+    width: $fullwidth
+    text-align: right
+    float: right

@@ -162,6 +162,7 @@ filters
 
         dd
           width: $fullwidth
+          height: 4.2em
           @extends .display-flex
 
           a
@@ -175,12 +176,14 @@ filters
             span
               #filter-icon
                 font-size: 1.5em
+                vertical-align: sub
 
               #filter-icon, span.text
                 margin: 0 0.75em 0 0
 
             span.badge
               margin: 0 0.75em 0 0
+              max-height: 28px
 
 .active-filter
   @extends .display-flex
