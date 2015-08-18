@@ -34,6 +34,15 @@
 
 @media $small
 
+  // Structure
+
+  .application-scroll
+    height: $fullheight
+    overflow: hidden
+
+    &:hover
+      overflow: scroll
+
   // Navigation
 
   landing-bar
@@ -146,7 +155,7 @@
 
   // Left Navigation
 
-  left-navigation
+  .navigation
     top: 0
     left: 74.5%
     width: 25.5%
