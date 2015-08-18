@@ -49,25 +49,25 @@
     nav
       height: 4em
 
-  .logo
-    background-color: transparent;
-    background-size: 35%;
-    flex(50%)
-    width: 50%
-    height: 4em
+      .logo
+        background-color: transparent;
+        background-size: 35%;
+        flex(50%)
+        width: 50%
+        height: 4em
 
-  .links
-    flex(50%)
-    width: 50%
-    font-size: 0.85em
+      .links
+        flex(50%)
+        width: 50%
+        font-size: 0.85em
 
-    ul
-      li
-        padding: 0.75em 1em
-        vertical-align: middle
+        ul
+          li
+            padding: 0.75em 1em
+            vertical-align: middle
 
-        &:last-child
-          display: inline-block
+            &:last-child
+              display: inline-block
 
   .search
     flex-order(3)
@@ -357,8 +357,11 @@
 @media $large
 
   // Landing Page
-  .section.row__landing-page, landing-bar
+  landing-bar
     padding: 0 5%
+
+  .section.row__landing-page
+    padding: 0 4.5% 0 5%
 
   .reasons, .about-us, .features
     padding: 3em 20%
