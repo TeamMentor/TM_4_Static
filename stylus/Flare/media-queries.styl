@@ -193,7 +193,7 @@
   // Sections
 
   .section
-    .row_landing-page
+    &.row__landing-page
       top: 4em
 
     &.row__label
@@ -360,8 +360,9 @@
   landing-bar
     padding: 0 5%
 
-  .section.row__landing-page
-    padding: 0 4.5% 0 5%
+  .section
+    &.row__landing-page
+      padding: 0 4.5% 0 5%
 
   .reasons, .about-us, .features
     padding: 3em 20%
@@ -370,6 +371,7 @@
     padding: 0em 20% 3em
 
   // Container
-  .section.row__landing-page
-    .main
-      padding: 0 5%
+  .section
+    &.row__landing-page
+      .main
+        padding: 0 5%
