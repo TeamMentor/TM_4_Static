@@ -217,7 +217,7 @@ dl
 
 .pagination
   @extends .display-flex
-  padding: 1em 0.5em
+  padding: 0 0.5em
   width: 40%
 
   .previous, .next
@@ -228,7 +228,6 @@ dl
 
     span
       background-color: $bordercolor
-      border: $border
       padding: 0.5em
       margin: 0.5em 0
       border-radius: 50%
@@ -238,7 +237,6 @@ dl
         display: block
         font-size: 0.65em
         background-color: $transparent
-        border: 0
 
   .number
     flex(0 0 auto)
@@ -249,20 +247,22 @@ dl
       height: 3.2em
       width: $fullwidth
 
+// Results per page
+
 .number-of-results
-  padding: 0.65em 0
-  width: 60%
+  padding: 0 0.5em
+  width: 40%
 
   form
     float:right
-    padding: 0.25em 0.5em
-    height: 3em
+    padding: 0
+    height: 2em
 
     label
-      min-width:40px
+      min-width:30px
       background-color: $bordercolor
       border: $border
-      padding: 0.75em
+      padding: 0.5em
       text-align: center
       font-size: 0.85em
       color: $textcolor
@@ -276,13 +276,29 @@ dl
           background-color: $white
           transitions(0.3s)
 
-  ul
-    margin: 3em 0 0 0
-    padding: 0 0.5em 0 0
-
   span.text
     font-size: 0.75em
+    padding: 0.65em 0 0 0
     display: block
     width: $fullwidth
     text-align: right
     float: right
+
+// Back to top
+
+.back-to-top
+  width: 20%
+  text-align: center
+  margin: 0 0 1em 0
+
+  span
+    background-color: $bordercolor
+    padding: 0.5em
+    margin: 0.5em 0
+    border-radius: 50%
+
+    &.text
+      display: block
+      font-size: 0.65em
+      width: $fullwidth
+      background-color: $transparent
