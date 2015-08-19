@@ -1,5 +1,4 @@
 // Sections
-
 .section
   width: $fullwidth
   display: block
@@ -88,10 +87,10 @@
     overflow(auto)
     height: 92%
     position: relative
-    top: 4em
+    top: 3em
 
     button, .button
-      width: 50%
+      width: auto
 
   &.tm-summary
     table
@@ -113,7 +112,7 @@
 
 // Left Navigation
 
-left-navigation
+.navigation
   @extends .display-flex
   flex($fullwidth)
   width: $fullwidth
@@ -151,7 +150,7 @@ left-navigation
 
 // Filters
 
-filters
+.filters
   div
     width: $fullwidth
     dl
@@ -226,6 +225,7 @@ filters
   @extends .display-flex
   flex-direction(row)
   flex(1 1 400px)
+  min-height:255px
   margin: 0.5em
   padding: 0
   text-align: center
@@ -286,6 +286,7 @@ filters
 
   img
     width: auto
+    max-width: $fullwidt
 
   &.search-term
     flex(1)

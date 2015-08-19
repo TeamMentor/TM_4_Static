@@ -9,37 +9,41 @@ landing-bar
     @extends .display-flex
     flex(100%)
     flex-order(1)
-    z-index: 99
+    flex-direction(row)
     width: $fullwidth
     background-color: $white
     height: 3em
 
-.logo
-  flex-order(1)
-  flex(25%)
-  width: 25%
-  height: 3em
-  position: relative
-  background: $white url('../assets/logos/tm-logo.svg') no-repeat 8px 12px
-  background-size: 70px
-  border-bottom: $border
+    .logo
+      flex-order(1)
+      flex(25%)
+      width: 25%
+      height: 3em
+      position: relative
+      background: $white url('../assets/logos/tm-logo.svg') no-repeat 8px 12px
+      background-size: 70px
+      border-bottom: $border
 
-.links
-  flex-order(2)
-  flex(75%)
-  width: 75%
-  text-align: right
-  left: 30%
-  padding: 0.5em 0
-  font-size: 0.75em
-  text-transform: uppercase
-  border-bottom: $border
+    .links
+      flex-order(2)
+      flex(75%)
+      width: 75%
+      text-align: right
+      left: 30%
+      padding: 0.5em 0
+      font-size: 0.75em
+      text-transform: uppercase
+      border-bottom: $border
 
-  li
-    a
-      color: $brandcolor
-      &:hover
-        color: $alertoktext
+      ul
+        height: 100%
+        padding: 0.5em 0
+        li
+          padding: 0 0.25em
+          a
+            color: $brandcolor
+            &:hover
+              color: $brandaccent
 
 .search
   @extends .display-flex
@@ -63,6 +67,18 @@ landing-bar
 
     ul
       display: none
+
+      li
+        div
+          &.logo
+            flex-order(1)
+            flex(25%)
+            width: 25%
+            height: 3em
+            position: relative
+            background: $white url('../assets/logos/tm-logo.svg') no-repeat 8px 12px
+            background-size: 70px
+            border-bottom: $border
 
     input
       flex(80%)
@@ -139,7 +155,7 @@ dl
               + label
                 color: $white
 
-  .scroll
+  &.scroll, .scroll
     max-height: 200px
     overflow(auto)
 
@@ -201,7 +217,7 @@ dl
 
 .pagination
   @extends .display-flex
-  padding: 1em 0.5em
+  padding: 0 0.5em
   width: 40%
 
   .previous, .next
@@ -212,7 +228,6 @@ dl
 
     span
       background-color: $bordercolor
-      border: $border
       padding: 0.5em
       margin: 0.5em 0
       border-radius: 50%
@@ -222,7 +237,6 @@ dl
         display: block
         font-size: 0.65em
         background-color: $transparent
-        border: 0
 
   .number
     flex(0 0 auto)
@@ -233,20 +247,22 @@ dl
       height: 3.2em
       width: $fullwidth
 
+// Results per page
+
 .number-of-results
-  padding: 0.65em 0
-  width: 60%
+  padding: 0 0.5em
+  width: 40%
 
   form
     float:right
-    padding: 0.25em 0.5em
-    height: 3em
+    padding: 0
+    height: 2em
 
     label
-      min-width:40px
+      min-width:30px
       background-color: $bordercolor
       border: $border
-      padding: 0.75em
+      padding: 0.5em
       text-align: center
       font-size: 0.85em
       color: $textcolor
@@ -260,13 +276,29 @@ dl
           background-color: $white
           transitions(0.3s)
 
-  ul
-    margin: 3em 0 0 0
-    padding: 0 0.5em 0 0
-
   span.text
     font-size: 0.75em
+    padding: 0.65em 0 0 0
     display: block
     width: $fullwidth
     text-align: right
     float: right
+
+// Back to top
+
+.back-to-top
+  width: 20%
+  text-align: center
+  margin: 0 0 1em 0
+
+  span
+    background-color: $bordercolor
+    padding: 0.5em
+    margin: 0.5em 0
+    border-radius: 50%
+
+    &.text
+      display: block
+      font-size: 0.65em
+      width: $fullwidth
+      background-color: $transparent
