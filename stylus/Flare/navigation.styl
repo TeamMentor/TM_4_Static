@@ -1,15 +1,5 @@
 // First Level Navigation
 
-.logo
-  flex-order(1)
-  flex(25%)
-  width: 25%
-  height: 3em
-  position: relative
-  background: $white url('../assets/logos/tm-logo.svg') no-repeat 8px 12px
-  background-size: 70px
-  border-bottom: $border
-
 landing-bar
   width: $fullwidth
   position: fixed
@@ -77,6 +67,18 @@ landing-bar
 
     ul
       display: none
+
+      li
+        div
+          &.logo
+            flex-order(1)
+            flex(25%)
+            width: 25%
+            height: 3em
+            position: relative
+            background: $white url('../assets/logos/tm-logo.svg') no-repeat 8px 12px
+            background-size: 70px
+            border-bottom: $border
 
     input
       flex(80%)

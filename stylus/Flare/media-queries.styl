@@ -46,7 +46,7 @@
     overflow: hidden
 
     &:hover
-      overflow: scroll
+      overflow: auto
 
   // Navigation
 
@@ -98,10 +98,12 @@
         border-right: $border
 
         li
-          div.logo
-            background-size: 60%
-            width: $fullwidth
-            background-position: 0.75em 0.5em
+          div
+            &.logo
+              background-size: 60%
+              width: $fullwidth
+              height: 4em
+              background-position: 0.75em 0.5em
 
       button
         flex(10%)
@@ -344,7 +346,7 @@
 
   dl
 
-    .scroll
+    .scroll, &.scroll
       max-height: $fullheight
 
     dt
