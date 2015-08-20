@@ -35,15 +35,29 @@
 @media $small
   // Structure
 
+  .fixed-results
+    position: fixed;
+    width: inherit;
+    background-color: #fafafa;
+    z-index: 99;
+
+  .scrolling-results
+    top: 9.5em
+    position: relative
+
+    &.application-scroll
+      height: 79%
+
   .application-scroll
     height: $fullheight
-    overflow: hidden
+    overflow-y: hidden
 
     &:hover
       overflow: auto
 
   .middle-col
     flex-order(2)
+    height: $fullheight
 
   .right-col
     flex-order(3)
