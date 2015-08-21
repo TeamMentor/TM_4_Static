@@ -35,18 +35,10 @@
 @media $small
   // Structure
 
-  .fixed-results
-    position: fixed;
-    width: inherit;
-    background-color: #fafafa;
-    z-index: 99;
-
   .scrolling-results
-    top: 9.5em
-    position: relative
-
-    &.application-scroll
-      height: 79%
+    max-height: 80%
+    overflow: auto
+    padding-bottom: 15%
 
   .application-scroll
     height: $fullheight
@@ -58,6 +50,7 @@
   .middle-col
     flex-order(2)
     height: $fullheight
+    overflow: hidden
 
   .right-col
     flex-order(3)
@@ -373,7 +366,6 @@
     span
       &.text
         font-size: 0.65em
-
 
 @media $large
 
