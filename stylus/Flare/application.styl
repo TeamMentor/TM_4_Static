@@ -26,6 +26,13 @@
     #icon-Phase, #icon-Type, #icon-technology
       font-size: 2em
 
+    img
+      max-width: 100%
+      width: auto
+
+    a
+      text-decoration: underline
+
   &.article-info, &.article-body
     flex-align-self(stretch)
     height: $fullheight
@@ -59,6 +66,12 @@
         li
           padding: 0.5em
 
+    span
+      display: inline-block
+
+      &.text
+        padding: 0 0 0 1em
+
     a
       &:hover
         color: $brandaccent
@@ -78,6 +91,12 @@
       flex(95%)
       padding: 0.5em 0 1em
 
+    h4
+      margin: 0
+      width: $fullwidth
+      border-bottom: 1px solid $basecolor
+      padding: 0 0 0.75em 0
+
     ul
       flex(5%)
       text-align: right
@@ -85,7 +104,8 @@
   &.row__landing-page
     flex-order(2)
     overflow(auto)
-    height: 92%
+    max-height: 92%
+    min-height: 88%
     position: relative
     top: 3em
 
@@ -161,7 +181,7 @@
 
         dd
           width: $fullwidth
-          height: 4.2em
+          min-height: 4.2em
           @extends .display-flex
 
           a
@@ -182,7 +202,6 @@
 
             span.badge
               margin: 0 0.75em 0 0
-              max-height: 28px
 
 .active-filter
   @extends .display-flex
@@ -225,7 +244,6 @@
   @extends .display-flex
   flex-direction(row)
   flex(1 1 400px)
-  min-height:255px
   margin: 0.5em
   padding: 0
   text-align: center
@@ -238,6 +256,7 @@
 
     .metadata
       flex(8%)
+      max-width: 40px
       background-color: $bordercolor
       border-bottom: $border
       padding: 1em 0
@@ -262,7 +281,7 @@
 
     .summary
       flex(92%)
-      padding: 1em 1.5em 0
+      padding: 1em 1.5em
       text-align: left
 
       h4
