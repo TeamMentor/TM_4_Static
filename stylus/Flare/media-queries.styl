@@ -60,7 +60,7 @@
 
       .logo
         background-color: transparent
-        background-size: 35%
+        background-size: 180px
         flex(50%)
         width: 50%
         height: 4em
@@ -68,11 +68,11 @@
       .links
         flex(50%)
         width: 50%
-        font-size: 0.85em
+        font-size: 1em
 
         ul
           li
-            padding: 0.75em 1em
+            padding: 0 0.95em
             vertical-align: middle
 
             &:last-child
@@ -199,8 +199,9 @@
   // Sections
 
   .section
-    &.row__landing-page
-      top: 4em
+    &.landing-page
+      button, .button
+        width: auto
 
     &.row__label
       flex-direction(row)
@@ -227,6 +228,9 @@
 
       section.row__label
         padding: 3em 0 0 0
+
+    &.row__article
+      padding: 1em
 
   // Article Box
 
@@ -338,9 +342,9 @@
   .clients
     padding: 0 10% 3em
 
-  .features
+  .features, .reasons
     p
-      position: relative
+      margin-top: 4%
 
   // Sprites
 
@@ -352,7 +356,9 @@
   dl
 
     .scroll, &.scroll
-      max-height: $fullheight
+      height: auto
+      max-height: none !important
+      overflow: visible
 
     dt
       font-size: 1.08em
@@ -369,11 +375,15 @@
 
   // Landing Page
   landing-bar
-    padding: 0 5%
+    nav
+      width: 80%
+      margin: 0 auto
 
   .section
-    &.row__landing-page
-      padding: 0 4.5% 0 5%
+    &.landing-page
+      padding-top: 4em
+      width: 80%
+      margin: 0 auto
 
   .reasons, .about-us, .features
     padding: 3em 20%
@@ -383,6 +393,8 @@
 
   // Container
   .section
-    &.row__landing-page
+    &.landing-page
       .main
-        padding: 0 5%
+        width: 80%
+        margin: 0 0 0 -40%
+        left: 50%
