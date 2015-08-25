@@ -93,18 +93,23 @@ landing-bar
       margin: 0.5em 0.5em 0.5em 0
       border-radius: 3px
 
-select
+ul
   &#recommendations
     position: absolute
     z-index: 100
-    top: 4.75em
+    top: 3.2em
     left: 35%
     width: 33%
     flex(20%)
     background-color: $white
     border: $border
-    color: $brandcolor
-    height: 4em
+    color: $textcolor
+
+    li
+      padding: 0.35em 0.75em
+      &:hover
+        background-color: $bodycolor
+        color: $brandcolor
 
 // Second Level Navigation
 
