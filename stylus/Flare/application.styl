@@ -305,42 +305,29 @@
 
   img
     width: auto
-    max-width: $fullwidt
-
-  &.search-term
-    flex(1)
-    display: inline-block
-
-  &.search-term
-    flex(1 0 auto)
-    width: auto
-    border-radius: 30px
-    padding: 1em
-    margin: 0.5em
-    word-wrap: normal
-    background-color: $white
-    color: $textcolor
-    border: $border
-
-    [class^="icon-"], [class*=" icon-"]
-      padding: 0 10px 0 0
-      font-size: 0.85em
-
-    div
-      width: 40%
-      background-color: $textcolor
-      display: inline-block
-
-      .number
-        width: $fullwidth
-        font-size: 1.5em
-        color: $brandaccent
-
-      .label
-        color: $bodycolor
+    max-width: $fullwidth
 
     a
       text-decoration: none
+
+// Search Terms
+
+.search-term
+  @extends .display-flex
+  flex-justify-content(space-between)
+  display: inline-block
+  flex(1 0 auto)
+  width: auto
+  padding: 0
+  margin: 0.5em
+  word-wrap: normal
+  background-color: $white
+  color: $textcolor
+  border: $border
+
+  div
+    background-color: $bordercolor
+    display: inline-block
 
 // Results
 
