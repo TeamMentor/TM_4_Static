@@ -313,21 +313,31 @@
 // Search Terms
 
 .search-term
-  @extends .display-flex
-  flex-justify-content(space-between)
   display: inline-block
-  flex(1 0 auto)
+  flex(0 0 auto)
   width: auto
   padding: 0
   margin: 0.5em
   word-wrap: normal
-  background-color: $white
-  color: $textcolor
-  border: $border
 
-  div
-    background-color: $bordercolor
+  span
     display: inline-block
+    float: left
+
+    &.icon
+      background-color: $bordercolor
+      padding: 0.65em 0.5em
+      height: 2.5em
+      display: inline-block
+
+    &.link
+      display: inline-block
+      padding: 0.35em 0.5em 0.5em 1em
+      height: 2.5em
+      background-color: $white
+      border: $border
+      border-top-right-radius: 3px
+      border-bottom-right-radius: 3px
 
 // Results
 
