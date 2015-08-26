@@ -97,3 +97,50 @@ span.alert-text
 
 .validation
   font-size: 0.75em
+
+// Share module
+
+.share-modal
+  position: fixed
+  top: 35%
+  left: 25%
+  width: 50%
+  z-index: 99
+
+  .navbar
+    @extends .display-flex
+    flex(100%)
+    width: $fullwidth
+    flex-justify-content(space-between)
+    padding: 0.25em 0.75em
+    background-color: $bordercolor
+
+    .label
+      flex(1)
+
+    ul
+      flex(1)
+      text-align: right
+      padding: 0.85em 0.5em
+
+  .content
+    background-color: $white
+    padding: 0.5em
+    height: auto
+    border: $border
+
+    form
+      @extends .display-flex
+
+      label
+        flex(100%)
+
+      input
+        flex(88%)
+        border-radius: 0
+        border-top-left-radius: 3px
+        border-bottom-left-radius: 3px
+
+      .button
+        flex(12%)
+        height: 2.5em
