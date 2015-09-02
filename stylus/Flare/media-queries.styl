@@ -45,7 +45,7 @@
     overflow-y: auto
 
   .left-col
-    padding: 0 0 5em 0
+    padding: 0 0 4em 0
 
   .middle-col
     flex-order(2)
@@ -378,19 +378,26 @@
 
   .found-issue
     display: block
-    bottom: 0
+    bottom: 0.5em
     left: 0.5em
     position: fixed
     padding: 1%
-    min-width: 2em
+    min-width: 3.5em
     max-width: 80%
+    border-radius: 2em
+    text-align: center
 
     span
       &.alert-icon
         padding: 0
+        font-size: 1.5em
 
       &.alert-text
         padding: 0 0 0 1em
+
+      &.close
+        font-size: 1em
+        padding: 0.25em 0.5em 0 1em
 
 @media $large
 
