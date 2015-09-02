@@ -72,6 +72,9 @@
       &.text
         padding: 0 0 0 1em
 
+      &.icon
+        padding: 0.25em 0 0
+
     a
       &:hover
         color: $brandaccent
@@ -88,7 +91,7 @@
     text-align: left
 
     .label
-      flex(95%)
+      flex(90%)
       padding: 0.5em 0 1em
 
     h4
@@ -100,6 +103,9 @@
     ul
       flex(5%)
       text-align: right
+
+      &.toggle-bar
+        flex: 10%
 
   &.row__landing-page
     flex-order(2)
@@ -175,6 +181,11 @@
     width: $fullwidth
     dl
       width: $fullwidth
+
+      dt
+        span
+          padding: 0.75em 0 0
+          color: $infocolor
 
       #filters
         width: $fullwidth
