@@ -184,8 +184,12 @@
 
       dt
         span
-          padding: 0.75em 0 0
           color: $infocolor
+
+        &.header
+          background-color: $bodycolor
+          border-bottom: $border
+
 
       #filters
         width: $fullwidth
@@ -210,9 +214,6 @@
 
               #filter-icon, span.text
                 margin: 0 0.75em 0 0
-
-            span.badge
-              margin: 0 0.75em 0 0
 
 .active-filter
   @extends .display-flex
