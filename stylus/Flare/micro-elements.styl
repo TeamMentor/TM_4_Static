@@ -86,13 +86,12 @@ span.alert-text
 
 .badge
   background-color: $bordercolor
-  border: $border
   color: $textcolor
   font-size: 0.75em
   letter-spacing: 1px
   text-align: center
-  padding: 0.5em 0.75em
-  border-radius: 20%
+  padding: 0.55em 0.75em
+  border-radius: 1em
   max-height: 28px
 
 .validation
@@ -102,6 +101,13 @@ span.alert-text
 
 .found-issue
   display: none
+
+  .alert-icon, .close
+    a
+      color: $alertoktext
+
+      &:hover
+        color: $textcolor
 
 // Share module
 
