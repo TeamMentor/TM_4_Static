@@ -200,7 +200,10 @@
         &.header
           background-color: $bodycolor
           border-bottom: $border
+          padding: 0.75em
 
+          .label.no-underline, span.sub-nav__icon
+            padding: 0
 
       #filters
         width: $fullwidth
@@ -208,6 +211,7 @@
         dd
           width: $fullwidth
           @extends .display-flex
+          padding: 0.5em 1em 0
 
           a
             @extends .display-flex
