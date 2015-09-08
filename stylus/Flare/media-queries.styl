@@ -45,9 +45,6 @@
     height: $fullheight
     overflow-y: auto
 
-  .left-col
-    padding: 0 0 4em 0
-
   .middle-col
     flex-order(2)
     height: $fullheight
@@ -138,8 +135,8 @@
           border-radius: 3px
 
       select
-        flex(20%)
-        width: 20%
+        flex(auto)
+        width: auto
         flex-order(1)
         margin: 0.75em 0 0.75em 0.75em
         height: 2.5em
@@ -256,7 +253,7 @@
     flex(1 1 400px)
 
     &.user
-      flex(0 1 32%)
+      flex(0 1 100%)
 
   // Article
 
@@ -377,31 +374,14 @@
       &.text
         font-size: 0.65em
 
-  // Micro Elements
+  // Micro elements
 
   .found-issue
-    display: block
-    bottom: 0.5em
-    left: 0.5em
-    position: fixed
-    padding: 1%
-    min-width: 3.5em
-    max-width: 80%
-    border-radius: 2em
-    text-align: center
-    padding: 0
-
-    span
-      &.alert-icon
-        padding: 0 0.5em
-        font-size: 2em
-
-      &.alert-text
-        padding: 0 0 0 0.25em
-
-      &.close
-        font-size: 1em
-        padding: 0.85em 0.5em 0 0.75em
+    top: 4.5em
+    left: auto
+    right: 1em
+    width: 23.5%
+    height: 2.75em
 
 @media $large
 
