@@ -100,14 +100,31 @@ span.alert-text
 // Found Issue
 
 .found-issue
-  display: none
+  display: block
+  top: 4.5em
+  right: 0.5em
+  left: 0.5em
+  position: fixed
+  width: 94%
+  border-radius: 3px
+  background-color: $white
+  padding: 0.5em
+  border: $border
+  z-index: 99
 
-  .alert-icon, .close
-    a
-      color: $alertoktext
+  span
+    &.alert-text
+      padding: 0 0 0 0.25em
 
-      &:hover
-        color: $textcolor
+    &.close
+      font-size: 1em
+      padding: 0.05em 0.25em 0 0.5em
+
+      a
+        text-decoration: none
+
+  a
+    text-decoration: underline
 
 // Share module
 
