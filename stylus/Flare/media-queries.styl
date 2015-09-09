@@ -128,11 +128,24 @@
         padding: 0 0 0 0.5em
         border: $border
         border-radius: 3px
+        font-size:1em
 
         &:focus
           transition(0.3s)
           border: 1px solid $brandaccent
           border-radius: 3px
+
+        &::-webkit-input-placeholder
+          font-size: 1em
+
+        &:-moz-placeholder
+          font-size: 1em
+
+        &::-moz-placeholder
+          font-size: 1em
+
+        &:-ms-input-placeholder
+          font-size: 1em
 
       select
         flex(auto)
@@ -140,6 +153,7 @@
         flex-order(1)
         margin: 0.75em 0 0.75em 0.75em
         height: 2.5em
+        font-size: 1em
 
   // Application
 
@@ -379,9 +393,9 @@
   .found-issue
     top: 4.5em
     left: auto
+    bottom: auto
     right: 1em
     width: 23.5%
-    height: 2.75em
 
 @media $large
 
@@ -393,7 +407,8 @@
 
   .section
     &.landing-page
-      padding-top: 4em
+      position:relative
+      padding: 1em 0 0 0
       width: 80%
       margin: 0 auto
 
