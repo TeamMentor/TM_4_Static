@@ -78,18 +78,31 @@ landing-bar
       border-radius: 0 !important
       -webkit-appearance: none
 
-      :focus
+      &:focus
         border-bottom: 1px solid $brandcolor
+
+      &::-webkit-input-placeholder
+        font-size: 0.75em
+
+      &:-moz-placeholder
+        font-size: 0.75em
+
+      &::-moz-placeholder
+        font-size: 0.75em
+
+      &:-ms-input-placeholder
+        font-size: 0.75em
 
     select
       flex(20%)
-      width: 20%
+      width: auto
       background-color: $bodycolor
       border: $border
       color: $basecolor
-      margin: 0.5em 0 0.5em 0.5em
-      height: 2.5em
+      margin: 0.65em 0 0.5em 0.5em
+      height: 3.35em
       border-radius: 0
+      font-size: 0.75em
       -webkit-appearance: none
       border-top-left-radius: 3px
       border-bottom-left-radius: 3px

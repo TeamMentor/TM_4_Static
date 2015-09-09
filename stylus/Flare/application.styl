@@ -115,12 +115,12 @@
       &.toggle-bar
         flex: 10%
 
-  &.row__landing-page
+  &.landing-page
     flex-order(2)
     overflow(auto)
     max-height: 92%
     min-height: 88%
-    position: relative
+    position: fixed
     top: 3em
 
     button, .button
@@ -171,10 +171,6 @@
         display: inline-block
         border-right: $border
         width: 20%
-
-        &:first-child
-          padding: 0
-          float: left
 
         div.logo
           width: $fullwidth
