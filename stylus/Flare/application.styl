@@ -50,9 +50,6 @@
           bottom: 1em
           right: 0
 
-    a
-      width: auto
-
     #icon-Type, #icon-Phase, #icon-technology
       font-size: 1.5em
 
@@ -73,19 +70,27 @@
       display: inline-block
 
       &.text
-        padding: 0 0 0 1em
+        padding: 0 0 0 0.5em
         vertical-align: super
 
       &.icon
-        padding: 0.25em 0 0
+        padding: 0 !important
+        font-size: 0.85em
 
     a
+      width: auto
       &:hover
         color: $brandaccent
 
       &.button
+        padding: 0.25em 0.5em
         span
           padding: 0 0.5em
+
+          &.text
+            vertical-align: middle
+            padding: 0 0.25em
+            margin: 0
 
     section.row__label
       padding: 0
@@ -224,6 +229,10 @@
 
               #filter-icon, span.text
                 margin: 0 0.75em 0 0
+                display: table-cell
+
+              span.text
+                padding: 0 0 0 0.5em
 
 .active-filter
   @extends .display-flex

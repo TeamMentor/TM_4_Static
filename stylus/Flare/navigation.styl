@@ -57,6 +57,11 @@ landing-bar
   z-index: 99
   border-bottom: $border
 
+  &.customer
+    .logo
+      background-size: 130px
+      background-position: 0.5em 1em
+
   form
     flex(76%)
     width: 76%
@@ -95,7 +100,7 @@ landing-bar
 
     select
       flex(20%)
-      width: auto
+      width: 20%
       background-color: $bodycolor
       border: $border
       color: $basecolor
@@ -265,6 +270,10 @@ dl
         display: block
         font-size: 0.65em
         background-color: $transparent
+
+    a
+      &:active, &:visited, &:focus
+        color: $textcolor !important
 
   .number
     flex(0 0 auto)
