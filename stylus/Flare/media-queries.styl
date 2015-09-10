@@ -105,10 +105,10 @@
         li
           div
             &.logo
-              background-size: 60%
+              background-size: 8em
               width: $fullwidth
               height: 4em
-              background-position: 0.75em 0.5em
+              background-position: 0.5em 1.1em
 
       button
         flex(10%)
@@ -396,6 +396,19 @@
     bottom: auto
     right: 1em
     width: 23.5%
+
+@media only screen and (min-width: 1000px)
+  // Search Bar
+  .search
+    form
+      ul
+        li
+          div
+            &.logo
+              background-size: 12em
+              width: $fullwidth
+              height: 4em
+              background-position: 0.5em 0.75em
 
 @media $large
 
