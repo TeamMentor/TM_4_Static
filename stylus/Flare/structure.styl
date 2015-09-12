@@ -1,8 +1,9 @@
 html, body
   height: $fullheight
   width: $fullwidth
-  margin: 0
-  padding: 0
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
 
 body
   @extends .display-flex
@@ -13,26 +14,13 @@ body
   background-color: $bodycolor
   font: $font-stack
   min-height: $fullheight
-  -webkit-animation-delay: 0.1s
-  -webkit-animation-name: fontfix
-  -webkit-animation-duration: 0.1s
-  -webkit-animation-iteration-count: 1
-  -webkit-animation-timing-function: linear
 
   *
     @extends .border-box-sizing
 
-@-webkit-keyframes fontfix
-  from { opacity: 1 }
-  to   { opacity: 1 }
-
-ui-view
-  &.ng-scope
-    width: $fullwidth
-
 .full-width
-  width: $fullwidth !important
   display: block
+  width: $fullwidth !important
 
 .half-width
   width: 50%
@@ -45,15 +33,3 @@ ui-view
 .one-fourth
   width: 25%
   margin: 0 auto
-
-::-webkit-scrollbar
-  width: 0.5em
-
-  &:horizontal
-    display: none
-
-::-webkit-scrollbar-track
-  background-color: $white
-
-::-webkit-scrollbar-thumb
-  background-color: $brandaccent

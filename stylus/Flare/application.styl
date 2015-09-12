@@ -1,5 +1,19 @@
+.application
+  @extends .display-flex
+  flex-order(2)
+  flex($fullwidth)
+  flex-direction(column)
+  width: $fullwidth
+  height: 94%
+  position: fixed
+  top: 3.5em
+  left: 0
+  display: block
+  overflow(auto)
+
 // Sections
-.section
+
+section
   width: $fullwidth
   display: block
   overflow(auto)
@@ -21,13 +35,6 @@
     #icon-Phase, #icon-Type, #icon-technology
       font-size: 2em
 
-    img
-      max-width: 100%
-      width: auto
-
-    a
-      text-decoration: underline
-
   &.article-info, &.article-body
     flex-align-self(stretch)
     height: $fullheight
@@ -36,13 +43,6 @@
   &.article-info
     background: $infocolor
     overflow(hidden)
-
-    .section
-      &.row
-        padding: 0 0.5em
-
-    #icon-Type, #icon-Phase, #icon-technology
-      font-size: 1.5em
 
     .label, ul, a
       color: $white
@@ -54,73 +54,30 @@
       &.display-inline
         padding: 0
 
-        li
-          padding: 0.5em
-
-    span
-      display: inline-block
-
-      &.text
-        padding: 0 0 0 0.5em
-        vertical-align: super
-
-      &.icon
-        padding: 0 !important
-        font-size: 0.85em
+    span.text
+      padding: 0 0 0 1em
 
     a
-      width: auto
       &:hover
         color: $brandaccent
-
-      &.button
-        padding: 0.25em 0.5em 0.1em 0.25em
-        span
-          padding: 0 0.5em
-
-          &.text
-            vertical-align: middle
-            padding: 0 0.25em
-            margin: 0
-
-    section.row__label
-      padding: 0
 
   &.article-body
     a
       text-decoration: underline
 
   &.row__label
-    padding: 1em 0.5em
+    padding: 1em
     text-align: left
 
-    .label
-      flex(90%)
-      padding: 0.5em 0 1em
-
-    h4
-      margin: 0
-      width: $fullwidth
-      border-bottom: 1px solid $basecolor
-      padding: 0 0 0.75em 0
-
-    ul
-      flex(5%)
-      text-align: right
-
-      &.toggle-bar
-        flex: 10%
-
-  &.landing-page
+  &.row__landing-page
     flex-order(2)
     overflow(auto)
-    max-height: 92%
-    min-height: 88%
-    position: fixed
-    top: 3em
+    background-color: $white
+    height: 92%
 
     button, .button
       width: auto
+
 
   &.tm-summary
     table
@@ -140,9 +97,10 @@
     p
       font-size: 0.85em
 
+
 // Left Navigation
 
-.navigation
+left-navigation
   @extends .display-flex
   flex($fullwidth)
   width: $fullwidth
@@ -168,87 +126,46 @@
         border-right: $border
         width: 20%
 
-        div.logo
-          width: $fullwidth
-          height: 4em
-          background-size: 80%
-          background-position: 8px 16px
-
-        span.text
-          font-size: 1.25em
+        &:first-child
+          padding: 0
+          float: left
 
 // Filters
 
-.filters
-  div
-    width: $fullwidth
-    dl
-      width: $fullwidth
-
-      dt
-        span
-          color: $infocolor
-
-        &.header
-          background-color: $bodycolor
-          border-bottom: $border
-          padding: 0.75em
-
-          .label.no-underline, span.sub-nav__icon
-            padding: 0
-
-      #filters
-        width: $fullwidth
-
-        dd
-          width: $fullwidth
-          @extends .display-flex
-          padding: 0.5em 1em 0
-
-          a
-            @extends .display-flex
-            flex-justify-content(space-between)
-            width: $fullwidth
-
-            &:hover
-              cursor:pointer
-
-            span
-              #filter-icon
-                font-size: 1.5em
-                vertical-align: sub
-
-              #filter-icon, span.text
-                margin: 0 0.75em 0 0
-                display: table-cell
-
-              span.text
-                padding: 0 0 0 0.5em
-                vertical-align: middle
-
-.active-filter
+filters
   @extends .display-flex
-  flex-justify-content(space-between)
-  flex(0 1 auto)
-  background-color: $bordercolor
-  margin: 0.5em
-  border-radius: 2em
-  color: white
-  padding: 0.25em 0.65em
+  flex($fullwidth)
+  width: $fullwidth
 
-  span
-    &.text
-      padding: 0.5em 0.75em
-      font-size: 0.95em
+  #filters
+    filter-item
+      margin: 0.25em
 
-    &.close
-      font-size: 0.65em
-      border-left: 1px solid $white
-      padding: 0.1em 0.5em 0 0.75em
+      a
+        @extends .display-flex
+        flex-justify-content(space-between)
+        flex(0 0 30%)
+        width: $fullwidth
+        padding: 0.5em 0.75em 0.25em
+        border: $border
+        border-radius: 2em
+        letter-spacing: 0
+
+        #filter-icon
+          font-size: 2em
+          margin: 0 0.25em 0 0
+
+        .badge
+          max-height: 25px
+          padding: 0.45em 0.5em 0.5em
+          margin: 0.15em 0 0
+
+        &:hover
+          background-color: $white
 
 // Main container
 
-.main
+main
   @extends .display-flex
   flex-order(1)
   flex($fullwidth)
@@ -263,55 +180,21 @@
 
 // Articles
 
-.article-box
-  @extends .display-flex
-  flex-direction(row)
-  flex(1 1 100%)
+article-box
+  width: $fullwidth
   margin: 0.5em
-  padding: 0
-  text-align: center
-  border: $border
-  background-color: $white
 
-  .result
-    @extends .display-flex
-    flex-direction(row)
+  article
+    &.result
+      flex(1 1 400px)
+      display: inline-block
+      padding: 0
+      text-align: center
+      border: $border
+      background-color: $white
 
-    .metadata
-      flex(8%)
-      max-width: 40px
-      background-color: $bordercolor
-      border-bottom: $border
-      padding: 1em 0
-
-      .label
-        padding: 0
-
-      ul
-        flex(1)
-        list-style-type: none
-        padding: 0
-        margin: 0
-        text-align: right
-
-        li
-          text-align: center
-          width: auto
-          padding: 0.25em 0
-
-          #icon-technology
-            font-size: 1.45em
-
-          icon.Curated-Content
-            font-size: 1.25em
-
-    .summary
-      flex(92%)
-      padding: 1em 1.5em
-      text-align: left
-
-      h4
-        color: $headingcolor
+      h3
+        color: $infocolor
         margin: 0 0 1em 0
         padding: 0 0 0.5em 0
         border-bottom: $border
@@ -321,61 +204,77 @@
       a
         text-decoration: none
 
-        &:hover h4
+        &:hover h3
           color: $brandcolor
           transitions(0.3s)
 
-.article
-  width: $fullwidth
-  padding: 0 1em
+      .metadata
+        background-color: $infocolor
+        border-bottom: $border
+        padding: 0 1em
 
-  img
+        .label
+          padding: 0
+
+        ul
+          flex(1)
+          list-style-type: none
+          padding: 0
+          margin: 0
+          text-align: right
+
+          li
+            display: inline-block
+            text-align: center
+            width: auto
+            padding: 0.5em 0
+            margin: 0 0.5em
+
+            #icon-technology
+              font-size: 2em
+
+      .summary
+        padding: 1.5em 1.5em 0.5em;
+        width: $fullwidth
+
+
+article
+  width: $fullwidth
+
+  &.search-term
+    flex(1)
+    display: inline-block
+
+  &.search-term
+    flex(1 0 auto)
     width: auto
-    max-width: $fullwidth
+    border-radius: 30px
+    padding: 1em
+    margin: 0.5em
+    word-wrap: normal
+    background-color: $white
+    color: $textcolor
+    border: $border
+
+    [class^="icon-"], [class*=" icon-"]
+      padding: 0 10px 0 0
+      font-size: 0.85em
+
+    div
+      width: 40%
+      background-color: $textcolor
+      display: inline-block
+
+      .number
+        width: $fullwidth
+        font-size: 1.5em
+        color: $brandaccent
+
+      .label
+        color: $bodycolor
 
     a
+      //width: 55%
       text-decoration: none
-
-// Search Terms
-
-.search-term
-  display: inline-block
-  flex(0 0 auto)
-  width: auto
-  padding: 0
-  margin: 0.5em
-  word-wrap: normal
-
-  span
-    display: inline-block
-    float: left
-
-    &.icon
-      background-color: $bordercolor
-      padding: 0.65em 0.5em
-      height: 2.5em
-      display: inline-block
-
-    &.link
-      display: inline-block
-      padding: 0.35em 0.5em 0.5em 1em
-      height: 2.5em
-      background-color: $white
-      border: $border
-      border-top-right-radius: 3px
-      border-bottom-right-radius: 3px
-
-// Results
-
-results
-  section.row__label
-    padding: 0.5em
-    .label
-      flex(90%)
-      width: 90%
-      display: inline-block
-
-    ul
-      flex(10%)
-      width: 10%
-      display: inline-block
+      //display: inline-block
+      //padding: 0 1em
