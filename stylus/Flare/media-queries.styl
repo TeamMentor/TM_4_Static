@@ -16,6 +16,7 @@
 
     h2, h3
       font-size: 1.75em
+      margin: 1em 0
 
   .about
     background-position: 0px -820px
@@ -23,16 +24,34 @@
   .call-to-action
     background-position: 0px -500px
 
-  .reasons, .about-us, .features
+  .reasons, .about-us, .features, .clients
     padding: 2em 10%
 
     h2, h3
       text-align: center
+      margin: 1em 0
 
   .clients
     padding: 0 10% 2em
 
 @media $small
+  // Structure
+  .scrolling-results
+    height: 80%
+    overflow: auto
+    padding: 0 0 3em 0
+
+  .application-scroll
+    height: $fullheight
+    overflow-y: auto
+
+  .middle-col
+    flex-order(2)
+    height: $fullheight
+    overflow: hidden
+
+  .right-col
+    flex-order(3)
 
   // Navigation
 
@@ -40,38 +59,33 @@
     nav
       height: 4em
 
-  .logo
-    background-color: transparent;
-    background-size: 35%;
-    flex(50%)
-    width: 50%
-    height: 4em
+      .logo
+        background-color: transparent
+        background-size: 180px
+        flex(50%)
+        width: 50%
+        height: 4em
 
-  .application-logo
-    background: $white url(../assets/logos/tm-icon.svg) no-repeat
-    background-size: 30px
-    background-position: 10px 12px
+      .links
+        flex(50%)
+        width: 50%
+        font-size: 1em
 
-  .links
-    flex(50%)
-    width: 50%
-    font-size: 0.85em
+        ul
+          li
+            padding: 0 0.95em
+            vertical-align: middle
 
-    ul
-      li
-        padding: 0.75em 1em
-        vertical-align: middle
-
-        &:last-child
-          display: inline-block
+            &:last-child
+              display: inline-block
 
   .search
     flex-order(3)
-    flex(95%)
-    width: 95%
+    flex(74.5%)
+    width: 74.5%
     position: fixed
     top: 0
-    left: 5%
+    left: 0
     overflow(hidden)
     background-color: white
     display: inline-block
@@ -79,48 +93,82 @@
 
     form
       width: $fullwidth
+      padding: 0 0.5em 0 0
+      border-right: $border
+
+      ul
+        display: inline-block
+        width: 53%
+        background-color: $white
+        border-right: $border
+
+        li
+          div
+            &.logo
+              background-size: 8em
+              width: $fullwidth
+              height: 4em
+              background-position: 0.5em 1.1em
 
       button
-        flex(5%)
+        flex(10%)
         flex-order(3)
-        width: 5%
+        width: 10%
         text-align: center
+        height: 2.5em
+        margin: 0.75em 0.25em 0 0
 
       input
         background-color: $transparent
         flex-order(2)
-        flex(85%)
-        width: 85%
+        flex(70%)
+        width: 70%
+        height: 2.5em
+        margin: 0.75em 0
+        padding: 0 0 0 0.5em
+        border: $border
+        border-radius: 3px
+        font-size:1em
 
         &:focus
           transition(0.3s)
+          border: 1px solid $brandaccent
+          border-radius: 3px
+
+        &::-webkit-input-placeholder
+          font-size: 1em
+
+        &:-moz-placeholder
+          font-size: 1em
+
+        &::-moz-placeholder
+          font-size: 1em
+
+        &:-ms-input-placeholder
+          font-size: 1em
 
       select
-        flex(15%)
-        width: 15%
+        flex(20%)
+        width: 20%
         flex-order(1)
-        margin: 0.25em 0
+        margin: 0.75em 0 0.75em 0.75em
+        height: 2.5em
+        font-size: 1em
 
   // Application
 
-  .application
-    flex-order(2)
-    height: 92%
-    flex-wrap(nowrap)
-
-  main
+  .main
     @extends .display-flex
     flex-order(2)
-    flex(95%)
-    width: 95%
-    overflow(scroll)
+    flex($fullwidth)
+    width: $fullwidth
     top: 4em
-    left: 5%
+    left: 0
     padding: 0
     height: 92%
 
   .container
-    main
+    .main
       position: relative
       top: 0
       left: 0
@@ -128,64 +176,81 @@
 
   // Left Navigation
 
-  left-navigation
+  .navigation
     top: 0
-    width:5%
-    flex(5%)
+    left: 74.5%
+    width: 25.5%
+    flex(25.5%)
     display: block
     text-align: center
-    height: $fullheight
+    height: 4em
     padding: 0
+    border-top: 0
+    border-bottom: $border
 
     aside
       ul
+        text-align: right
+
         li
-          display: block
-          width: $fullwidth
-          border: 0
-          border-bottom: $border
+          width:20%
+          border-right:0
+          border-left: $border
+          text-align: center
+          height: 4em
 
           &:first-child
-            height: 4em
-            float: none
+            display: none
+
+          &:nth-child(2)
+            border-left: 0
 
   // Filter
 
-  filters
+  .filters
     height: $fullheight
     padding: 0
 
   // Sections
 
-  section
-    .row_landing-page
-      top: 4em
+  .section
+    &.landing-page
+      button, .button
+        width: auto
 
     &.row__label
       flex-direction(row)
       flex($fullwidth)
       width: $fullwidth
 
-      .label
-        flex(3)
-        width: $fullwidth
-        padding: 0.5em 0 1em
-
-      ul
-        flex(1)
-        width: $fullwidth
-        text-align: right
-
     &.tm-summary
       display: inline-block
+      padding: 1.4em 3em
 
       table
         tr
           td
             &:last-child
               width: 80%
-              margin: 0
-              padding: 0 0 0 1em
+              vertical-align: middle
+
+    &.article-info
+      position: fixed
+      right: 0.5em
+      top: 4em
+      height: 93%
+      width: 25%
+
+      .section
+        &.row
+          &.fixed-bottom
+            position:fixed
+            bottom: 0
+            right: 0.5%
+            width: inherit
+
+    &.row__article
+      padding: 1em
 
   // Buttons
 
@@ -195,23 +260,60 @@
 
   // Footer
 
-  footer
+  .footer
     ul
       text-align: right
 
     .icons
       flex(2)
 
+  // Article Box
+  .article-box
+    flex(1 1 400px)
+
+    &.user
+      flex(0 1 100%)
+
   // Article
 
-  article
-    padding: 1em 2em
+  .article
+    padding: 1em 6em
 
-    &.result
-      display: inline-block
+    &.curated-content
+      width: 65%
+      padding: 1em
+
+    h1.article-title
+      line-height: 2em
+      padding: 0 0 1em 0
+      border-bottom: 1px solid $basecolor
+      font-size: 2.25em
+      margin: 0
+
+    .article-content
+      h1
+        font-size: 2em
+
+      h2
+        font-size: 1.75em
+
+      h3
+        font-size: 1.5em
+
+      h4
+        font-size: 1.25em
+
+      h5
+        font-size: 1em
+
+      p, ul
+        font-size: 1em
+        line-height: 1.75em
+
+  .result
+    display: inline-block
 
   // Typography
-
   h1
     font-size: 2.25em
 
@@ -266,9 +368,9 @@
   .clients
     padding: 0 10% 3em
 
-  .features
+  .features, .reasons
     p
-      position: relative
+      margin-top: 4%
 
   // Sprites
 
@@ -277,23 +379,62 @@
 
   // Sub Navigation
 
-  .pagination
-    width: 50%
-    margin: 0 auto
-
   dl
-    margin: 0
 
-    .scroll
-      max-height: $fullheight
+    .scroll, &.scroll
+      height: auto
+      max-height: none !important
+      overflow: visible
 
-@media $medium
-  .container
-    width: 1285px
-    margin: 0 auto
+    dt
+      font-size: 1.08em
+
+    dd
+      font-size: 0.85em
+
+  .number-of-results
+    span
+      &.text
+        font-size: 0.65em
+
+@media only screen and (min-width: 1000px)
+  // Search Bar
+  .search
+    form
+      ul
+        li
+          div
+            &.logo
+              background-size: 12em
+              width: $fullwidth
+              height: 4em
+              background-position: 0.5em 0.75em
+
+@media $large
+
+  // Landing Page
+  landing-bar
+    nav
+      width: 80%
+      margin: 0 auto
+
+  .section
+    &.landing-page
+      position:relative
+      padding: 1em 0 0 0
+      width: 80%
+      margin: 0 auto
 
   .reasons, .about-us, .features
     padding: 3em 20%
 
   .clients
     padding: 0em 20% 3em
+
+  // Container
+  .section
+    &.landing-page
+      .main
+        width: 80%
+        margin: 0 0 0 -40%
+        left: 50%

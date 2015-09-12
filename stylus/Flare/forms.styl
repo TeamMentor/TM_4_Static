@@ -10,18 +10,12 @@ form
     textarea
       min-height: 20em
       margin: 1em 0 0 0
+      padding: 0.5em
 
     label
       margin: 0
       color: $textcolor
       font-size: 1em
-
-    input[type='radio'], input[type='checkbox']
-      display: none
-
-      &:checked
-        + label
-          color: $headingcolor
 
   &.article-editor-grid
     flex-align-items(flex-start)
@@ -39,14 +33,18 @@ form
             background-color: $white
 
       label
-        font-size: 1.5em
+        font-size: 0.85em
         padding: 0.5em
         margin: 0.5em
         border: $border
         border-radius: 2em
+        text-transform: initial
+
+        span
+          font-size: 1.2em
 
   p
-    font-size: 0.65em
+    font-size: 0.85em
 
   ul
     display: block
@@ -74,6 +72,9 @@ form
       outline: none;
       border: 1px solid #aaaaaa;
 
+    &:required
+      box-shadow: none
+
   .input-field, .button-field, .conditions
     flex($fullwidth)
     width: $fullwidth
@@ -84,6 +85,14 @@ form
 
   label, .label
     margin: 0
+
+  &.access-form
+    background-color: $white
+    border: $border
+    border-radius: 3px
+
+    input
+      background-color: $bodycolor
 
 label, .label
   display: inline-block
@@ -98,7 +107,7 @@ label, .label
   display: block
 
 .label
-  border-bottom: $border
+  border-bottom: 1px solid $basecolor
   padding: 1.5em 0
   width: $fullwidth
 

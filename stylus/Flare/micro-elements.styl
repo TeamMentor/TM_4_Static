@@ -56,6 +56,14 @@ img
   background-color: $bodycolor
   border: $border
 
+  a
+    color: $textcolor !important
+    text-decoration: underline
+
+    &:hover
+      color: $brandcolor !important
+      text-decoration: underline
+
 span.alert-icon
   font-size: 2em
   padding: 0 10px 0 0
@@ -78,13 +86,91 @@ span.alert-text
 
 .badge
   background-color: $bordercolor
-  border: $border
   color: $textcolor
   font-size: 0.75em
   letter-spacing: 1px
   text-align: center
-  padding: 0.5em 0.75em
-  border-radius: 20%
+  padding: 0.55em 0.75em
+  border-radius: 1em
+  max-height: 28px
 
 .validation
   font-size: 0.75em
+
+// Found Issue
+
+.found-issue
+  display: block
+  border-radius: 3px
+  padding: 0.5em
+  z-index: 99
+  margin: 0.5em 0.5em 0
+
+  span
+    &.alert-text
+      padding: 0 0 0 0.25em
+
+    &.close
+      font-size: 1em
+      padding: 0.05em 0.25em 0 0.5em
+
+      a
+        text-decoration: none
+
+  a
+    text-decoration: underline
+
+// Share module
+
+.share-modal
+  position: fixed
+  top: 35%
+  left: 25%
+  width: 50%
+  z-index: 99
+
+  .navbar
+    @extends .display-flex
+    flex(100%)
+    width: $fullwidth
+    flex-justify-content(space-between)
+    padding: 0.25em 0.75em
+    background-color: $bordercolor
+
+    .label
+      flex(1)
+
+    ul
+      flex(1)
+      text-align: right
+      padding: 0.85em 0.5em
+
+  .content
+    background-color: $white
+    padding: 0.5em
+    height: auto
+    border: $border
+
+    form
+      @extends .display-flex
+
+      label
+        flex(100%)
+
+      input
+        flex(88%)
+        border-radius: 0
+        border-top-left-radius: 3px
+        border-bottom-left-radius: 3px
+
+      .button
+        flex(12%)
+        height: 2.5em
+
+// Loading Bar
+
+.loading-bar
+  background-color: $brandcolor
+  width: $fullwidth
+  height: 0.25em
+  position: fixed
