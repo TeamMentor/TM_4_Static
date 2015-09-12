@@ -14,14 +14,9 @@ button, .button
   overflow(hidden)
   text-align: center
   font-size: 0.85em
+  letter-spacing: 1px
   transitions(0.3s)
-  text-decoration: none !important
-
-  &#btn-get-password
-    margin: 1.5em 0
-
-  span.text
-    margin: 0 0 0 1em
+  text-decoration: none
 
   &:focus
     outline: none
@@ -36,17 +31,20 @@ button, .button
     display: inline-block
     padding: 0.75em 1em
     border: none
-    color: $white !important
+    background-color: $transparent
+    color: $basecolor !important
     font-size: 1em
     overflow(visible)
     transitions(0.3s)
     width: auto;
-    border-radius: 0
-    border-top-right-radius: 3px
-    border-bottom-right-radius: 3px
+
+    &:hover
+      background: none
+      color: $brandaccent !important
 
     &:focus
       outline: none
+      color: $brandcolor
 
   &.btn-result
     font-size: 0.95em
