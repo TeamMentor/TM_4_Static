@@ -241,8 +241,13 @@
       height: 93%
       width: 25%
 
-      section.row__label
-        padding: 3em 0 0 0
+      .section
+        &.row
+          &.fixed-bottom
+            position:fixed
+            bottom: 0
+            right: 0.5%
+            width: inherit
 
     &.row__article
       padding: 1em
@@ -273,6 +278,10 @@
 
   .article
     padding: 1em 6em
+
+    &.curated-content
+      width: 65%
+      padding: 1em
 
     h1.article-title
       line-height: 2em
