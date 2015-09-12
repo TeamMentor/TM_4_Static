@@ -60,9 +60,12 @@
     span
       display: inline-block
 
+      &.text, &.icon
+        display: table-cell
+
       &.text
         padding: 0 0 0 0.5em
-        vertical-align: super
+        vertical-align: middle
 
       &.icon
         padding: 0 !important
@@ -223,8 +226,8 @@
                 display: table-cell
 
               span.text
-                padding: 0 0 0 0.5em
-                vertical-align: middle
+                padding: 0.35em 0 0 0.5em
+                vertical-align: top
 
 .active-filter
   @extends .display-flex
