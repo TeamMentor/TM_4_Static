@@ -111,7 +111,7 @@ span.alert-text
 
 // Share module
 
-.share-modal
+.modal
   position: fixed
   top: 35%
   left: 25%
@@ -139,6 +139,16 @@ span.alert-text
     padding: 0.5em
     height: auto
     border: $border
+
+    h4
+      padding: 0.53em 0
+
+    h4, ul.display-inline
+      display: table-cell
+
+    ul.display-inline
+      float: right
+      text-align:right
 
     form
       @extends .display-flex
