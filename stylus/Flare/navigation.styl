@@ -47,6 +47,7 @@ landing-bar
 
 .search
   @extends .display-flex
+  transitions(0)
   flex(100%)
   flex-order(1)
   width: $fullwidth
@@ -62,7 +63,7 @@ landing-bar
       background-position: 0.5em 1em
 
   form
-    flex(76%)
+    flex(4)
     width: 76%
     height: $fullheight
     flex-wrap(nowrap)
@@ -73,7 +74,7 @@ landing-bar
       display: none
 
     input
-      flex(80%)
+      flex(4)
       width: 80%
       transitions(0.3s)
       padding: 0 0.5em
@@ -98,8 +99,8 @@ landing-bar
         font-size: 0.75em
 
     select
-      flex(20%)
-      width: 20%
+      flex(3)
+      transitions(0)
       background-color: $bodycolor
       border: $border
       color: $basecolor
