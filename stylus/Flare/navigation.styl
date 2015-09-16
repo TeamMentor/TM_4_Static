@@ -47,7 +47,6 @@ landing-bar
 
 .search
   @extends .display-flex
-  transitions(0)
   flex(100%)
   flex-order(1)
   width: $fullwidth
@@ -72,48 +71,48 @@ landing-bar
     ul
       display: none
 
-    input
-      flex(3)
-      transitions(0.3s)
-      padding: 0 0.5em
-      height: 2.5em
-      margin: 0.5em 0
-      border-radius: 0 !important
-      -webkit-appearance: none
+    div
+      width: $fullwidth
+      @extends .display-flex
+      
+      input
+        flex(3)
+        padding: 0 0.5em
+        height: 2.5em
+        margin: 0.5em 0
+        border-radius: 0 !important
+        -webkit-appearance: none
 
-      &:focus
-        border-bottom: 1px solid $brandcolor
+        &:focus
+          border-bottom: 1px solid $brandcolor
 
-      &::-webkit-input-placeholder
+        &::-webkit-input-placeholder
+          font-size: 0.75em
+
+        &:-moz-placeholder
+          font-size: 0.75em
+
+        &::-moz-placeholder
+          font-size: 0.75em
+
+        &:-ms-input-placeholder
+          font-size: 0.75em
+
+      select
+        background-color: $bodycolor
+        border: $border
+        color: $basecolor
+        margin: 0.65em 0 0.5em 0.5em
+        height: 3.35em
+        border-radius: 0
         font-size: 0.75em
+        -webkit-appearance: none
+        border-top-left-radius: 3px
+        border-bottom-left-radius: 3px
 
-      &:-moz-placeholder
-        font-size: 0.75em
-
-      &::-moz-placeholder
-        font-size: 0.75em
-
-      &:-ms-input-placeholder
-        font-size: 0.75em
-
-    select
-      min-width: 50px
-      max-width: 150px
-      transitions(0)
-      background-color: $bodycolor
-      border: $border
-      color: $basecolor
-      margin: 0.65em 0 0.5em 0.5em
-      height: 3.35em
-      border-radius: 0
-      font-size: 0.75em
-      -webkit-appearance: none
-      border-top-left-radius: 3px
-      border-bottom-left-radius: 3px
-
-    button
-      height: 2.5em
-      margin: 0.5em 0.5em 0.5em 0
+      button
+        height: 2.5em
+        margin: 0.5em 0.5em 0.5em 0
 
 ul
   &#recommendations
