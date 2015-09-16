@@ -63,8 +63,7 @@ landing-bar
       background-position: 0.5em 1em
 
   form
-    flex(4)
-    width: 76%
+    width: $fullwidth
     height: $fullheight
     flex-wrap(nowrap)
     margin: 0
@@ -74,8 +73,7 @@ landing-bar
       display: none
 
     input
-      flex(4)
-      width: 80%
+      flex(3)
       transitions(0.3s)
       padding: 0 0.5em
       height: 2.5em
@@ -99,7 +97,8 @@ landing-bar
         font-size: 0.75em
 
     select
-      flex(3)
+      min-width: 50px
+      max-width: 150px
       transitions(0)
       background-color: $bodycolor
       border: $border

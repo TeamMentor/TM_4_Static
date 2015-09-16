@@ -45,6 +45,9 @@
     height: $fullheight
     overflow-y: auto
 
+  .left-col, .right-col, .middle-col
+    padding: 0 0 3em 0
+
   .middle-col
     flex-order(2)
     height: $fullheight
@@ -52,6 +55,12 @@
 
   .right-col
     flex-order(3)
+
+  .display-mobile
+    display: none
+
+  .display-desktop
+    display: block
 
   // Navigation
 
@@ -241,6 +250,7 @@
       top: 4em
       height: 93%
       width: 25%
+      margin: 0
 
       &.curated-content
         width: 15%
