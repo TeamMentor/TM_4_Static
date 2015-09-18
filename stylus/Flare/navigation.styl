@@ -71,10 +71,27 @@ landing-bar
     ul
       display: none
 
+      &.technology
+        position: fixed
+        top: 3.7em
+        background-color: $white
+        left: 0.5em
+        width: auto
+        padding: 0.25em
+        border: $border
+        border-radius: 3px
+
+        li
+          padding: 0.25em
+          border-bottom: $border
+
+          &:last-child
+            border: 0
+
     div
       width: $fullwidth
       @extends .display-flex
-      
+
       input
         flex(3)
         padding: 0 0.5em
@@ -99,35 +116,44 @@ landing-bar
           font-size: 0.75em
 
       select
-        background-color: $bodycolor
-        border: $border
-        color: $basecolor
-        margin: 0.65em 0 0.5em 0.5em
-        height: 3.35em
-        border-radius: 0
-        font-size: 0.75em
-        -webkit-appearance: none
-        border-top-left-radius: 3px
-        border-bottom-left-radius: 3px
+        display:none
 
       button
         height: 2.5em
-        margin: 0.5em 0.5em 0.5em 0
+
+        &:first-child
+          margin: 0.5em 0 0.5em 0.5em
+          border-top-left-radius: 3px
+          border-bottom-left-radius: 3px
+
+        &:last-child
+          margin: 0.5em 0.5em 0.5em 0
+          border-top-right-radius: 3px
+          border-bottom-right-radius: 3px
 
 ul
   &#recommendations
-    position: absolute
+    position: fixed
     z-index: 100
-    top: 3.2em
-    left: 35%
-    width: 33%
-    flex(20%)
+    top: 3.45em
+    left: 4.15em
+    right: 4.15em
+    min-width: 71%
+    width: inherit
     background-color: $white
     border: $border
     color: $textcolor
+    max-height: 50%
+    overflow: scroll
 
     li
+      width: $fullwidth
       padding: 0.35em 0.75em
+      border-bottom: $border
+
+      &:last-child
+        border: 0
+
       &:hover
         background-color: $bodycolor
         color: $brandcolor
