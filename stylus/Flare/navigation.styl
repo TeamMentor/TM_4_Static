@@ -175,10 +175,6 @@ dl
     p
       padding: 0.45em 0.10em
 
-    .label
-      padding: 1em 0
-      color: $textcolor
-
     span.sub-nav__icon
       padding: 0.5em 0.5em 0 0
 
@@ -209,6 +205,37 @@ dl
             &:checked
               + label
                 color: $white
+
+  ul
+    li
+      margin: 0.5em 0 0 0
+
+      &:nth-child(1)
+        margin-left: calc(1 * 0.5em)
+
+      &:nth-child(2)
+        margin-left: calc(2 * 0.5em)
+
+      &:nth-child(3)
+        margin-left: calc(3 * 0.5em)
+
+      &:nth-child(4)
+        margin-left: calc(4 * 0.5em)
+
+      &:nth-child(5)
+        margin-left: calc(5 * 0.5em)
+
+      &:nth-child(6)
+        margin-left: calc(6 * 0.5em)
+
+      &:nth-child(7)
+        margin-left: calc(7 * 0.5em)
+
+      &:nth-child(8)
+        margin-left: calc(8 * 0.5em)
+
+      p
+        font-size: 0.75em
 
   &.scroll, .scroll
     max-height: 200px
@@ -301,6 +328,8 @@ dl
       background-color: $white
       height: 3.2em
       width: $fullwidth
+      -webkit-appearance: menulist-button
+      border:0
 
 // Results per page
 
