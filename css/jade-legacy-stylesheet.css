@@ -331,16 +331,8 @@ a#link-forgot-pwd.minor {
   font-size: 0.75em;
   margin: 5px 0;
 }
-#copyright [class^="icon-"], #copyright [class*=" icon-"] {
-  font-size: 0.65em;
-  margin: 0 10px 0 0;
-}
-#filters [class^="icon-"], #filters [class*=" icon-"],  #article [class^="icon-"], #article [class*=" icon-"] {
-  font-size: 1.25em;
-  padding: 0 10px 0 0px;
-}
-#articles [class^="icon-"], #articles [class*=" icon-"] {
-  font-size: 1.25em;
+#filters #filter-icon {
+  display: none;
 }
 #customer #main-app-view {
   margin-top: 130px
@@ -358,6 +350,9 @@ a#link-forgot-pwd.minor {
   padding: 5px 0 0 20px;
   display: inline-block;
   width: 85%;
+}
+#search-div button span.icon, #search-div-2 button span.icon {
+  display: none;
 }
 #search-input input {
   border: none;
