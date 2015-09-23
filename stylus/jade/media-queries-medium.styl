@@ -28,6 +28,9 @@
   // Landing Page
 
   #landing-page
+    #clients
+      img
+        max-width: 80%
     h1
       line-height: 2.5em
 
@@ -87,12 +90,34 @@
   .bg.content
     padding: 1em 3em 2em
 
-  // Sprites
+  // Landing Page
 
-  .fix-vulnerabilities, .reduce-vulnerabilities, .improve-process, .delivers-compliance, .integrates, .cross-references, .provides-guidance
-    width: 100px
-    height: 100px
+  #footer
+    padding: 1em 0;
+    ul
+      text-align: left
 
-  .elsevier, .fedex, .mass-mutual, .microsoft, .ubs
-    width: $fullwidth
-    padding-top: 33%
+      li
+        display: inline-block
+
+      &.contact
+        text-align: right
+        padding: 0 1em 0 0
+
+        li
+          width: 20%
+          text-align: right
+          margin: 0
+          font-size: 0.85em
+
+          &:first-child
+            width: auto
+            display: inline-block
+            text-align: left
+
+      &.si
+        padding: 0 1em
+
+        li
+          &:first-child
+            padding: 0 1em 0 0
