@@ -140,6 +140,11 @@ span.alert-text
     padding: 0.5em
     height: auto
     border: $border
+    display: table
+    width: $fullwidth
+
+    .col-11, .col-1
+      display: table-cell
 
     h4
       padding: 0.53em 0
@@ -150,6 +155,9 @@ span.alert-text
     ul.display-inline
       float: right
       text-align:right
+
+    .button
+      vertical-align: middle
 
     form
       @extends .display-flex
@@ -166,7 +174,6 @@ span.alert-text
       .button
         flex(12%)
         height: 2.5em
-        padding: 0.5em 0
 
 // Loading Bar
 
