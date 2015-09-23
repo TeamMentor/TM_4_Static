@@ -8,8 +8,11 @@
     @extends .display-flex
     flex-wrap(wrap)
     flex-justify-content(flex-start)
+    ms-flex-justify-content(start)
     flex-align-items(flex-start)
+    ms-flex-align-items(start)
     flex-align-content(flex-start)
+    ms-flex-align-content(start)
     flex($fullwidth)
     width: $fullwidth
     background-color: $transparent
@@ -219,6 +222,7 @@
           a
             @extends .display-flex
             flex-justify-content(space-between)
+            ms-flex-justify-content(justify)
             width: $fullwidth
 
             &:hover
@@ -240,6 +244,7 @@
 .active-filter
   @extends .display-flex
   flex-justify-content(space-between)
+  ms-flex-justify-content(justify)
   flex(0 1 auto)
   background-color: $bordercolor
   margin: 0.5em
@@ -264,7 +269,9 @@
   flex-order(1)
   flex($fullwidth)
   flex-align-items(flex-start)
+  ms-flex-align-items(start)
   flex-align-content(flex-start)
+  ms-flex-align-content(start)
   flex-wrap(wrap)
   width: $fullwidth
   overflow(auto)

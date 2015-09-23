@@ -3,9 +3,9 @@ $fullwidth = 100%
 $fullheight = $fullwidth
 
 .border-box-sizing
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  box-sizing: border-box;
+  -moz-box-sizing:border-box
+  -webkit-box-sizing:border-box
+  box-sizing: border-box
 
 overflow(n)
  overflow: n
@@ -26,42 +26,56 @@ flex(n)
 
 flex-basis(n)
   -webkit-flex-basis: n
-  -ms-flex-preferred-size: n
   flex-basis: n
+
+ms-flex-basis(n)
+  -ms-flex-preferred-size: n
 
 flex-wrap(n)
   -webkit-flex-wrap: n
-  -ms-flex-wrap: n
   flex-wrap: n
+  -ms-flex-wrap: n
 
 flex-align-items(n)
   -webkit-box-align: n
   -webkit-align-items: n
+
+ms-flex-align-items(n)
   -ms-flex-align: n
 
 flex-align-self(n)
   -webkit-align-self: n
-  -ms-flex-item-align: n
+  -ms-flex-item-align:;
   align-self: n
+
+ms-flex-align-self(n)
+  -ms-flex-item-align: n
 
 flex-justify-content(n)
   -webkit-box-pack: n
   -webkit-justify-content: n
-  -ms-flex-pack: n
   justify-content: n
+
+ms-flex-justify-content(n)
+  -ms-flex-pack: n
 
 flex-align-content(n)
   -webkit-align-content: n
-  -ms-flex-line-pack: n
   align-content: n
 
+ms-flex-align-content(n)
+  -ms-flex-line-pack: n
+
 flex-direction(n)
-  flex-direction: n
+  -webkit-box-direction:normal
   -webkit-flex-direction: n
+  -ms-flex-direction: n
+  flex-direction: n
 
 .display-flex
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: -webkit-box
   display: flex;
 
 // Application Colours
@@ -69,7 +83,7 @@ $bodycolor      = #f9f9f9
 $textcolor      = #444444
 $headingcolor   = #676767
 $bordercolor    = #dbdbdb
-$basecolor 		  = #aaaaaa
+$basecolor      = #aaaaaa
 $brandcolor     = #8aaf3e
 $brandaccent    = #b4cf7b
 $white          = #fff
@@ -109,6 +123,11 @@ $iosicon = #a6a8ab
 // Typography
 $font-stack = 100% Helvetica, Arial, sans-serif
 $code-font = Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
+
+hyphens(n)
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+  hyphens: auto
 
 // Transitions
 transitions(n)

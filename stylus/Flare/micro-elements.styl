@@ -123,6 +123,7 @@ span.alert-text
     flex(100%)
     width: $fullwidth
     flex-justify-content(space-between)
+    ms-flex-justify-content(justify)
     padding: 0.25em 0.75em
     background-color: $bordercolor
 
@@ -174,3 +175,17 @@ span.alert-text
   height: 0.25em
   position: fixed
   top: 3.5em
+
+// Tool Tips
+
+.tooltip
+  position: absolute
+  z-index: 999
+  width: auto
+  background-color: $bordercolor
+  border: $border
+  text-align: left
+  padding: 0.05em 0.5em
+  margin: 3%
+  display:inline-block
+  font-size: 0.65em
