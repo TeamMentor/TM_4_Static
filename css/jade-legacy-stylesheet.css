@@ -69,7 +69,6 @@ img, object {
   margin: 0;
   background-position: 0 0;
   background-size: 180px;
-  height: 33px;
   float: left;
 }
 .fixed #team-mentor-navigation #tm-logo.customization {
@@ -101,6 +100,9 @@ img, object {
   display: inline-block !important;
   margin: 0px 0;
   padding: 0 20px 0 0;
+}
+.fixed #links ul li span.icon {
+  display: none;
 }
 .fixed #links ul li:last-child {
   padding-right: 20px;
@@ -347,16 +349,24 @@ a#link-forgot-pwd.minor {
   padding-bottom: 14px;
 }
 #search-div #search-input input {
-  padding: 5px 0 0 20px;
+  padding: 15px 0 0 20px;
   display: inline-block;
   width: 85%;
+  margin: 0;
 }
 #search-div button span.icon, #search-div-2 button span.icon {
-  display: none;
+  display: none !important;
+}
+#search-div button span.text, #search-div-2 button span.text {
+  display: block !important;
+  font-weight: 600;
 }
 #search-input input {
   border: none;
   background: none;
+}
+#search-div button, #search-div-2 button {
+  height: 2.5em;
 }
 #search-div, #search-div-2 {
   margin-bottom: 5px;
