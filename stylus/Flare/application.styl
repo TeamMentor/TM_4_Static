@@ -345,7 +345,8 @@
           transitions(0.3s)
 
 .article
-  width: $fullwidth
+  width: 100vw
+  max-width $fullwidth
   padding: 0 1em
   -ms-word-break: break-all
   -ms-word-wrap: break-all
@@ -353,9 +354,9 @@
   -webkit-word-wrap: break-word
   word-break: break-word
   word-wrap: break-word
-  -webkit-hyphens: auto
-  -moz-hyphens: auto
-  hyphens: auto
+  -webkit-hyphens: manual
+  -moz-hyphens: manual
+  hyphens: manual
 
   img
     width: auto

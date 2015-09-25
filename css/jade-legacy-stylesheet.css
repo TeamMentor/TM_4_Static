@@ -355,9 +355,9 @@ a#link-forgot-pwd.minor {
 #search-input {
   padding-bottom: 14px;
 }
-#search-div #search-input input {
+#search-div #search-input input, #search-div-2 #search-input input  {
   padding: 15px 0 0 20px;
-  display: inline-block;
+  display: inline-block !important;
   width: 85%;
   margin: 0;
 }
@@ -665,8 +665,8 @@ button:hover, button:active, .button:hover, .button:active {
   -webkit-box-shadow: none;
   background: transparent;
   float: right;
-  width: 8%;
-  font-size: 1.2em;
+  width: auto;
+  font-size: 0.75em;
   color: #8aaf3e;
 }
 #search-button:hover {
