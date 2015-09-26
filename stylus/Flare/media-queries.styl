@@ -71,6 +71,7 @@
     flex-order(2)
     height: $fullheight
     overflow: hidden
+    padding: 0
 
   .right-col
     flex-order(3)
@@ -442,7 +443,6 @@
   // Sub Navigation
 
   dl
-
     .scroll, &.scroll
       height: auto
       max-height: none !important
@@ -450,6 +450,10 @@
 
     dt
       font-size: 1.08em
+
+      span
+        &.sub-nav__icon
+          display: none
 
     dd
       font-size: 0.85em
