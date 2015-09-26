@@ -131,7 +131,7 @@ img, object {
 #landing-page {
   margin-top: 0;
   left: 0;
-  top:60px;
+  top:50px;
 }
 #landing-page #application {
   margin: 10px 0 0 0;
@@ -152,7 +152,7 @@ img, object {
 #about, #usp, #call-to-action {
   background-size: auto;
   background: url(../assets/stock-img/bg-img-large.jpg) no-repeat !important;
-  padding: 8% 0;
+  padding: 8% 0 !important;
 }
 #about-us, #clients, #features, #reasons {
   border-left: 1px solid #dbdbdb;
@@ -186,7 +186,7 @@ img, object {
 #reasons img, #features img {
   width: 100%
 }
-#reasons table tr td:first-child, #features table tr td:first-child {
+#reasons table tr td:first-child, #features table tr td:first-child, #summary table tr td:first-child {
   width: 18%;
   text-align: center;
   padding: 0 1em;
@@ -231,7 +231,7 @@ img, object {
   text-decoration: none;
 }
 #footer ul.contact span.text {
-  display: block;
+  display: block !important;
 }
 #landing-page h1 {
   line-height: 2.5em;
