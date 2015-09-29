@@ -86,6 +86,8 @@ img, object {
 }
 .fixed #tm-logo, #links, #links ul li {
   display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 .fixed #links {
   width: auto;
@@ -98,6 +100,9 @@ img, object {
 }
 .fixed #links ul li {
   display: inline-block !important;
+  zoom: 1;
+  *display: inline;
+  zoom: 1;
   margin: 0px 0;
   padding: 0 20px 0 0;
 }
@@ -199,7 +204,7 @@ img, object {
 }
 #footer ul {
   list-style: none;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 10px 0;
   font-size: 0.75em;
 }
@@ -212,6 +217,9 @@ img, object {
 }
 #footer li {
   display: inline-block;
+  zoom: 1;
+  *display: inline;
+  zoom: 1;
 }
 #footer li img {
   vertical-align: middle;
@@ -222,16 +230,18 @@ img, object {
   margin: 0 0 10px;
   text-align: center;
   display: inline-block;
+  zoom: 1;
+  *display: inline;
+  zoom: 1;
 }
 #footer ul.contact li:first-child {
   width: 55%;
   display: inline-block !important;
+  zoom: 1;
+  *display: inline;
 }
 #footer ul.contact a {
   text-decoration: none;
-}
-#footer ul.contact span.text {
-  display: block !important;
 }
 #landing-page h1 {
   line-height: 2.5em;
@@ -257,7 +267,7 @@ img, object {
 }
 #summary table tr td:first-child {
   width: 80px;
-  padding: 0 50px;
+  padding: 0 20px 0 0;
 }
 #summary img {
   width: 100%;
@@ -313,6 +323,8 @@ a#link-forgot-pwd.minor {
 .bg#list-view-article {
   padding: 1em;
   display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 .bg#list-view-article table {
   width: 100%;
@@ -340,9 +352,6 @@ a#link-forgot-pwd.minor {
   font-size: 0.75em;
   margin: 5px 0;
 }
-#filters #filter-icon {
-  display: none;
-}
 #customer #main-app-view {
   margin-top: 130px
 }
@@ -358,6 +367,8 @@ a#link-forgot-pwd.minor {
 #search-div #search-input input, #search-div-2 #search-input input  {
   padding: 15px 0 0 20px;
   display: inline-block !important;
+  zoom: 1;
+  *display: inline;
   width: 85%;
   margin: 0;
 }
@@ -378,7 +389,7 @@ a#link-forgot-pwd.minor {
 #search-div, #search-div-2 {
   margin-bottom: 5px;
   position: fixed;
-  top: 60px;
+  top: 50px;
   left: 0;
   z-index: 96;
   margin: 0 auto;
@@ -436,6 +447,7 @@ a#link-forgot-pwd.minor {
 .sub-nav dd:last-child > a:after { content: "" }
 .sub-nav dt, .sub-nav dd, .sub-nav li {
   float: left;
+  zoom: 1;
   display: inline;
   font-weight: normal;
   margin: 0 0 0 10px;
@@ -494,6 +506,8 @@ form h4 {
 }
 label, .label {
   display: inline-block;
+  zoom: 1;
+  *display: inline;
   margin-bottom: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -516,6 +530,10 @@ input[type="number"], input[type="search"], input[type="tel"], input[type="time"
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+::-ms-clear {
+    width : 0;
+    height: 0;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus,
 input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus,
@@ -647,6 +665,8 @@ button, .button {
   border: none;
   color: white;
   display: inline-block;
+  zoom: 1;
+  *display: inline;
   font-size: 0.85em;
   letter-spacing: 1px;
   padding: 15px;
@@ -799,6 +819,8 @@ td.vertical-align {
 #link-forgot-pwd { text-align: right; }
 .filter {
   display: inline-block;
+  zoom: 1;
+  *display: inline;
   margin: 2px 5px 0;
 }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; }
