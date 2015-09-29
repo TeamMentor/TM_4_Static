@@ -27,6 +27,7 @@ img, object {
 }
 .right { float: right !important; }
 .left { float: left !important; }
+.desktop { display: block !important; }
 /*------------------------------------*
    NAVIGATION
 *------------------------------------*/
