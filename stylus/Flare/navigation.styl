@@ -1,17 +1,5 @@
 // First Level Navigation
 
-landing-bar
-  width: $fullwidth
-
-  nav
-    @extends .display-flex
-    flex(100%)
-    flex-order(1)
-    z-index: 99
-    width: $fullwidth
-    background-color: $white
-    height: 3em
-
 .logo
   flex-order(1)
   flex(25%)
@@ -22,112 +10,174 @@ landing-bar
   background-size: 70px
   border-bottom: $border
 
-.application-logo
-  background: $white url(../assets/logos/tm-icon.svg) no-repeat
-  background-size: 25px
-  background-position: 10px 12px
-  width: 50px
-  height: 45px
-  display:inline-block
+landing-bar
+  width: $fullwidth
+  position: fixed
+  z-index: 99
 
-.links
-  flex-order(2)
-  flex(75%)
-  width: 75%
-  text-align: right
-  left: 30%
-  padding: 0.5em 0
-  font-size: 0.75em
-  text-transform: uppercase
-  border-bottom: $border
+  nav
+    @extends .display-flex
+    flex(100%)
+    flex-order(1)
+    flex-direction(row)
+    width: $fullwidth
+    background-color: $white
+    height: 3em
 
-  li
-    a
-      color: $brandcolor
-      &:hover
-        color: $alertoktext
+    .links
+      flex-order(2)
+      flex(75%)
+      width: 75%
+      text-align: right
+      left: 30%
+      padding: 0.5em 0
+      font-size: 0.75em
+      text-transform: uppercase
+      border-bottom: $border
+
+      ul
+        height: 100%
+        padding: 0.5em 0
+        li
+          padding: 0 0.25em
+          a
+            color: $brandcolor
+            &:hover
+              color: $brandaccent
 
 .search
   @extends .display-flex
   flex(100%)
   flex-order(1)
   width: $fullwidth
-  position: fixed
-  left: 0
+  position:fixed
   top: 0
   background-color: $white
   z-index: 99
   border-bottom: $border
 
+  &.customer
+    .logo
+      background-size: 80%
+      background-position: 0.5em 1em
+
   form
-    flex(76%)
-    width: 76%
+    width: $fullwidth
     height: $fullheight
     flex-wrap(nowrap)
     margin: 0
     padding: 0
 
-    input
-      flex(80%)
-      width: 80%
-      transitions(0.3s)
-      padding: .5em .5em 0
-      border: 0 !important
+    ul
+      display: none
 
-      :focus
-        border-bottom: 1px solid $brandcolor
+      &.technology
+        position: fixed
+        top: 3.7em
+        background-color: $white
+        left: 0.5em
+        width: auto
+        border: $border
+        border-radius: 3px
 
-    input, input:focus
-      border: none;
-      border-radius: 0;
+        li
+          padding: 0.5em
+          border-bottom: $border
 
-    select
-      flex(20%)
-      width: 20%
-      background: $bodycolor
-      border: $border
-      color: $basecolor
-      border: none
-      margin: 0 auto
-      height: 3.5em
+          &:last-child
+            border: 0
 
-    button
-      position: relative
-      display: inline-block
-      padding: 0.75em 1em
-      border: none
-      background-color: $transparent
-      color: $basecolor !important
-      font-size: 1em
-      overflow(visible)
-      transitions(0.3s)
-      width: auto;
+    div
+      width: $fullwidth
+      @extends .display-flex
+
+      input
+        flex(3)
+        padding: 0 0.5em
+        height: 2.5em
+        margin: 0.5em 0
+        border-radius: 0 !important
+        -webkit-appearance: none
+
+        &:focus
+          border-bottom: 1px solid $brandcolor
+
+        &::-webkit-input-placeholder
+          font-size: 0.75em
+
+        &:-moz-placeholder
+          font-size: 0.75em
+
+        &::-moz-placeholder
+          font-size: 0.75em
+
+        &:-ms-input-placeholder
+          font-size: 0.75em
+
+      select
+        display:none
+
+      button
+        height: 2.5em
+
+        &:first-child
+          margin: 0.5em 0 0.5em 0.5em
+          border-top-left-radius: 3px
+          border-bottom-left-radius: 3px
+
+        &:last-child
+          margin: 0.5em 0.5em 0.5em 0
+          border-top-right-radius: 3px
+          border-bottom-right-radius: 3px
+
+ul
+  &#recommendations
+    position: fixed
+    z-index: 100
+    top: 3.45em
+    left: 4.15em
+    right: 4.15em
+    min-width: 71%
+    width: inherit
+    background-color: $white
+    border: $border
+    color: $textcolor
+    max-height: 50%
+    overflow: scroll
+
+    li
+      width: $fullwidth
+      padding: 0.35em 0.75em
+      border-bottom: $border
+
+      &:last-child
+        border: 0
 
       &:hover
-        background: none
-        color: $brandaccent !important
-
-      &:focus
-        outline: none
+        background-color: $bodycolor
         color: $brandcolor
+        cursor: pointer
 
 // Second Level Navigation
 
 dl
   background-color: $white
-  border: $border
   border-bottom: 0
   margin: 0.5em
 
   dt
     @extends .display-flex
     flex-justify-content(space-between)
+    ms-flex-justify-content(justify)
     padding: 0.35em 0.5em
     background-color: $bordercolor
-    font-size: 1.08em
+    font-size: 0.95em
+
+    p
+      padding: 0.45em 0.10em
 
     span.sub-nav__icon
-      padding: 1em 0.5em 0 0
+      padding: 0.5em 0.5em 0 0
 
     &.editor
       padding: 0
@@ -157,17 +207,49 @@ dl
               + label
                 color: $white
 
-  .scroll
+  ul
+    li
+      margin: 0.5em 0 0 0
+
+      &:nth-child(1)
+        margin-left: calc(1 * 0.5em)
+
+      &:nth-child(2)
+        margin-left: calc(2 * 0.5em)
+
+      &:nth-child(3)
+        margin-left: calc(3 * 0.5em)
+
+      &:nth-child(4)
+        margin-left: calc(4 * 0.5em)
+
+      &:nth-child(5)
+        margin-left: calc(5 * 0.5em)
+
+      &:nth-child(6)
+        margin-left: calc(6 * 0.5em)
+
+      &:nth-child(7)
+        margin-left: calc(7 * 0.5em)
+
+      &:nth-child(8)
+        margin-left: calc(8 * 0.5em)
+
+      p
+        font-size: 0.75em
+
+  &.scroll, .scroll
     max-height: 200px
     overflow(auto)
 
   dd
     @extends .display-flex
     flex-justify-content(space-between)
-    padding: 1em
+    ms-flex-justify-content(space-between)
+    padding: 0.5em 1em
     margin: 0
     border-bottom: $border
-    font-size: 0.95em
+    font-size: 0.65em
 
     a
       text-decoration: none !important
@@ -190,6 +272,7 @@ dl
     margin: 0.5em
     border-bottom: $border
     flex-align-items(flex-start)
+    ms-flex-align-items(start)
     flex-wrap(wrap)
     text-transform: uppercase
     letter-spacing: 1px
@@ -218,15 +301,91 @@ dl
 // Pagination
 
 .pagination
-  width: $fullwidth
-  height: 3em
-  margin: 1em 0
+  @extends .display-flex
+  padding: 4em 0.5em 0
+  width: 40%
 
   .previous, .next
-    flex(1)
+    flex(0 0 auto)
     height: $fullheight
-    text-align: center;
-    padding: 0.75em;
+    text-align: center
+    padding: 0.5em 0
+
+    span
+      background-color: $bordercolor
+      padding: 0.5em
+      margin: 0.5em 0
+      border-radius: 50%
+
+      &.text
+        width: $fullwidth
+        display: block
+        font-size: 0.65em
+        background-color: $transparent
 
   .number
-    flex(1)
+    flex(0 0 auto)
+    padding: 0 0.5em
+
+    select
+      background-color: $white
+      height: 3.2em
+      width: $fullwidth
+      -webkit-appearance: menulist-button
+      border:0
+
+// Results per page
+
+.number-of-results
+  padding: 4em 0.5em 0
+  width: 40%
+
+  form
+    float:right
+    padding: 0
+    height: 2em
+
+    label
+      min-width:30px
+      background-color: $bordercolor
+      border: $border
+      padding: 0.5em
+      text-align: center
+      font-size: 0.85em
+      color: $textcolor
+      transitions(0.3s)
+
+    input[type='radio']
+      display: none
+
+      &:checked
+        + label
+          background-color: $white
+          transitions(0.3s)
+
+  span.text
+    font-size: 0.75em
+    padding: 0.65em 0 0 0
+    display: block
+    width: $fullwidth
+    text-align: right
+    float: right
+
+// Back to top
+
+.back-to-top
+  width: 20%
+  text-align: center
+  padding: 1em 0 0
+
+  span
+    background-color: $bordercolor
+    padding: 0.5em
+    margin: 0.5em 0
+    border-radius: 50%
+
+    &.text
+      display: block
+      font-size: 0.65em
+      width: $fullwidth
+      background-color: $transparent
