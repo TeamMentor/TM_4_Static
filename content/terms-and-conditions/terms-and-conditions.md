@@ -298,7 +298,7 @@ Your data will be stored and processed in whole or in part in the United States.
 
 ##### What Information do we Collect and How Is It Used?
 
-When you do business with us, we may collect three types of information: personal, non-personal and an anonymous. You share this information so that we may provide you with the information and service that best meet your needs. We assume your consent for our firm to use this information in an appropriate manner. We may use and disclose this information in order to:
+When you do business with us, we may collect three types of information: personal, non-personal and  anonymous. You share this information so that we may provide you with the information and service that best meet your needs. We assume your consent for our firm to use this information in an appropriate manner. We may use and disclose this information in order to:
 
 * Communicate with you in a timely and efficient manner
 * Provide requested information on our products and services
@@ -314,7 +314,7 @@ We may disclose your information if necessary to protect our legal rights or if 
 
 ##### Links
 
-The TEAM Mentor websites sites contain links to other Web sites over which we have no control. We are not responsible for the privacy policies or practices of other Web sites to which you choose to link from our Sites. We encourage you to review the privacy policies of those other Web sites so you can understand how they collect, use and share your information.
+The TEAM Mentor websites sites contain links to other websites over which we have no control. We are not responsible for the privacy policies or practices of other websites to which you choose to link from our Sites. We encourage you to review the privacy policies of those other websites so you can understand how they collect, use and share your information.
 
 ##### Aggregated Statistics
 
