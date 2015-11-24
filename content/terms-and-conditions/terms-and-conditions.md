@@ -294,7 +294,6 @@ The parties acknowledge that this Agreement sets forth the entire Agreement and 
 #### Privacy Policy
 
 Security Innovation, Inc. is committed to respecting the privacy of our users. We strive to provide a safe, secure user experience. This Privacy Statement sets forth the online data collection and usage policies and practices that apply to TEAM Mentor websites, and does not apply to information we collect in any other fashion.
-
 Your data will be stored and processed in whole or in part in the United States.
 
 ##### What Information do we Collect and How Is It Used?
@@ -306,8 +305,7 @@ When you do business with us, we may collect three types of information: persona
 * Analyze business results
 * Act as required or authorized by law
 
-When you place an order, download or sign up for an evaluation we ask for your contact or billing information which is used for internal operations and/or to provide you with updated information on our products.  We also may forward your contact information to a registered Security Innovation value-added reseller who may contact you. Other than for this purpose, we do not sell, trade, or rent your personal information to others.
-
+When you place an order, download or sign up for an evaluation we ask for your contact or billing information which is used for internal operations and/or to provide you with updated information on our products.  We also may forward your contact information to a registered Security Innovation value-added reseller who may contact you. Other than for this purpose, we do not sell, trade, or rent your personal information to others. 
 In addition, there are areas on our web site where you may elect to provide feedback on our products, services or programs, and this information becomes our property, which we may use for marketing purposes or to contact you for further information.
 
 ##### Exceptional Disclosure
@@ -324,7 +322,7 @@ Security Innovation Inc, may collect statistics about the behavior of visitors o
 
 ##### Cookies
 
-A cookie is a string of information that a website stores on a visitor's computer, and that the visitor's browser provides to the website each time the visitor returns. TEAM Mentor websites use cookies to help us identify and track visitors, their usage of TEAM Mentor websites, and their website access preferences. TEAM Mentor websites visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using our websites, with the drawback that certain features of the websites may not function properly without the aid of cookies.
+A cookie is a string of information that a website stores on a visitor’s computer, and that the visitor’s browser provides to the website each time the visitor returns. TEAM Mentor websites use cookies to help us identify and track visitors, their usage of TEAM Mentor websites, and their website access preferences. TEAM Mentor websites visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using our websites, with the drawback that certain features of the websites may not function properly without the aid of cookies.
 
 ##### Opting-Out or Changing Your Contact Information
 
