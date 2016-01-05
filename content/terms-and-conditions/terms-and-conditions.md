@@ -294,7 +294,6 @@ The parties acknowledge that this Agreement sets forth the entire Agreement and 
 #### Privacy Policy
 
 Security Innovation, Inc. is committed to respecting the privacy of our users. We strive to provide a safe, secure user experience. This Privacy Statement sets forth the online data collection and usage policies and practices that apply to TEAM Mentor websites, and does not apply to information we collect in any other fashion.
-Your data will be stored and processed in whole or in part in the United States.
 
 ##### What Information do we Collect and How Is It Used?
 
@@ -305,12 +304,16 @@ When you do business with us, we may collect three types of information: persona
 * Analyze business results
 * Act as required or authorized by law
 
-When you place an order, download or sign up for an evaluation we ask for your contact or billing information which is used for internal operations and/or to provide you with updated information on our products.  We also may forward your contact information to a registered Security Innovation value-added reseller who may contact you. Other than for this purpose, we do not sell, trade, or rent your personal information to others. 
-In addition, there are areas on our web site where you may elect to provide feedback on our products, services or programs, and this information becomes our property, which we may use for marketing purposes or to contact you for further information.
+When you place an order, download or sign up for an evaluation we ask for your contact or billing information which is used for internal operations and/or to provide you with updated information on our products.  We also may forward your contact information to a registered Security Innovation value-added reseller who may contact you. Other than for this purpose, we do not sell, trade, or rent your personal information to others. In addition, there are areas on our web site where you may elect to provide feedback on our products, services or programs, and this information becomes our property, which we may use for marketing purposes or to contact you for further information.
 
 ##### Exceptional Disclosure
 
-We may disclose your information if necessary to protect our legal rights or if the information relates to actual or threatened harmful conduct. Disclosure may be required by law or if we receive legal process.
+We will share your personal information with companies, organizations or individuals outside of Security Innovation if we have a good-faith belief that access, use, preservation or disclosure of the information is reasonably necessary to:
+
+* meet any applicable law, regulation, legal process or enforceable governmental request.
+* enforce applicable Terms of Service, including investigation of potential violations.
+* detect, prevent, or otherwise address fraud, security or technical issues.
+* protect against harm to the rights, property or safety of Security Innovation, our users or the public as required or permitted by law.
 
 ##### Links
 
@@ -318,7 +321,7 @@ The TEAM Mentor websites sites contain links to other websites over which we hav
 
 ##### Aggregated Statistics
 
-Security Innovation Inc, may collect statistics about the behavior of visitors on TEAM Mentor websites. For instance,we may collect how many views a particular article got. We collect and use this information to help us understand how visitors use the sites so we can maximize their effectiveness. From time to time, we may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of TEAM Mentor websites.
+Security Innovation Inc., may collect statistics about the behavior of visitors on TEAM Mentor websites. For instance, we may collect how many views a particular article earned. We collect and use this information to help us understand how visitors use the sites so we can maximize their effectiveness. From time to time, we may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of TEAM Mentor websites.
 
 ##### Cookies
 
