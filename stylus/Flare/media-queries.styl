@@ -91,10 +91,16 @@
       .logo
         background-color: transparent
         background-size: 180px
-        flex(50%)
+        flex(10%)
         width: 50%
         height: 4em
         display: block
+
+        &.customization
+          flex(9%)
+          background-repeat:no-repeat;
+          background-position:center;
+          background-size: 65%;
 
       .links
         flex(50%)
@@ -141,6 +147,14 @@
               background-size: 8em
               width: $fullwidth
               height: 4em
+              background-position: 0.5em 1.1em
+
+            &.logosearch
+              background-size: 85% !important
+              background-repeat:no-repeat;
+              width: $fullwidth
+              height: 4em
+              //margin-top: 8px
               background-position: 0.5em 1.1em
 
       div
