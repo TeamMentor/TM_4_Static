@@ -290,3 +290,47 @@ Neither party shall be liable hereunder by reason of any failure or delay in the
 ##### 18.14 Entire Agreement
 
 The parties acknowledge that this Agreement sets forth the entire Agreement and understanding of the parties as to the subject matter hereof and this Agreement shall not be subject to any change or modification except by the execution of a written instrument executed by both parties.
+
+#### Privacy Policy
+
+Security Innovation, Inc. is committed to respecting the privacy of our users. We strive to provide a safe, secure user experience. This Privacy Statement sets forth the online data collection and usage policies and practices that apply to TEAM Mentor websites, and does not apply to information we collect in any other fashion.
+
+##### What Information do we Collect and How Is It Used?
+
+When you do business with us, we may collect three types of information: personal, non-personal and  anonymous. You share this information so that we may provide you with the information and service that best meet your needs. We assume your consent for our firm to use this information in an appropriate manner. We may use and disclose this information in order to:
+
+* Communicate with you in a timely and efficient manner
+* Provide requested information on our products and services
+* Analyze business results
+* Act as required or authorized by law
+
+When you place an order, download or sign up for an evaluation we ask for your contact or billing information which is used for internal operations and/or to provide you with updated information on our products.  We also may forward your contact information to a registered Security Innovation value-added reseller who may contact you. Other than for this purpose, we do not sell, trade, or rent your personal information to others. In addition, there are areas on our web site where you may elect to provide feedback on our products, services or programs, and this information becomes our property, which we may use for marketing purposes or to contact you for further information.
+
+##### Exceptional Disclosure
+
+We will share your personal information with companies, organizations or individuals outside of Security Innovation if we have a good-faith belief that access, use, preservation or disclosure of the information is reasonably necessary to:
+
+* meet any applicable law, regulation, legal process or enforceable governmental request.
+* enforce applicable Terms of Service, including investigation of potential violations.
+* detect, prevent, or otherwise address fraud, security or technical issues.
+* protect against harm to the rights, property or safety of Security Innovation, our users or the public as required or permitted by law.
+
+##### Links
+
+The TEAM Mentor websites sites contain links to other websites over which we have no control. We are not responsible for the privacy policies or practices of other websites to which you choose to link from our Sites. We encourage you to review the privacy policies of those other websites so you can understand how they collect, use and share your information.
+
+##### Aggregated Statistics
+
+Security Innovation Inc., may collect statistics about the behavior of visitors on TEAM Mentor websites. For instance, we may collect how many views a particular article earned. We collect and use this information to help us understand how visitors use the sites so we can maximize their effectiveness. From time to time, we may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of TEAM Mentor websites.
+
+##### Cookies
+
+A cookie is a string of information that a website stores on a visitor’s computer, and that the visitor’s browser provides to the website each time the visitor returns. TEAM Mentor websites use cookies to help us identify and track visitors, their usage of TEAM Mentor websites, and their website access preferences. TEAM Mentor websites visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using our websites, with the drawback that certain features of the websites may not function properly without the aid of cookies.
+
+##### Opting-Out or Changing Your Contact Information
+
+Users opt-out of receiving future mailings or update their existing contact information.
+
+##### Contacting the Web Site
+
+If you have any questions about this privacy statement, the practices of this site, or your dealings with this web site, please contact us (https://www.securityinnovation.com/company/contact-us.html)
