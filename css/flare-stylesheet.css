@@ -273,7 +273,7 @@ ui-view.ng-scope {
   background-color: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #b4cf7b;
+  background-color: #004671;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -388,7 +388,7 @@ a {
 a:hover,
 a:active,
 a.active {
-  color: #8aaf3e;
+  color: #1780bf;
   text-decoration: none;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
@@ -443,7 +443,7 @@ a.active {
   -ms-animation: rotating 2s linear infinite;
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
-  color: #8aaf3e !important;
+  color: #1780bf !important;
 }
 @-moz-keyframes rotating {
   from {
@@ -767,10 +767,10 @@ landing-bar nav .links ul li {
   padding: 0 0.25em;
 }
 landing-bar nav .links ul li a {
-  color: #8aaf3e;
+  color: #1780bf;
 }
 landing-bar nav .links ul li a:hover {
-  color: #b4cf7b;
+  color: #004671;
 }
 .search {
   -webkit-flex: 100%;
@@ -837,7 +837,7 @@ landing-bar nav .links ul li a:hover {
   -webkit-appearance: none;
 }
 .search form div input:focus {
-  border-bottom: 1px solid #8aaf3e;
+  border-bottom: 1px solid #1780bf;
 }
 .search form div input::-webkit-input-placeholder {
   font-size: 0.75em;
@@ -893,7 +893,7 @@ ul#recommendations li:last-child {
 }
 ul#recommendations li:hover {
   background-color: #f9f9f9;
-  color: #8aaf3e;
+  color: #1780bf;
   cursor: pointer;
 }
 dl {
@@ -918,7 +918,7 @@ dl dt span.sub-nav__icon {
 }
 dl dt.editor {
   padding: 0;
-  background-color: #b4cf7b;
+  background-color: #004671;
 }
 dl dt.editor form {
   width: 100%;
@@ -1244,7 +1244,7 @@ dl.breadcrumbs dd.active {
   text-decoration: underline;
 }
 .section.article-info a:hover {
-  color: #b4cf7b;
+  color: #004671;
 }
 .section.article-info a.button {
   padding: 0.25em 0.5em 0.1em 0.25em;
@@ -1552,7 +1552,7 @@ dl.breadcrumbs dd.active {
   text-decoration: none;
 }
 .article-box .result .summary a:hover h4 {
-  color: #8aaf3e;
+  color: #1780bf;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1926,32 +1926,32 @@ img {
   text-align: center;
 }
 .alert-ok {
-  background-color: #b4cf7b;
-  color: #6c9020;
+  background-color: #004671;
+  color: #fff;
 }
 .alert-ok a {
   color: #fff;
   text-decoration: none;
 }
 .alert-ok a:hover {
-  color: #6c9020;
+  color: #fff;
 }
 .alert-ok .alert-icon {
-  color: #6c9020;
+  color: #fff;
 }
 .alert-bad {
-  background: #cf7b7b;
-  color: #902020;
+  background: #d6484b;
+  color: #eceeef;
 }
 .alert-bad .alert-icon {
-  color: #902020;
+  color: #eceeef;
 }
 .alert-bad a {
   color: #fff;
   text-decoration: none;
 }
 .alert-bad a:hover {
-  color: #902020;
+  color: #eceeef;
 }
 .alert-neutral {
   background-color: #f9f9f9;
@@ -1962,7 +1962,7 @@ img {
   text-decoration: underline;
 }
 .alert-neutral a:hover {
-  color: #8aaf3e !important;
+  color: #1780bf !important;
   text-decoration: underline;
 }
 span.alert-icon {
@@ -2096,7 +2096,7 @@ span.alert-text {
   height: 2.5em;
 }
 .loading-bar {
-  background-color: #8aaf3e;
+  background-color: #1780bf;
   width: 100%;
   height: 0.25em;
   position: fixed;
@@ -2121,7 +2121,7 @@ button,
   padding: 1em;
   border: none;
   display: inline-block;
-  background-color: #8aaf3e;
+  background-color: #1780bf;
   margin: 5px 0;
   color: #fff !important;
   z-index: 1;
@@ -2151,7 +2151,7 @@ button:focus,
 }
 button:hover:enabled,
 .button:hover:enabled {
-  background-color: #b4cf7b;
+  background-color: #004671;
   color: #fff;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -2213,11 +2213,11 @@ button.btn-editor,
 }
 button.btn-editor.cancel,
 .button.btn-editor.cancel {
-  background-color: #902020;
+  background-color: #eceeef;
 }
 button.btn-editor.cancel:hover,
 .button.btn-editor.cancel:hover {
-  background-color: #cf7b7b;
+  background-color: #d6484b;
 }
 button:disabled,
 .button:disabled {
@@ -3144,7 +3144,7 @@ pre .tex .formula {
     font-size: 1em;
   }
   .search form div input:focus {
-    border: 1px solid #b4cf7b;
+    border: 1px solid #004671;
     border-radius: 3px;
   }
   .search form div input::-webkit-input-placeholder {
